@@ -1,0 +1,18 @@
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.column {
+  width: 23%;
+  border: 1px solid #bbb8b8;
+  float: left;
+  box-shadow: 3px 5px 9px #333;
+}
+
+.column .card ul {
+  list-style: none;
+}
+.column .card ul li span {
+  font-weight: bold;
+}
