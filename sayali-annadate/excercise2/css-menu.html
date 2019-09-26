@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Test</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1" />
+<style>
+body {
+   margin: 0px;
+}
+
+main {
+   width: 100%;
+   margin: 0px auto;
+   font-family: sans-serif;
+}
+
+section {
+   /*background: linear-gradient(to right, #000000 20%, #808080 70%, #ffffff 100%);*/
+    background: rgba(73,155,234,1);
+    background: -moz-linear-gradient(left, rgba(73,155,234,1) 0%, rgba(32,124,229,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(73,155,234,1)), color-stop(100%, rgba(32,124,229,1)));
+    background: -webkit-linear-gradient(left, rgba(73,155,234,1) 0%, rgba(32,124,229,1) 100%);
+    background: -o-linear-gradient(left, rgba(73,155,234,1) 0%, rgba(32,124,229,1) 100%);
+    background: -ms-linear-gradient(left, rgba(73,155,234,1) 0%, rgba(32,124,229,1) 100%);
+    background: linear-gradient(to right, rgba(73,155,234,1) 0%, rgba(32,124,229,1) 100%);
+    box-shadow: 0px 7px 10px #00000054;
+    border-radius: 20px;
+    width: 100%;
+    float: left
+}
+
+ul {
+   list-style-type: none;
+   color: #fff
+}
+
+ul li {
+   display: inline;
+   margin-right: 10px;
+   margin-left: 10px;
+   line-height: 1em;
+}
+
+ul li a {
+   text-decoration: none;
+   color: aliceblue;
+}
+
+ul li:hover a {
+   color:#222;
+}
+
+.left {
+   float: left;
+   width: 80%
+}
+
+.right {
+   float: right;
+   width: 20%
+}
+
+.search {
+   width: 20%;
+   float: left;
+   margin: 6px 0px 0px -30px;
+}
+
+.search input {
+   width: 100%;
+   padding: 10px;
+   border-radius: 20px;
+   border: 1px solid #fff;
+}
+
+@media screen and (max-width:1024px) {
+   main {
+      width: 100%
+   }
+}
+
+@media screen and (max-width:800px) {
+   main {
+      width: 100%
+   }
+   ul li:nth-child(3),
+   ul li:nth-child(5) {
+      display: none;
+   }
+    span {
+      display: none
+   }
+
+
+}
+
+@media screen and (max-width:500px) {
+   main {
+      width: 100%
+   }
+   section {
+      border-radius: 0px;
+      min-height: 220px;
+   }
+   .left {
+      width: 100%;
+   }
+   ul {
+      padding: 0px;
+   }
+   ul li {
+      display: block;
+      border-bottom: 1px solid #fff;
+      line-height: 2em
+   }
+   ul li:nth-child(3),
+   ul li:nth-child(4),
+   ul li:nth-child(5) {
+      display: none;
+   }
+   ul li:last-child {
+      border-bottom: none
+   }
+   .search {
+      width: 100%;
+      margin: 0;
+      position: absolute;
+      right: 0;
+      top: 10px;
+   }
+   .left {
+      width: 100%;
+      position: relative;
+      top: 35px;
+   }
+   span {
+      display: none
+   }
+   .search input {
+   border-radius: 0px;
+}
+}
+
+
+
+</style>
+</head>
+
+<body>
+
+<main>
+	<section>
+		<div  class="left">
+        <nav>
+            <ul>
+                <li><a href="#">Friends</a></li><span>|</span>
+                <li><a href="#">Movies</a></li><span>|</span>
+                <li><a href="#">Cars</a></li><span>|</span>
+                <li><a href="#">Songs</a></li><span>|</span>
+                <li><a href="#">Fun</a></li><span>|</span>
+                <li><a href="#">Hobbies</a></li><span>|</span>
+                <li><a href="#">Holidays</a></li>
+
+            </ul>
+        </nav>
+        </div>
+        <div class="search">
+            <input type="search" placeholder="Search Here">
+        </div>
+      
+	</section>
+
+</main>
+
+</body>
+</html>
