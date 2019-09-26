@@ -1,0 +1,84 @@
+@mixin card-design{
+	width: 35%;
+	margin: 0 5%;
+	border-radius: 7px;
+	padding: 2em;
+	height:10em;
+	box-shadow: 0px 0px 5px #ccc;
+}
+
+body{
+	font-family:calibri;
+}
+.page-header{
+	h1{
+		text-align:center;
+		color:#253c81;
+	}
+}
+main{
+	h2{
+		margin:1em 5%;
+		color:#16a085;
+	}
+	.v-card{
+		margin-bottom: 1em;
+		display: inline-block;
+		width: 100%;
+		.front-view{
+			float:left;    
+			margin-bottom: 1em;
+	    	background-color:#14628f;	 
+	    	@include card-design;   
+	    	.info{
+	    		float:left;
+	    		width:60%;
+	    	}	
+	    	.logo{
+	    		float: right;
+	    		width: 30%;
+	    		background: #fff;
+	    		height: 5em;
+	    		width: 5em;
+	    		border-radius: 50%;
+	    		padding: 2em;
+
+	    	}
+	    	h3{
+	    		color:#fff;
+	    		font-size:1.5em;
+	    		margin:0;
+	    		small{
+	    			font-size:0.8em;
+	    			display: block;
+	    			color:#76f7f7;
+	    		}
+	    	}
+	    	h4{
+	    		color:#ccc;
+	    		margin:0.5em 0;
+	    		font-weight:400;
+	    	}
+    	}
+		.back-view{
+			float:right;
+			margin-bottom: 1em;
+	    	background-color:#344554; 
+	    	@include card-design;   
+	    	h2{
+	    		color: #fff;
+			    font-size: 1.5em;
+			    border: 1px dashed #eee;
+			    border-radius: 30px;
+			    text-align: center;
+			    line-height: 2.2em;
+			    padding: 0 2em;
+	    	}
+	    	p{
+	    		color: #fff;
+	    		text-align: center;
+	    		font-size: 1.3em;
+	    	}
+    	}
+	}
+}
