@@ -1,0 +1,135 @@
+html {
+  font-size: 10px;
+}
+body {
+  font-family: "Merriweather", serif;
+}
+.container {
+  width: 1000px;
+  margin: 0 auto;
+}
+.header {
+  display: flex;
+  box-shadow: -2px -4px 0px 0px rgba(135, 206, 235, 1) inset;
+  -webkit-box-shadow: 0px 0px 8px 10px rgba(135, 206, 235, 1) inset;
+  -moz-box-shadow: 2px 4px 1px 8px rgba(135, 206, 235, 1) inset;
+}
+.row {
+  display: flex;
+}
+li {
+  list-style-type: none;
+}
+.pd-1 {
+  padding: 7em;
+}
+.pd-2 {
+  padding: 3.5em;
+}
+.left {
+  flex: 70%;
+  padding: 1em;
+}
+.right {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  padding: 1em;
+}
+.heading-1 {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+.text-red {
+  color: #8b0000;
+}
+.sub-heading-1,
+.sub-heading-2 {
+  font-size: 1.3rem;
+  line-height: 2.4rem;
+  font-weight: 700;
+}
+.row {
+  margin-top: 3px;
+  box-shadow: -2px -4px 0px 0px rgba(135, 206, 235, 1) inset;
+  -webkit-box-shadow: 0px 0px 8px 10px rgba(135, 206, 235, 1) inset;
+  -moz-box-shadow: 2px 4px 1px 8px rgba(135, 206, 235, 1) inset;
+}
+.col-6 {
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+}
+.lebal-text {
+  font-size: 20px;
+}
+.horizontal-button {
+}
+.button {
+}
+.content-inner {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  color: #e8e8e8;
+  border-radius: 2em;
+  -webkit-box-shadow: -5px 4px 18px 5px rgba(0, 0, 0, 0.84);
+  -moz-box-shadow: -5px 4px 18px 5px rgba(0, 0, 0, 0.84);
+  box-shadow: -5px 4px 18px 5px rgba(0, 0, 0, 0.84);
+}
+.font-medium {
+  font-size: 20px;
+}
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2.8em;
+  box-shadow: -2px -4px 0px 0px rgba(135, 206, 235, 1) inset;
+  -webkit-box-shadow: 0px 0px 8px 10px rgba(135, 206, 235, 1) inset;
+  -moz-box-shadow: 2px 4px 1px 8px rgba(135, 206, 235, 1) inset;
+}
+.horizontal-margin {
+  margin: 4px 47px;
+}
+.btn {
+  box-shadow: -2px -4px 0px 0px rgba(135, 206, 235, 1) inset;
+  -webkit-box-shadow: 0px 0px 8px 10px rgba(135, 206, 235, 1) inset;
+  -moz-box-shadow: 2px 4px 1px 8px rgba(135, 206, 235, 1) inset;
+  border-radius: 3em;
+  font-size: 16px;
+  margin-top: 0.2em;
+  padding: 0.5em;
+  border: none;
+  outline: none;
+  width: 10em;
+}
+.chart {
+  width: 100%;
+  max-width: 600px;
+  height: 250px;
+  margin: 0 auto;
+}
+.chart li {
+  width: 1%;
+  position: relative;
+  display: table-cell;
+  vertical-align: bottom;
+  height: 200px;
+  border-bottom: 1px solid black;
+}
+.chart .chart-box {
+  height: 95%;
+  display: block;
+  background: rgba(209, 236, 250, 0.75);
+  animation: draw 1s ease-in-out;
+  box-shadow: -2px -4px 0px 0px rgba(135, 206, 235, 1) inset;
+  -webkit-box-shadow: 0px 0px 8px 10px rgba(135, 206, 235, 1) inset;
+  -moz-box-shadow: 2px 4px 1px 8px rgba(135, 206, 235, 1) inset;
+}
+
+@keyframes draw {
+  0% {
+    height: 0;
+  }
+}

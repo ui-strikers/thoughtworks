@@ -1,0 +1,48 @@
+*{box-sizing: border-box}
+body{
+    margin: 0;
+    margin: 0 auto
+}
+
+// Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+h2 {
+    background: green;
+    color: #fff;
+    padding: 100px;
+    margin: 0px;
+}
+h2:nth-of-type(2){
+    background: red;
+}
+h2:nth-of-type(3){
+    background: brown;
+}
+h2:nth-of-type(4){
+    background: blueviolet;
+}
+
+
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {  }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { 
+    h2{
+        width: 50%;
+        float: left;
+        text-align: center
+    }
+    
+    
+ }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+    
+ }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {  }
