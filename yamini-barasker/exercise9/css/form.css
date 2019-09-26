@@ -1,0 +1,36 @@
+.form-section form{
+	width: 50%;
+    margin: 20px auto;
+    padding: 30px 50px;
+    border: 1px solid #AAAAFF;
+    box-shadow: inset 0px 0px 35px #0C1DA1;
+}
+
+.form-section form ul li{
+	display: flex;
+	flex-flow : row nowrap;
+	padding: 10px 0;
+
+
+}
+.form-section form ul li:last-child{
+	justify-content: center;
+}
+form label{
+  flex: 1;
+  text-align: right;
+  font-weight: 600;
+  padding-right: 0.5em;
+   
+}
+form span{
+	flex: 2;
+}
+form input{
+	flex: 2;
+	border-radius: 2px;
+}
+li .fa{
+	transform: rotate(-30deg);
+	margin: 0 4px;
+}

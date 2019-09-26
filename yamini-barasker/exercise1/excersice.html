@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Voter Form</title>
+</head>
+<body>
+	<header></header>
+	<main>
+		<form action="" name="voterFrom">
+			<p>Who is the most corrupt Politician?</p>
+			<input type="radio" name="politician" id="p1" value="Modi">Modi<br/>
+			<input type="radio" name="politician" id="p2" value="kejariwal">Kejariwal<br/>
+			<input type="radio" name="politician" id="p3" value="digvijay">Digvijay<br/>
+			<input type="radio" name="politician" id="p4" value="rahul">Rahul Gandhi<br/>
+		</form>
+		
+	</main>
+	<output id="result"></output>
+
+	<script>
+		var name = document.getElementsByName('politician');
+		var result = document.getElementsById('result'),
+           
+        for (i = 0; i < name.length; i++) {
+            if (name[i].checked)
+             {
+                alert("this radio button was clicked: " + name[i].value);
+                radio_check_val = name[i].value;        
+            }        
+        }
+        // if (radio_check_val === "")
+        // {
+        //     alert("please select radio button");
+        // }        
+    
+	</script>
+
+</body>
+</html>

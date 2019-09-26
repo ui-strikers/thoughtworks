@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JS Demo</title>
+<script>
+	function number() {
+		document.write("first Number is: "+(Math.floor(Math.random() * 9000) + 1000));
+		document.write("<br/>");
+		return function () {
+			document.write("Second Number is: "+(Math.floor(Math.random() * 900000) + 100000));
+			document.write("<br/>");
+	
+			return function () {
+				document.write("Third Number is: "+(Math.floor(Math.random() * 90000000) + 10000000));
+				document.write("<br/>");
+		
+				return function () {
+					document.write("fouth Number is: "+(Math.floor(Math.random() * 9000000000) + 1000000000));
+					document.write("<br/>");
+						
+				}		
+			}		
+		}	
+	}	
+	number()()()();	
+	
+				
+</script>
+</head>
+<body>
+</body>
+</html>
