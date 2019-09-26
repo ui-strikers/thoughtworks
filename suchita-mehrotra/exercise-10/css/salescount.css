@@ -1,19 +1,48 @@
-header h3:nth-child(1){color:red;margin-left:30px;}
-header h3:nth-child(2){color:green;margin-right: 40px;}
-header h4{color:green;}
 
+.left-part{
+  flex:70%;
+  text-align:left;
+}
+.right-part{
+  flex:30%;
+  text-align:right;
+
+}
+.left-part h3{
+  margin-left:10px;
+  text-align:left; 
+}
+.right-part h3{
+  text-align:right;
+  margin-left:10px;
+}
+
+.text-left{
+  text-align: left;
+}
+.text-right{
+  text-align: left;
+}
+.text-red{
+  color:red;
+}
+.text-green{
+  color:green;
+}
+header h4{color:green;}
+.btn{
+  bottom:0px; font-size: 15px;
+
+}
 /*table section*/
-.available_channels_section{
+.channels-section{
 	display:flex;
 }
-.available_channels_section p{
-	text-shadow: 4px 0px 5px #080c0c;
-}
-.label_tags{
+.label-tag{
 	flex:25%;
 	margin:0px 46px 46px 46px;
 }
-.available_channel_table{
+.channel-table{
 	flex:70%; 
 	margin:5px 46px 46px 46px;
 }
@@ -30,7 +59,7 @@ tbody tr:nth-child(even){
 }
 
 /*chart section css*/
-.channel_mix_chart{
+.channel-mix-chart{
 	position: relative;
 	flex:45%;
 	height:260px;
@@ -38,11 +67,11 @@ tbody tr:nth-child(even){
 	border-radius: 25px;
 	box-shadow: 0px 8px 21px #797D7F;
 }
-.channel_mix_chart h3 , .flow_of_count_chart h3{
+.channel-mix-chart h3 , .flow-count-chart h3{
 	text-shadow: 4px 0px 7px #080c0c;
 
 }
-.flow_of_count_chart{
+.flow-count-chart{
 	flex:45%;
 	height:260px;
 	margin: 16px 41px 10px 20px;
@@ -51,7 +80,7 @@ tbody tr:nth-child(even){
 	position: relative;
 
 }
-.chart_section{
+.chart-section{
 	display: flex;}
 /*.salescount{
   position: relative;
@@ -64,7 +93,7 @@ tbody tr:nth-child(even){
   font-size:12px;
   margin:10px;
   }*/
-  .blue1_square1{
+  .blue1-square1{
   	width: 73px;
   	height: 92px;
   	background: #1A5276;
@@ -72,14 +101,14 @@ tbody tr:nth-child(even){
   	top: 134px;
   	margin-left: 27px;
   }
-  .blue1_square1 span{
+  .blue1-square1 span{
 position: absolute;
     top: -59px;
     transform: rotate(-90deg);
     font-size: 10px;
     left: 57px;
   }
-  .blue1_square2{
+  .blue1-square2{
   	width: 42px;
   	height: 92px;
   	background: #226693;
@@ -90,7 +119,7 @@ position: absolute;
   	left: 100px;
   	top: 122px;
   }
-  .blue1_square3{
+  .blue1-square3{
   	width: 44px;
   	height: 56px;
   	background: #154360;
@@ -101,7 +130,7 @@ position: absolute;
   	left: 35px;
   	top: 41px;
   }
-  .red1_square1{
+  .red1-square1{
   	width: 72px;
   	height: 60px;
   	background: #943126;
@@ -109,14 +138,14 @@ position: absolute;
   	top: 166px;
   	margin-left: 100px;
   }
-    .red1_square1 span{
+    .red1-square1 span{
 position: absolute;
     top: -49px;
     transform: rotate(-90deg);
     font-size: 10px;
     left: 41px;
   }
-  .red1_square2{
+  .red1-square2{
   	width: 25px;
   	height: 61px;
   	background: #78281F;
@@ -127,7 +156,7 @@ position: absolute;
   	left: 172px;
   	top: 158px;
   }
-  .red1_square3{
+  .red1-square3{
   	width: 28px;
   	height: 59px;
   	background: #78281F;
@@ -138,7 +167,7 @@ position: absolute;
   	left: 105px;
   	top: 76px;
   }
-  .blue2_square1{
+  .blue2-square1{
   	width: 72px;
   	height: 60px;
   	background: #1A5276;
@@ -146,7 +175,7 @@ position: absolute;
   	top: 163px;
   	margin-left: 240px;
   }
-    .blue2_square1 span{
+    .blue2-square1 span{
 position: absolute;
     top: -49px;
     -webkit-transform: rotate(-90deg);
@@ -155,7 +184,7 @@ position: absolute;
     font-size: 10px;
     left: 41px;
   }
-  .blue2_square2{
+  .blue2-square2{
   	width: 25px;
   	height: 61px;
   	background: #164565;
@@ -166,7 +195,7 @@ position: absolute;
   	left: 311px;
   	top: 155px;
   }
-  .blue2_square3{
+  .blue2-square3{
   	width: 39px;
   	height: 50px;
   	background: #154360;
@@ -177,7 +206,7 @@ position: absolute;
   	left: 245px;
   	top: 75px;
   }
-  .red2_square1{
+  .red2-square1{
   	width: 63px;
   	height: 73px;
   	background: #943126;
@@ -185,7 +214,7 @@ position: absolute;
   	top: 150px;
   	margin-left: 314px;
   }
-  .red2_square1 span{
+  .red2-square1 span{
 position: absolute;
     top: -49px;
     -webkit-transform: rotate(-90deg);
@@ -194,7 +223,7 @@ position: absolute;
     font-size: 10px;
     left: 41px;
   }
-  .red2_square2{
+  .red2-square2{
   	width: 25px;
   	height: 71px;
   	background: #78281F;
@@ -205,7 +234,7 @@ position: absolute;
   	left: 377px;
   	top: 141px;
   }
-  .red2_square3{
+  .red2-square3{
   	width: 35px;
   	height: 50px;
   	background: #78281F;
@@ -216,34 +245,34 @@ position: absolute;
   	left: 313px;
   	top: 62px;
   }
-  .color_bar{
+  .color-bar{
   	width:100px;
   	margin:0px auto;
 
   }
-  .red_square{
+  .red-square{
   	background-color: #78281F;
   	float:right;
 
   }
-  .red_square span,.blue_square span{
+  .red-square span,.blue-square span{
   	margin-left:25px;
   }
-  .blue_square{
+  .blue-square{
   	background-color: #154360;
   	float:left;
   }
 
-  .blue_square,.red_square{
+  .blue-square,.red-square{
   	width:20px;
   	height:20px;
 
   }
-  .customer_type{
+  .customer-type{
   	display: flex;
   	flex-flow: row wrap;
   }
-  *[role='button_link']{
+  .button-link{
   	background-image: linear-gradient(#1F618D, white, #1F618D);
   	margin: 11px 26px 10px 20px;
   	font-size: 20px;
@@ -255,7 +284,7 @@ position: absolute;
   	color:black;
   }
 
-  .flow_of_count_chart .cylindermiddle1{
+  .flow-count-chart .cylindermiddle1{
   	width: 58px;
   	height: 70px;
   	background-color: #444;
@@ -265,7 +294,7 @@ position: absolute;
   }
 
 
-  .flow_of_count_chart .cylindertop1{
+  .flow-count-chart .cylindertop1{
   	width: 59px;
   	height: 29px;
   	background-color: #666;
@@ -277,7 +306,7 @@ position: absolute;
   	left: 54px;
   }
 
-  .flow_of_count_chart .cylinderbottom1{
+  .flow-count-chart .cylinderbottom1{
   	width: 59px;
   	height: 39px;
   	background-color: #444;
@@ -290,7 +319,7 @@ position: absolute;
   	box-shadow: 0px 0px 10px rgba(0,0,0,0.75);
   }
 
-  .flow_of_count_chart .cylindermiddle2{
+  .flow-count-chart .cylindermiddle2{
   	width: 58px;
   	height: 53px;
   	background-color: #444;
@@ -300,7 +329,7 @@ position: absolute;
   }
 
 
-  .flow_of_count_chart .cylindertop2{
+  .flow-count-chart .cylindertop2{
   	width: 59px;
   	height: 29px;
   	background-color: #666;
@@ -312,7 +341,7 @@ position: absolute;
   	left: 162px;
   }
 
-  .flow_of_count_chart .cylinderbottom2{
+  .flow-count-chart .cylinderbottom2{
   	width: 59px;
   	height: 39px;
   	background-color: #444;
@@ -325,7 +354,7 @@ position: absolute;
   	box-shadow: 0px 0px 10px rgba(0,0,0,0.75);
 
   }
-  .flow_of_count_chart .cylindermiddle3{
+  .flow-count-chart .cylindermiddle3{
   	width: 51px;
   	height: 41px;
   	background-color: #444;
@@ -335,7 +364,7 @@ position: absolute;
   }
 
 
-  .flow_of_count_chart .cylindertop3{
+  .flow-count-chart .cylindertop3{
   	width: 51px;
   	height: 29px;
   	background-color: #666;
@@ -347,7 +376,7 @@ position: absolute;
   	left: 282px;
   }
 
-  .flow_of_count_chart .cylinderbottom3{
+  .flow-count-chart .cylinderbottom3{
   	width: 52px;
   	height: 25px;
   	background-color: #444;
@@ -383,3 +412,18 @@ position: absolute;
     top: 148px;
   }
 
+header ,.chart-section ,.channels-section,footer{
+  box-shadow: 18px 0 33px -4px #1F618D inset, -24px -16px 21px -9px #1F618D inset;
+  border-bottom:2px solid white;
+  /* box-shadow: 20px 20px 20px  inset;*/
+}
+
+  .cylindermiddle1 span, .cylindermiddle2 span,   .cylindermiddle3 span{
+    position: absolute;
+    top: -49px;
+    -webkit-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    font-size: 10px;
+    left: 4px;
+  }
