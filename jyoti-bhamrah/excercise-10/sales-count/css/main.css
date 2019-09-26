@@ -1,0 +1,272 @@
+
+.page-header, .box, .btns{
+	display: flex;
+	flex-wrap: wrap;
+}
+.left-side{
+	flex: 70%;
+}
+.left-side h4{
+	margin:0.5em 0;
+}
+.right-side{
+	flex: 30%;
+}
+.filter-buttons {
+    margin-top: 100px;
+}
+.charts{
+	display: flex;
+}
+.chart-box {
+    flex: 50%;
+    background: #fff;
+    padding: 1em;
+    border-radius: 40px;
+    margin: 0.7em;
+    box-shadow: 0px 0px 5px #333;
+}
+.chart-box label {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.chart-box label span {
+    margin: 0.2em;
+    font-size: 13px;
+}
+span.blue-label {
+    background: #0099cc;
+    height: 12px;
+    width: 12px;
+    float: left;
+}
+span.red-label {
+    background: #e32822;
+    height: 12px;
+    width: 12px;
+    float: left;
+}
+.chart-design1 .base-text {
+    display: flex;
+    position: absolute;
+    bottom: 0px;
+    justify-content: space-around;
+    font-size: 13px;
+    width: 90%;
+}
+.chart-design2 .base-text {
+
+}
+
+.single-btn {
+    flex: 19%;
+    margin: 0.2em;
+}
+.single-btn input[type=button] {
+    background: #fff;
+    width: 100%;
+    box-shadow: 0px 0px 20px 5px inset #14628f;
+    padding: 0.7em;
+    border-radius: 50px;
+    border: 1px solid #14628f;
+}
+.chart-design1, .chart-design2{
+	position: relative;
+    min-height: 220px;
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.chart-design1 .base {
+    background: #fff;
+    width: 85%;
+    border: 1px solid #8b8b8b;
+    height: 35px;
+    transform: skew(-45deg, 0deg);
+    position: absolute;
+    bottom:20px;
+}
+.chart-design2 .base {
+    background: #fff;
+    width: 85%;
+    border: 1px solid #8b8b8b;
+    height: 35px;
+    transform: skew(-40deg, 5deg);
+    position: absolute;
+    bottom:30px;
+}
+
+.chart-design1 .cube{
+	position: absolute;	
+	bottom:35px;
+	z-index: 9;
+	width: 60px;
+}
+
+.chart-design1 .cube:after{
+	content: '';   
+    width: 60px;
+    left: 15px;
+    position:absolute;
+    -webkit-transform:skew(-35deg);
+    -webkit-transform-origin:top;
+    
+    -moz-transform:skew(-35deg);
+    -moz-transform-origin:top;
+    
+    -ms-transform:skew(-35deg);
+    -ms-transform-origin:top;
+    
+    -o-transform:skew(-35deg);
+    -o-transform-origin:top;
+    
+    transform:skew(-35deg);
+    transform-origin:top;    
+}
+
+.chart-design1 .cube:before{
+	content: '';
+    width: 15px;
+    position:absolute;
+    -webkit-transform: skewY(-55deg);
+    -webkit-transform-origin: top;
+    
+    -moz-transform: skewY(-55deg);
+    -moz-transform-origin: top;
+    
+    -ms-transform: skewY(-55deg);
+    -ms-transform-origin: top;    
+    
+    -o-transform: skewY(-55deg);
+    -o-transform-origin: top;     
+    
+    transform: skewY(-55deg);
+    transform-origin: top;     
+}
+.chart-design1 .cube span {
+    font-size: 11px;
+    transform: rotate(-90deg);
+    position: absolute;
+    top: -70px;
+    font-family: none;
+    left: 20px;
+}
+
+.chart-design1 .cube1{
+	background: #0099cc;
+	height: 100px;
+	left:45px;
+}
+.chart-design1 .cube1:after{	
+    height:20px;
+    top:-20px;
+    background-color: #14628f;
+}
+.chart-design1 .cube1:before{
+    height: 100px;
+    top: -10px;
+    right: -15px;
+    background-color:  #074c75;
+}
+
+.chart-design1 .cube2{
+	background: #e32822;
+	height: 60px;
+	left:105px;
+}
+.chart-design1 .cube2:after{
+    height:20px;
+    top:-20px;
+    background-color: #bd130d;
+}
+.chart-design1 .cube2:before{
+    height: 60px;
+    top: -10px;
+    right: -15px;
+    background-color:  #a30d08;
+}
+
+.chart-design1 .cube3{
+	background: #0099cc;
+	height: 60px;
+	left:225px;
+}
+.chart-design1 .cube3:after{
+    height:20px;
+    top:-20px;
+    background-color: #14628f;
+}
+.chart-design1 .cube3:before{
+    height: 60px;
+    top: -10px;
+    right: -15px;
+    background-color:  #074c75;
+}
+
+.chart-design1 .cube4{
+	background: #e32822;
+	height: 65px;
+	left:285px;
+}
+.chart-design1 .cube4:after{
+    height:20px;
+    top:-20px;
+    background-color: #bd130d;
+}
+.chart-design1 .cube4:before{
+    height: 65px;
+    top: -10px;
+    right: -15px;
+    background-color:  #a30d08;
+}
+
+.cylinder{
+    background: #0099cc;
+    box-shadow: 0px 0px 5px #ccc;
+    position: absolute;
+    width: 60px;
+    z-index: 9;	
+}
+.cylinder:after{
+    content: '';
+    position: absolute;
+    background: #14628f;
+    width: 60px;
+    height: 20px;
+    border-radius: 50%;
+    top: -10px;
+}
+.cylinder:before {
+    background: #0099cc;
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    width: 60px;
+    height: 20px;
+    border-radius: 50%;
+}
+.cylinder span {
+    position: absolute;
+    font-size: 11px;
+    top: -35px;
+    left: 15px;
+}
+
+.cylinder1 {
+    height: 90px;
+    left: 60px;
+    bottom: 65px;
+}
+
+.cylinder2 {
+    height: 70px;
+    left: 160px;
+    bottom: 60px;
+}
+
+.cylinder3{
+    height: 40px;
+    left: 260px;
+    bottom: 45px;
+}

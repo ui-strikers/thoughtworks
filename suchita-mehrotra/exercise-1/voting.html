@@ -1,0 +1,48 @@
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<title>Voter Form</title>
+	</head>
+	<body>
+
+		<script>
+			function formSubmit(){
+				//alert('abc');
+				var radios = document.getElementsByName('politicians');
+				var divs= document.getElementById('result');
+							//console.log(radios);
+							if(localStorage.getItem('radioval')==undefined){
+								for(var i=0;i<radios.length;i++){
+							//console.log(radios[i]);
+							if(radios[i].checked){
+								var radio_val = radios[i].value;
+							localStorage.setItem('radioval',radio_val); // keys are always text in sessionStorage. This function adds the value to the store and even update the value.
+								//console.log('abc');
+							}
+						}
+					}else{
+										//console.log('xydz');
+										var data=localStorage.getItem('radioval');
+										if(data!=radio_val){
+											divs.innerHTML='You already voted for '+data; 
+										}
+									}
+								}
+								
+								
+							</script>
+							<header>Quiz</header>
+							<main id='main_tag'>
+								<form name='form1' id='form1' method='get' action='#'>
+									<section>
+										<p>Who is the most corrupt politician of all?</p>
+										<input type='radio' name='politicians' id='p1' value='Modi'/>Modi<br/>
+										<input type='radio' name='politicians' id='p2' value='Sonia'/>Sonia<br/>
+										<input type='radio' name='politicians' id='p3' value='Rahul'/>Rahul<br/>
+										<input type='radio' name='politicians' id='p4' value='Kejriwal'/>Kejriwal
+									</section>
+									<output id='result'></output>
+									<input type='submit' value='Submit' name='submit' onclick='formSubmit();'/>
+								</main>
+							</body>
+							</html>

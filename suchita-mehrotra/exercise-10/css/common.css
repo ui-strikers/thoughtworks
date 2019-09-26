@@ -1,0 +1,38 @@
+body{
+	width:1000px;
+	margin:0px auto;
+}
+header{
+	border:1px solid #154360;
+}
+h3{
+	text-align: center;
+}
+h4{
+	margin:0px 10px 10px 30px;
+}
+footer{
+	border:1px solid #154360;
+}
+*[role='button']{
+	bottom:0px; font-size: 15px;
+
+}
+.clearfix{
+	clear:both;
+}
+header ,.chart_section ,.available_channels_section,footer{
+	box-shadow: 18px 0 33px -4px #1F618D inset, -24px -16px 21px -9px #1F618D inset;
+	border-bottom:2px solid white;
+	/* box-shadow: 20px 20px 20px  inset;*/
+}
+
+  .cylindermiddle1 span, .cylindermiddle2 span,   .cylindermiddle3 span{
+  	position: absolute;
+    top: -49px;
+    -webkit-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    font-size: 10px;
+    left: 4px;
+  }

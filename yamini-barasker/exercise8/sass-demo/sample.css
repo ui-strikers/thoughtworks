@@ -1,0 +1,19 @@
+.container {
+  width: 90%;
+  margin: 2%;
+}
+
+.row {
+  width: 90%;
+  margin: 2%;
+}
+
+.column {
+  width: 11%;
+  height: 100px;
+  background-color: pink;
+  float: left;
+  margin: 2%;
+}
+
+/*# sourceMappingURL=sample.css.map */

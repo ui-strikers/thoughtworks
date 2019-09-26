@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Slider</title>
+	<style>
+		
+
+	</style>
+	<script>
+
+		window.onload = function () {
+			container = document.querySelectorAll('.container')[0];
+			slider = document.querySelectorAll('.slider')[0];  
+		    var  slide = document.querySelectorAll('.slide-img')[0];
+			var btn0 = document.querySelectorAll('.btn')[0];
+			var btn1 = document.querySelectorAll('.btn')[1];
+			
+			if(typeof window.addEventListener === 'function') {
+				btn0.addEventListener('click',onStart,true); //true capture phase
+			    btn1.addEventListener('click',stop,true);
+			}else if (typeof window.attachEvent === 'function') {
+				btn1.attachEvent('click',start,true);
+				btn2.attachEvent('click',stop,true);
+			}
+			console.log("All event handlers registered successfully!!");
+		};
+        
+        function onStart(evt) {
+        	clock = window.setInterval(function () {
+			var counter = 1;
+		    var slide = document.querySelectorAll('.slide-img')[0];
+		    console.log('img found');
+		    slide.setAttribute('src',`imgs/img${counter++}.jpg`);
+			if (counter > 10) {
+				counter = 1;
+			}			
+			
+		},1000);
+
+        }		
+	</script>
+</head>
+<body>
+     <section class="container">
+     	<div class="slider">
+     		<img class="slide-img" src="imgs/img10.jpg" width="50%">
+     	</div>
+     	<input class="btn" type="button" value="start"/>
+     	<input class="btn" type="button" value="stop"/>
+     </section>
+</body>
+</html>
