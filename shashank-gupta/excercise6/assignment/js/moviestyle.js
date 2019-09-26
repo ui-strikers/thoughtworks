@@ -98,13 +98,10 @@ const movieList = [
     }
 ];
 
-
 // This function create to shows the movie list
 (function () {
 
     var movieListObj = movieList;
-
-
     let showData = document.querySelectorAll(".moviesitems")[0];
     //let showData = document.getElementsByClassName("moviesitems");
 
@@ -121,11 +118,10 @@ const movieList = [
         rating = movieListObj[movieCount].rating;
         releaseDate = movieListObj[movieCount].releaseDate;
 
-        var movieitems = createNode("div");
+        var movieitems = createNode("sectiion");
         movieitems.setAttribute('id', movieCount);
         movieitems.setAttribute('class', 'col-md-3');
         movieitems.setAttribute('onclick', `Movie_Details(this.id); `);
-
         console.log('movieitems creates: ' + movieitems);
 
         var items = createNode("div");
@@ -156,19 +152,11 @@ const movieList = [
         //movieitems.appendChild(itemDetails);
         //showData.appendChild(movieitems);
     }
+    window.onload = Movie_Details(0);
 })();
 
-// dynamic funtion to create element and append
-function createNode(nodeName) {
-    return document.createElement(nodeName);
-}
-function createTextNode(nodeName) {
-    return document.createTextNode(nodeName);
-}
-function append(parentNode, childNode) {
-    parentNode.appendChild(childNode);
-}
 
+// below function show movie description
 function Movie_Details(index) {
     let show_movie_item = document.querySelectorAll('.movielist-right-bottom')[0];
     let item_length = document.querySelectorAll('.movielist-right-bottom div').length;
@@ -176,13 +164,12 @@ function Movie_Details(index) {
     if (item_length !== 0) {
         if (typeof show_movie_item !== 'undefined') {
             var child_remove = document.querySelectorAll('.movielist-right-bottom div')[0];
-            show_movie_item.removeChild(child_remove);	
+            show_movie_item.removeChild(child_remove);
         }
     }
 
     //let Movie_image = createNode("div");
     let Movie_discription = createNode("div");
-
 
     /*
     let figure = createNode("figure");
@@ -191,17 +178,47 @@ function Movie_Details(index) {
     movie_img.setAttribute('style', 'width: 10em; height: 12em;');
     append(figure, movie_img);
     append(Movie_image, figure);
-*/
+    */
 
+    let Cart_movie = document.querySelectorAll('.movielist-right-bottom movie-description-details')[0];
     var title = ['Title', 'Year', 'Release Date', 'Rating', 'Actors', 'Genres'];
     var count = 0;
 
     for (var item in movieList[index]) {
+/*
+        var movieName = createNode("label");
+        let text = createTextNode(`${movieList[index].title}`);
+        append(movieName, text);
+        append(Cart_movie, movieName);
+        console.log('movieName creates: ' + movieName + " or text: " + text);
+
+        var movieDetails = createNode("label");
+        let text2 = createTextNode(`${movieList[index].year} - ${movieList[index].genres}`);
+        append(movieDetails, text2);
+        append(Cart_movie, movieDetails);
+        console.log('Movie Description: ' + movieName + " or text: " + text);
+*/
+
         let items = createNode("span");
         items.appendChild(createTextNode(`${title[count]}:  ${movieList[index][item]}`));
         append(Movie_discription, items);
         count++;
     }
-   // append(show_movie_item, Movie_image);
+    // append(show_movie_item, Movie_image);
     append(show_movie_item, Movie_discription);
+}
+
+// dynamic funtion to create element
+function createNode(nodeName) {
+    return document.createElement(nodeName);
+}
+
+// dynamic funtion to create text
+function createTextNode(nodeName) {
+    return document.createTextNode(nodeName);
+}
+
+// dynamic funtion to append child
+function append(parentNode, childNode) {
+    parentNode.appendChild(childNode);
 }

@@ -13,6 +13,12 @@
     flex-flow: wrap;
     display: flex;
 }
+@mixin movieDescription {
+    height: 3.5em;
+    padding: 1em;
+    line-height: 1.5em;
+    background-color: #454A4C;
+}
 
 body {
     font-family: sans-serif;
@@ -49,14 +55,11 @@ body {
     width: 100%;
 }
 .movie-details{
-    height: 3.5em;
-    padding: 1em;
-    line-height: 1.5em;
-    background-color: #454A4C;
+    @include movieDescription;
 }
 .movie-details label:first-child {
     font-weight: 600;
-    font-size: 16px;
+    font-size: 1em;
 }
 label{
     display: inherit;
@@ -72,6 +75,7 @@ label{
 .movielist-right-bottom{
     @include movielist-right;
     display: flex;
+    flex-flow: column;
 }
 .movielist-right-bottom span {
     display: block;
@@ -89,4 +93,8 @@ figure {
 }
 .movielist section:last-child {
     flex: 40%;
+}
+.movie-description-details{
+    @include movieDescription;
+    width: 100%;
 }

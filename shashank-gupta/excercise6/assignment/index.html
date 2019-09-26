@@ -2,7 +2,14 @@
 <html lang="en">
 
 <head>
-    <title></title>
+    <title>Movies</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/img_avatar.png">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1" />
+    <meta name="keywords" content="Movies" />
+    <meta name="author" content="Shashank" />
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/moviestyle.css">
@@ -10,10 +17,10 @@
 </head>
 
 <body>
-    <main class="container">
+    <main role="movie-contaimer" class="container">
         <article>
             <section>
-                <div class="movielist">
+                <div role="movie-list" class="movielist">
                     <section>
                         <div class="movielist-left">
                             <header>
@@ -21,13 +28,19 @@
                                     <span class="container-head">Movie Browser</span>
                                 </div>
                             </header>
-                            <div class="moviesitems-left-list moviesitems"></div>
+                            <div role="all-movie-details" class="moviesitems-left-list moviesitems"></div>
                         </div>
                     </section>
                     <section>
                         <div class="movielist-right">
-                            <div class="movielist-right-top"></div>
-                            <div class="movielist-right-bottom"></div>
+                            <section class="movielist-right-top"></section>
+                            <section role="movie-description" class="movielist-right-bottom">
+                                <header>
+                                    <section class="movie-description-details">
+
+                                    </section>
+                                </header>
+                            </section>
                         </div>
                     </section>
                 </div>

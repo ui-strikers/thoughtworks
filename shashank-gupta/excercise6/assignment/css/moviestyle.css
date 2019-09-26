@@ -67,7 +67,7 @@ body {
 
 .movie-details label:first-child {
   font-weight: 600;
-  font-size: 16px;
+  font-size: 1em;
 }
 
 label {
@@ -94,6 +94,10 @@ label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
 }
 
 .movielist-right-bottom span {
@@ -123,5 +127,13 @@ figure {
   -webkit-box-flex: 40%;
       -ms-flex: 40%;
           flex: 40%;
+}
+
+.movie-description-details {
+  height: 3.5em;
+  padding: 1em;
+  line-height: 1.5em;
+  background-color: #454A4C;
+  width: 100%;
 }
 /*# sourceMappingURL=moviestyle.css.map */
