@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Test</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1" />
+<style>
+body {margin:0px;}
+main, header {width:1150px;margin:0px auto;font-family:sans-serif;}
+.left {float:left;width: 48%;height:100px;font-size:15px;padding: 10px;color:#fff;} 
+.left-inside {padding:15px;background:red;}
+.right-inside {padding:15px;background:#048c08;}
+.right {float:left;width: 31.33%;height:100px;font-size:15px;padding: 10px;color: #f9f7f7;} 
+
+@media screen and (max-width:1000px) {
+main, header {width:100%}
+.left {margin:10px 0px;float:left;width: 47%;}
+.right {;margin:10px 0px;width:30.33%}
+}
+
+@media screen and (max-width:767px) {
+main, header {width:100%}
+.left {width:100%;margin:10px 0px;padding: 0;float:left}
+.right {width:100%;margin:10px 0px;float:left;padding: 0;}
+}
+
+
+
+</style>
+</head>
+
+<body>
+
+<header>
+	<h1>Css Demo</h1>
+</header>
+
+<main>
+	<section>
+			<div class="left">
+				<div class="left-inside">Lorem ipsum is dummy content.Lorem ipsum is dummy content.Lorem ipsum is dummy content.</div>
+			</div>
+			<div class="left">
+				<div class="left-inside">Lorem ipsum is dummy content.Lorem ipsum is dummy content.Lorem ipsum is dummy content.</div>
+			</div>
+			
+			<div class="clearfix"></div>
+			
+			<div class="right">
+				<div class="right-inside">Lorem ipsum is dummy content.Lorem ipsum is dummy content.Lorem ipsum is dummy content.</div>
+			</div>
+			<div class="right">
+				<div class="right-inside">Lorem ipsum is dummy content.Lorem ipsum is dummy content.Lorem ipsum is dummy content.</div>
+			</div>
+			<div class="right">
+				<div class="right-inside">Lorem ipsum is dummy content.Lorem ipsum is dummy content.Lorem ipsum is dummy content.</div>
+			</div>
+	</section>
+
+</main>
+
+</body>
+</html>

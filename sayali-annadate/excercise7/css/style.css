@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap');
+
+body {
+    margin: 0px auto;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #fff;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.container {
+    width:1200px;
+    padding: 0px 15px;
+    margin: 0px auto;
+}
+
+.movies {
+    width: 100%;
+    float: left;
+}
+
+.movie-list {
+    width: 57%;
+    float: left;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.header {
+    background: #171717;
+    padding: 15px;
+    font-size: 20px;
+    width: 100%;
+    border-right: 0.5px solid #616161;
+}
+
+.movie-box {
+    background: #212121;
+    float: left;
+    flex: 24%;
+    border-right: 0.5px solid #616161;
+}
+
+.movie-image {
+    padding: 80px;
+    float: left;
+}
+
+.movie-name {
+    background: #454A4C;
+    float: left;
+    padding: 14px 41px;
+    width: auto;
+}
+
+.movie-name .name {
+    color: #fff;
+    flex: 100%;
+}
+
+.movie-name span {
+    font-size: 12px;
+}
+
+.movie-info {
+    float: right;
+    background: #212121;
+    width: 43%;
+}
+
+.movie-info .movie-name {
+    background: #454A4C;
+    float: left;
+    padding: 15px 41px;
+    width: 84%;
+}
+
+.movie-info .movie-name span {
+    font-size: 12px;
+    color: #A6A6A6;
+}
+
+.movie-image-large {
+    min-height: 374px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
