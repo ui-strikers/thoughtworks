@@ -1,0 +1,261 @@
+/*reset css start*/
+body {
+	margin: 0px;
+	padding: 0px;
+	font-size: 14px;
+	font-family: 'Roboto', sans-serif;
+	line-height: 1em;
+	color: #333;
+}
+/*reset css end*/
+
+
+/*global typography css start*/
+h1 {
+	font-size: 32px;
+}
+
+h2 {
+	font-size: 28px;
+}
+
+h3 {
+	font-size: 24px;
+}
+
+h4 {
+	font-size: 20px;
+}
+
+h5 {
+	font-size: 16px;
+}
+/*global typography css end*/
+
+/*color css start*/
+.text-primary {
+	color: #3c97de;
+}
+/*color css end*/
+
+/*text center css start*/
+.text-center {
+	text-align: center;
+}
+/*text center css end*/
+
+/*input and label row css start*/
+.form-row {
+	margin: 0px auto;
+    display: flex;
+    padding: 0px 15px;
+    font-size: 16px;
+    position: relative;
+    flex-wrap: wrap;
+
+}
+
+.form-row label {
+	font-weight: 500;
+    padding: 4px 10px;
+    color: #3c97de;
+    width: 32%;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.form-row input {
+	padding: 4px 15px;
+    border: 1px solid #d8d4d4;
+    color: #333;
+    font-size: 16px;
+    box-shadow: 0px 0px 2px 2px #9e9e9e63;
+    margin: 6px 15px;
+    margin-bottom: 10px;
+}
+/*input and label row css end*/
+
+/*button css start*/
+button {
+    padding: 2px 14px;
+    font-size: 14px;
+    background: #cccccc59;
+    outline: 0;
+    margin: 6px 15px;
+    box-shadow: 0px 0px 3px 1px #a2a4a5;
+    border-radius: 3px;
+    border: 1px solid #acaeaf00;
+    color: #333;
+}
+/*button css end*/
+
+/*article css start*/
+.article-box {
+	max-width: 750px;
+	box-shadow: inset 0px 0px 13px 14px #8db8e2;
+	padding: 20px;
+	border: 4px solid #34688200;
+	width: 100%;
+	margin: 40px auto;
+}
+/*article css end*/
+
+/*grid system start*/
+.row {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+}
+
+.col-1 {
+	flex: 0 0 8.333%;
+}
+
+.col-2 {
+	flex: 0 0 16.66%;
+}
+
+.col-3 {
+	flex: 0 0 25%;
+}
+
+.col-4 {
+	flex: 0 0 33.333%;
+}
+
+.col-5 {
+	flex: 0 0 41.666%;
+}
+
+.col-6 {
+	flex: 0 0 50%;
+}
+
+.col-7 {
+	flex: 0 0 58.333%;
+}
+
+.col-8 {
+	flex: 0 0 66.666%;
+}
+
+.col-9 {
+	flex: 0 0 75%;
+}
+
+.col-10 {
+	flex: 0 0 83.333%
+}
+
+.col-11 {
+	flex: 0 0 91.66%
+}
+
+.col-12 {
+	flex: 0 0 100%
+}
+
+[class*="col-"] {
+	box-sizing: border-box;
+}
+*,
+::after,
+::before {
+	box-sizing: border-box;
+}
+.select-box {
+    padding: 6px 15px;
+    min-width: 150px;
+    outline: 0;
+}
+
+.col-shrink-4 {
+	flex-shrink: 5;
+	display: flex;
+}
+
+.col-shrink-4 .button-box {
+	flex: 0 0 100%;
+	flex-direction: column;
+	align-self: center;
+}
+
+.col-shrink-4 .button-box .btn {
+	margin: 30px auto;
+	display: block;
+}
+
+/*article css e d*/
+
+/*container left and right border css start*/
+.container:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    width: 16px;
+    top: 0px;
+    height: 100%;
+    background: #c378089e;
+}
+.container:before {
+    content: '';
+    position: absolute;
+    right: 6px;
+    width: 2px;
+    top: 0px;
+    z-index: 999999;
+    height: 100%;
+    background: #00000057;
+}
+span:after {
+    content: '';
+    position: absolute;
+    background: #c378089e;
+    right: 22px;
+    top: 0px;
+	box-shadow: 3px 0px 9px #0000006e;
+    height: 100%;
+    width: 2px;
+}
+span:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    background: #c378089e;
+    top: 0;
+    box-shadow: 3px 0px 9px #0000006e;
+    height: 100%;
+    width: 5px;
+}
+/*container left and right border css end*/
+
+/*upload button css start*/
+.upload-btn-wrapper {
+  position: absolute;
+	right: 0;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.upload-btn-wrapper .btn {
+    border: 1px solid #8db8e2;
+    color: #000;
+    background-color: white;
+    margin-top: 13px;
+}
+
+.upload-btn-wrapper input[type=file] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+/*upload button css end*/
+
+
+.overflow-x-auto {
+    overflow-x: auto;
+    max-width: 380px;
+}
