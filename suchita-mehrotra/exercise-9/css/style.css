@@ -1,5 +1,7 @@
 
-
+body{
+	margin:0px auto;
+}
 header{
 	width: 708px;
 	background-color: #171717;
@@ -79,6 +81,6 @@ margin:10px;
 }
 
 
-.movie_list {float: left; width:708px;}
-.movie_detail {float: right;width:623px;background-color: #212121;height:780px;display: flex;
+.movie-list {float: left; width:708px;}
+.movie-detail {float: right;width:623px;background-color: #212121;height:780px;display: flex;
 }
