@@ -1,0 +1,109 @@
+body{
+	width: 1000px;
+	margin: auto;
+	padding: 0;
+}
+.promotion-box{
+	width: 65%;
+    margin: 0 auto;
+    box-shadow: 0 0px 23px 21px #7a9db3 inset;
+    margin-top: 20px;
+}
+.center{
+	margin: auto;
+}
+.promotion-box .container{
+	padding: 70px 61px;
+}
+.form-row {
+    display: flex;
+    justify-content: flex-end;
+    padding: .5em;
+  }
+.form-row > label {
+    padding: .3em 1em .3em 0;
+    flex: 1;
+    text-align: right;
+    color: #111010;
+    font-weight: bold;
+  }
+.form-row > input {
+    flex: 2;
+    border-radius: 4px;
+  }
+.description-text-two{
+	flex: 2;
+}
+.description-text-two > input{
+	border-radius: 4px;
+	margin-right: 6px;
+	padding: 0.1em;
+}
+.description-text-two i{
+	transform: rotate(333deg);
+}
+.cta{
+	text-align: center;
+    cursor: pointer;
+    border: none transparent;
+    background-color: #e6e6e6;
+    text-decoration: none;
+    border-radius: 2px;
+    padding: .6em 1em;
+    box-shadow: 0 0 0 1px rgba(0,0,0,.15) inset, 0 0 6px rgba(0,0,0,.2) inset;
+    border-color: #000;
+    font-weight: bold;
+    color:#888888;
+  }
+.sales-form .buttons{
+	text-align: center;
+	padding-top: 30px;
+	list-style: none;
+}
+.buttons a:first-child{
+	margin-right: 30px;
+}
+.header h1{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #005B96;
+	text-shadow: 0px 5px #b3cde0;
+}
+.table{
+	margin-top: 50px;
+}
+.tablebody{
+	margin:auto;
+}
+.btn{
+	width: 100px;
+	height: 30px;
+	margin-right: 20px;
+}
+.table-data{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+tr:nth-child(even){
+	background-color: #b3cde0;
+}
+tr:nth-child(odd){
+	background-color: 	#c0c5ce;
+}
+td{
+	height: 20px;
+	padding: 10px;
+	padding-right: 20px;
+}
+th{
+	background-color: 	#6497b1;
+	text-align: left;
+	padding: 12px;
+}
+
+
+
+
+
+

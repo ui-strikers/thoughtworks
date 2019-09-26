@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Event Handling Exercise</title>
+	<style>
+		.container{
+			width: 300px;
+			height: 300px;
+			border: 2px solid black;
+		}
+	</style>
+
+</head>
+<body>
+	<!-- Write a program which will display an image and once you hover on the image 
+   image should change to different image and once out image should be 
+   back to original. -->
+
+   <section class="container">
+   	
+   </section>
+
+   <script>
+
+   		window.onload = function () {
+   			var container = document.querySelectorAll('.container')[0];
+   			var img = document.createElement('img');
+			img.id ='image';
+			console.log('img');
+			img.setAttribute('src', 'images/rose-flower.jpg' );
+			console.log(img.src);
+			img.alt = 'Here is the image of rose';
+			img.width = 300;
+			img.height = 300;
+			var container = document.querySelectorAll('.container')[0];
+			container.appendChild(img);
+   			
+			if(typeof window.addEventListener === 'function') {
+				container.addEventListener('mouseover', new_image, true); //true capture phase
+				container.addEventListener('mouseout', original_image, true);
+				
+			} else if(typeof window.attachEvent === 'function') {
+				container.addEventListener('onmouseover', new_image,true); //true capture phase
+				container.addEventListener('onmouseout', original_image,true);
+				
+			}
+
+			console.log("All event handlers registered successfully!!");
+	};
+
+		function new_image(){
+		var new_image = document.getElementById('image');		
+			new_image.src = 'images/rose.jpg';
+			new_image.width = 300;
+			new_image.height = 300;
+			console.log('element added successfuly');
+		}
+
+		function original_image(){		
+			//var original_image = document.querySelectorAll('.image')[0];
+			var original_image = document.getElementById('image');
+			original_image.src = 'images/rose-flower.jpg';
+			original_image.width = 300;
+			original_image.height = 300;
+			console.log('element added successfuly');
+		}
+
+		
+
+	
+	</script>
+
+</body>
+</html>
+

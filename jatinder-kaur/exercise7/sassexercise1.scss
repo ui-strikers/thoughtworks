@@ -1,0 +1,44 @@
+$page-width: 100%;
+$columns: 6;
+$column-margin: 2%;
+$column-height: 110px;
+$base-color: #FFCCE5;
+$base-color-row: #b0e0e6;
+$rows: 24;
+
+@mixin color-divs{
+    @for $i from 0 through $rows {
+        $background-color: darken($base-color, $i * 2%); 
+    .colored-div#{$i} {
+      	background: $background-color;
+      	width: ($page-width/$columns) - ($column-margin * 2);
+		margin: $column-margin;
+	    height: $column-height;
+	    float: left;
+    }
+   }
+}
+
+
+body{
+	width: $page-width;
+	margin: 0%;
+}
+.row{
+	width: $page-width ;
+	margin: 0%;
+}
+
+@include color-divs;
+
+
+
+/*.column{
+	width: ($page-width/$columns) - ($column-margin * 2);
+	margin: $column-margin;
+	height: $column-height;
+	float: left;
+	@for $rows from 1 through 10{
+		background-color: darken($base-color, $rows * 5% );
+	}
+} */

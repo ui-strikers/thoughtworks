@@ -1,0 +1,221 @@
+body {
+  width: 100%;
+  margin: 0%;
+}
+
+.row {
+  width: 100%;
+  margin: 0%;
+}
+
+.colored-div0 {
+  background: #ffcce5;
+  width: 12.6666666667%;
+  margin: 2%;
+  height: 110px;
+  float: left;
+}
+
+.colored-div1 {
+  background: #ffc2e0;
+  width: 12.6666666667%;
+  margin: 2%;
+  height: 110px;
+  float: left;
+}
+
+.colored-div2 {
+  background: #ffb8db;
+  width: 12.6666666667%;
+  margin: 2%;
+  height: 110px;
+  float: left;
+}
+
+.colored-div3 {
+  background: #ffadd5;
+  width: 12.6666666667%;
+  margin: 2%;
+  height: 110px;
+  float: left;
+}
+
+.colored-div4 {
+  background: #ffa3d0;
+  width: 12.6666666667%;
+  margin: 2%;
+  height: 110px;
+  float: left;
+}
+
+.colored-div5 {
+  background: #ff99cb;
+  width: 12.6666666667%;
+  margin: 2%;
+  height: 110px;
+  float: left;
+}
+
+.colored-div6 {
+  background: #ff8fc6;
+  width: 12.6666666667%;
+  margin: 2%;
+  height: 110px;
+  float: left;
+}
+
+.colored-div7 {
+  background: #ff85c1;
+  width: 12.6666666667%;
+  margin: 2%;
+  height: 110px;
+  float: left;
+}
+
+.colored-div8 {
+  background: #ff7abb;
+  width: 12.6666666667%;
+  margin: 2%;
+  height: 110px;
+  float: left;
+}
+
+.colored-div9 {
+  background: #ff70b6;
+  width: 12.6666666667%;
+  margin: 2%;
+  height: 110px;
+  float: left;
+}
+
+.colored-div10 {
+  background: #ff66b1;
+  width: 12.6666666667%;
+  margin: 2%;
+  height: 110px;
+  float: left;
+}
+
+.colored-div11 {
+  background: #ff5cac;
+  width: 12.6666666667%;
+  margin: 2%;
+  height: 110px;
+  float: left;
+}
+
+.colored-div12 {
+  background: #ff52a7;
+  width: 12.6666666667%;
+  margin: 2%;
+  height: 110px;
+  float: left;
+}
+
+.colored-div13 {
+  background: #ff47a1;
+  width: 12.6666666667%;
+  margin: 2%;
+  height: 110px;
+  float: left;
+}
+
+.colored-div14 {
+  background: #ff3d9c;
+  width: 12.6666666667%;
+  margin: 2%;
+  height: 110px;
+  float: left;
+}
+
+.colored-div15 {
+  background: #ff3397;
+  width: 12.6666666667%;
+  margin: 2%;
+  height: 110px;
+  float: left;
+}
+
+.colored-div16 {
+  background: #ff2992;
+  width: 12.6666666667%;
+  margin: 2%;
+  height: 110px;
+  float: left;
+}
+
+.colored-div17 {
+  background: #ff1f8d;
+  width: 12.6666666667%;
+  margin: 2%;
+  height: 110px;
+  float: left;
+}
+
+.colored-div18 {
+  background: #ff1487;
+  width: 12.6666666667%;
+  margin: 2%;
+  height: 110px;
+  float: left;
+}
+
+.colored-div19 {
+  background: #ff0a82;
+  width: 12.6666666667%;
+  margin: 2%;
+  height: 110px;
+  float: left;
+}
+
+.colored-div20 {
+  background: #ff007d;
+  width: 12.6666666667%;
+  margin: 2%;
+  height: 110px;
+  float: left;
+}
+
+.colored-div21 {
+  background: #f50078;
+  width: 12.6666666667%;
+  margin: 2%;
+  height: 110px;
+  float: left;
+}
+
+.colored-div22 {
+  background: #eb0073;
+  width: 12.6666666667%;
+  margin: 2%;
+  height: 110px;
+  float: left;
+}
+
+.colored-div23 {
+  background: #e0006e;
+  width: 12.6666666667%;
+  margin: 2%;
+  height: 110px;
+  float: left;
+}
+
+.colored-div24 {
+  background: #d60069;
+  width: 12.6666666667%;
+  margin: 2%;
+  height: 110px;
+  float: left;
+}
+
+/*.column{
+	width: ($page-width/$columns) - ($column-margin * 2);
+	margin: $column-margin;
+	height: $column-height;
+	float: left;
+	@for $rows from 1 through 10{
+		background-color: darken($base-color, $rows * 5% );
+	}
+} */
+
+/*# sourceMappingURL=sassexercise1.css.map */

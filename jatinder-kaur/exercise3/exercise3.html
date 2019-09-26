@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Exercise</title>
+	<style>
+		.left{
+			height: 100px;
+			width: 49%;
+			border: 1px solid black;
+			float:left;
+			margin:  5px;
+		}
+		.clearfix::after{
+			clear: both;
+			content:'';
+			display: block;
+		}
+		.new{
+			width: 32.4%;
+			height: 100px;
+			float: left;
+			border: 1px solid red;
+			margin: 5px;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1> Sample</h1>
+	</header>
+	<main>
+		<section>
+	<div class="left" style="background-color: blue;"> There is some content </div>
+	<div class="left"> There is some content </div>
+		</section>
+	<div class="clearfix"></div>
+		<section>
+			<div class='new'> There is some content </div>
+			<div class="new">There is some content </div>
+			<div class="new"> There is some content </div>
+		</section>
+</main>
+
+<footer></footer>
+</body>
+</html>

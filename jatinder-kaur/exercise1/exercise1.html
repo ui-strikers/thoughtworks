@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercise (Politician)</title>
+
+</head>
+<body>
+	<header> 
+		<h1> Election</h1>
+	</header>
+	<main>
+		<form name='Election'>
+			<label for='vote'> Who is the most corrupt politician?</label><br>
+			 <input type='radio' name='vote' id='vote'/> Narendra Modi <br>
+			 <input type='radio' name='vote' id='vote'/> Manmohan Singh <br>
+			<input type='radio' name='vote' id='vote'/> XYZ <br>
+			<input type='radio' name='vote' id='vote'/> ABC <br>
+			
+	
+
+	<output id='result'> </output>
+	<script>
+		
+	
+		var result = document.getElementById('result');
+		if(window.localStorage)
+		{
+			if(localStorage.getItem('VOTER')== undefined){
+				localStorage.setItem("VOTER","Raman");
+				var data = localStorage.getItem("VOTER");
+				console.log("testdsffsfdsf",data);
+				result.innerHTML = data + 'Please choose one option';
+				
+			}
+			
+			else if(localStorage.getItem("VOTER") == "Raman"){
+				console.log("new pg");
+				var date =  new Date();
+				var data = localStorage.getItem("VOTER");
+				result.innerHTML = 'hey,'+ data + ' you have already voted at' + date;
+				
+			}
+			
+		}
+		else
+		{
+			result.innerHTML = 'Your browser doesnot support client side store, better to change the browser';
+		}
+	
+	</script>
+
+</body>
+</html>

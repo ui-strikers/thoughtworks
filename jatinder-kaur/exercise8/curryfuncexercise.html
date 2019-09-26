@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Curry Function Exercise</title>
+<script>
+
+	function population(city){
+		return function(month){
+			return function(year){
+				document.write("Population of " + city + " in "+month+ " " + year +" is "+(Math.floor(Math.random() * 10000) + 10000).toString().substring(1));
+				document.write("<br/>");
+				document.write("Population of " + city + " in "+month+ " " + year +" is "+(Math.floor(Math.random() * 1000000) + 1000000).toString().substring(1));
+				document.write("<br/>");
+				document.write("Population of " + city + " in "+month+ " " + year +" is "+(Math.floor(Math.random() * 100000000) + 100000000).toString().substring(1));
+				document.write("<br/>");
+				document.write("Population of " + city + " in "+month+ " " + year +" is "+(Math.floor(Math.random() * 10000000000) + 10000000000).toString().substring(1));
+				document.write("<br/>");
+				return function(x){
+					document.write("Population of " + city + " in "+month+ " " + year +" is "+(Math.floor(Math.random() * Math.pow(10,x)) + Math.pow(10,x)).toString().substring(1));
+					document.write("<br/>");
+					
+					
+
+				}
+
+			}
+		}
+	}
+
+	
+
+	var patialapopulation = population("Patiala");
+
+	var patialamarchpopulation = patialapopulation("March");
+
+	
+	patialamarchpopulation(2000);
+	patialamarchpopulation(2001);
+	patialamarchpopulation(2002);
+	
+
+	var patiala2005marchpopulation = patialamarchpopulation(2005);
+	document.write("<br/>");
+	document.write("<br/>");
+
+	document.write("custom ranges");
+	document.write("<br/>");
+	document.write("<br/>");
+
+	var custom = patiala2005marchpopulation(12);
+	var custom = patiala2005marchpopulation(5);
+	var custom = patiala2005marchpopulation(7);
+	var custom = patiala2005marchpopulation(9);
+
+	
+				
+</script>
+</head>
+<body>
+</body>
+</html>
