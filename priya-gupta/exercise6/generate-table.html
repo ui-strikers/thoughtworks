@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DOM Table Demo</title>
+	<style>
+		 td, th, table {
+  border: 1px solid black;
+}
+	</style>
+	<script>
+	function getRandomColor() {
+  var letters = '0123456789ABCDEF';
+  var color = '#';
+  for (var i = 0; i < 6; i++) {
+    color = color + letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
+
+}
+  
+
+function addtable() {
+  var mobile_phones = [['Samsung', 'J8', 2018, 17999, "Black", 1], ['Apple', '11', 2019, 64999, "Golden", 2],
+						['Mi', 'Mote Pro', 2017, 7999, "Pink", 3], ['Oppo', 'F1', 2016, 11999, "Rose Red", 4],
+						['Vivo', 'Selfie Pro', 2015, 8999, "Blue", 5], ['Microsoft', 'Lumia', 2014, 15999, "Green", 6],
+						['Lava', 'X1', 2013, 4999, "Silver", 7], ['Micromaxx', 'B789', 2012, 5999, "Orange", 8],
+						['RealMe', 'RM90', 2011, 7599, "Dark Blue Prism Cut", 9], ['Motorola', 'Razor', 2010, 14999, "Metallic Silver", 10]];
+						
+  // get the reference for the table-div element
+  var table_div = document.getElementById("table-div");
+  table_div.innerHTML = "";
+
+  // creates a <table> element and a <tbody> element
+  var tbl = document.createElement("table");
+  var tblHead = document.createElement("thead");
+  tblHead.style.background = "grey";
+  tblHead.style.color = "white";
+  var headerRow = document.createElement("tr");
+  
+  var makeHeader = document.createElement("th");
+  var textMake = document.createTextNode("Make");
+  makeHeader.appendChild(textMake);
+  headerRow.appendChild(makeHeader);
+  
+  var modelHeader = document.createElement("th");
+  var textModel = document.createTextNode("Model");
+  modelHeader.appendChild(textModel);
+  headerRow.appendChild(modelHeader);
+  
+  var ryHeader = document.createElement("th");
+  var textRY = document.createTextNode("Release Year");
+  ryHeader.appendChild(textRY);
+  headerRow.appendChild(ryHeader);
+  
+  var priceHeader = document.createElement("th");
+  var textPrice = document.createTextNode("Price");
+  priceHeader.appendChild(textPrice);
+  headerRow.appendChild(priceHeader);
+  
+  var colorHeader = document.createElement("th");
+  var textColor = document.createTextNode("Color");
+  colorHeader.appendChild(textColor);
+  headerRow.appendChild(colorHeader);
+  
+  var rankHeader = document.createElement("th");
+  var textRank = document.createTextNode("Rank");
+  rankHeader.appendChild(textRank);
+  headerRow.appendChild(rankHeader);
+  
+  tblHead.appendChild(headerRow);
+  
+  tbl.appendChild(tblHead);
+  
+  var tblBody = document.createElement("tbody");
+
+  // creating all cells
+  for (var i = 0; i < 10; i++) {
+    // creates a table row
+    var row = document.createElement("tr");
+
+    for (var j = 0; j < 6; j++) {
+      // Create a <td> element and a text node, make the text
+      // node the contents of the <td>, and put the <td> at
+      // the end of the table row
+      var cell = document.createElement("td");
+	  console.log(i,j)
+      var cellText = document.createTextNode(mobile_phones[i][j]);
+      cell.appendChild(cellText);
+      row.appendChild(cell);
+	  row.style.background = getRandomColor();
+    }
+
+    // add the row to the end of the table body
+    tblBody.appendChild(row);
+  }
+
+  // put the <tbody> in the <table>
+  tbl.appendChild(tblBody);
+  // appends <table> into <body>
+  table_div.appendChild(tbl);
+  // sets the border attribute of tbl to 2;
+  tbl.setAttribute("border", "2");
+}
+	</script>
+</head>
+<body>
+	
+<button onclick='addtable();'>Generate Table</button>
+<br><br>
+<div id="table-div"></div>
+</body>
+</html>
