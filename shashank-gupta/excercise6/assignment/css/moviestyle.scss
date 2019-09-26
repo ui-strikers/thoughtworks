@@ -1,0 +1,92 @@
+
+@mixin movielist-right {
+    width:100%;
+    background-color: #212121;
+    height: 25.2em;    
+    color: white;
+}
+
+@mixin moviesitemslist {
+    position: relative;
+    background-color: #212121;
+    min-height: 1px;  
+    flex-flow: wrap;
+    display: flex;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0px;
+}
+.container{
+    width:100%;
+}
+.movielist{
+    display: flex;
+    flex-flow: wrap;
+}
+.movielist-left-banner {     
+    @include moviesitemslist;
+}
+.moviesitems-left-list{
+    @include moviesitemslist;
+}
+.col-md-3{
+    width: 25%;
+    background-color: #212121;
+}
+.container-head{
+    width: 100%;
+    background-color:#171717;
+    font-size: 20px;
+    color: white;
+    padding: 20px;
+}
+.movie-image{
+    height: 10em;
+}
+.movie-image img{
+    width: 100%;
+}
+.movie-details{
+    height: 3.5em;
+    padding: 1em;
+    line-height: 1.5em;
+    background-color: #454A4C;
+}
+.movie-details label:first-child {
+    font-weight: 600;
+    font-size: 16px;
+}
+label{
+    display: inherit;
+    line-height: initial;
+    color: white;
+    font-size: 12px;
+    margin-bottom: .7em;
+    text-align: center;
+}
+.movielist-right-top{
+    @include movielist-right;
+}
+.movielist-right-bottom{
+    @include movielist-right;
+    display: flex;
+}
+.movielist-right-bottom span {
+    display: block;
+    padding: 6px 1em;
+}
+figure {
+    display: block;
+    margin-block-start: 0em;
+    margin-block-end: 1em;
+    margin-inline-start: 2em;
+    margin-inline-end: 1em;
+}
+.movielist section:first-child {
+    flex: 60%;
+}
+.movielist section:last-child {
+    flex: 40%;
+}

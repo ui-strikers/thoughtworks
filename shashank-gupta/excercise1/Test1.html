@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Test</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/img_avatar.png">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1" />
+    <meta name="author" content="Shashank" />
+
+    <style>
+        table {
+            border: 1px solid black
+        }
+
+        thead {
+            background-color: pink
+        }
+
+        thead tr {
+            background-color: black;
+            color: white;
+            margin: 15px
+        }
+
+        tbody>tr {
+            font-size: 15px;
+            text-align: center;
+            margin: 15px
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: blueviolet
+        }
+
+        tr {
+            background-color: gray
+        }
+
+        .row1 {
+            height: 100px;
+            width: 49%;
+            background-color: pink;
+            border: 2px solid gray;
+            margin: 2px;
+            float: left;
+
+        }
+
+        .row2 {
+            height: 100px;
+            width: 32%;
+            background-color: green;
+            border: 2px solid lightseagreen;
+            margin: 2px;
+            float: left;
+            padding: 3px;
+        }
+
+        .clearfix {
+            content: "";
+            clear: both;
+            display: block;
+        }
+
+        /*
+        #container {
+            width: 90%;
+            height: auto;
+            margin: 0 auto;
+        }
+        .row {
+            width: 100%;
+            height: 100px;
+            margin: 10px auto;
+        }
+        .box {
+            height: 100%;
+            text-align: center
+        }
+        .right{
+            background-color: pink;
+        }
+        .left{
+            background-color: brown;
+        }
+        .middle{
+            background-color:skyblue; 
+        }
+        .left, .middle {
+            float: right;
+            margin-right: 14px;
+        }
+        #first .box {
+            width : 49%;
+        }
+        #second .box {
+            width: 32%;
+        }
+*/
+        #container {
+            width: 90%;
+            height: auto;
+            margin: 0 auto;
+        }
+
+        .row {
+            width: 100%;
+            height: 100px;
+            margin: 10px auto;
+            display: table;
+
+        }
+
+        .box {
+            height: 100%;
+            text-align: center;
+            display: table-cell;
+        }
+
+        .right {
+            background-color: pink;
+        }
+
+        .left {
+            background-color: brown;
+        }
+
+        .middle {
+            background-color: skyblue;
+        }
+
+        .left,
+        .middle {
+            margin-right: 14px;
+        }
+
+        #first .box {
+            width: 49%;
+        }
+
+        #second .box {
+            width: 32%;
+        }
+
+        hr {
+            margin-top: 20px;
+            width: 90%;
+        }
+
+        @media screen and (max-width: 1000px) {}
+
+        @media screen and (max-width: 800px) {}
+
+        @media screen and (max-width: 550px) {
+            #first {
+                display: flex;
+            }
+        }
+
+        @media screen and (max-width: 320px) {}
+    </style>
+</Head>
+
+<body>
+    <main>
+        <output id='result'></output>
+        <article>
+            <Section>
+                <h3>Assignment 1</h3>
+                <ul><label>Q1. who is the most corrupt politician?</label>
+                    <li><input id="r1" type="radio" name="Check" value="Rahul Ghandi">
+                        <label for='r1'>Rahul Ghandi</label>
+                    </li>
+                    <li><input id="r2" type="radio" name="Check" value="Sonia Ghandhi">
+                        <label for='r2'>Sonia Ghandhi</label>
+                    </li>
+                    <li><input id="r3" type="radio" name="Check" value="Arvind Kejriwal">
+                        <label for='r3'>Arvind Kejriwal</label>
+                    </li>
+                    <li><input id="r4" type="radio" name="Check" value="Narendr Modi">
+                        <label for='r4'>Narendr Modi</label>
+                    </li>
+                </ul>
+                <input type="submit" value="Submit Voting" onclick="Voting()">
+                <input type="submit" value="Cancel Voting" onclick="VotingCancel();">
+            </Section>
+        </article>
+        <hr>
+        <article>
+            <section>
+                <h3> Assignment 2</h3>
+                <table style="width: 40%">
+                    <thead>
+                        <tr>
+                            <th colspan="3">Car Details</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <th>Car Name</th>
+                            <th>Car Model</th>
+                            <th>Car Color</th>
+                        </tr>
+                        <tr>
+                            <td>Maruti</td>
+                            <td>1019</td>
+                            <td>White</td>
+                        </tr>
+                        <tr>
+                            <td>Maruti</td>
+                            <td>1019</td>
+                            <td>White</td>
+                        </tr>
+                        <tr>
+                            <td>Maruti</td>
+                            <td>1019</td>
+                            <td>White</td>
+                        </tr>
+                        <tr>
+                            <td>Maruti</td>
+                            <td>1019</td>
+                            <td>White</td>
+                        </tr>
+                        <tr>
+                            <td>Maruti</td>
+                            <td>1019</td>
+                            <td>White</td>
+                        </tr>
+                    </tbody>
+
+                    <tfoot>
+                        <tr></tr>
+                    </tfoot>
+                </table>
+            </section>
+        </article>
+        <hr>
+
+        <section>
+            <h3> Assignment 3.1 ( using display: float )</h3>
+            <div class="row">
+                <div class="row1">Left Box</div>
+                <div class="row1">Right Box</div>
+            </div>
+
+            <div class="clearfix"></div>
+            <div class="row">
+                <div class="row2">Left Box</div>
+                <div class="row2">Middle Box</div>
+                <div class="row2">Right Box</div>
+            </div>
+        </section>
+
+        <!--
+        <section>
+            <h3> Assignment 3.2</h3>
+            <div id="container">
+                <section>
+                    <div id="first" class="row">
+                        <div class="box left">Left Box</div>
+                        <div class="box right">Right Box</div>
+                    </div>
+                </section>
+                <section>
+                    <div id="second" class="row">
+                        <div class="box left">Left Box</div>
+                        <div class="box middle">Middle Box</div>
+                        <div class="box right">Right Box</div>
+                    </div>
+                </section>
+            </div>
+            </br>
+        </section>
+    -->
+
+        <hr>
+        <section>
+            <h3> Assignment 3.3 ( using display: table )</h3>
+            <div id="container">
+                <section>
+                    <div id="first" class="row">
+                        <div class="box left">Left Box</div>
+                        <div class="box right">Right Box</div>
+                    </div>
+                </section>
+                <section>
+                    <div id="second" class="row">
+                        <div class="box left">Left Box</div>
+                        <div class="box middle">Middle Box</div>
+                        <div class="box right">Right Box</div>
+                    </div>
+                </section>
+            </div>
+            </br>
+        </section>
+    </main>
+
+    <script>
+        function VotingCancel() {
+            localStorage.clear('Voting');
+            alert('voting is Clear successfuly');
+        };
+
+        function Voting() {
+            debugger;
+            let result = document.getElementsByName('Check');
+            var d = new Date();
+
+            for (i = 0; i < result.length; i++) {
+                if (result[i].checked) {
+                    if (window.localStorage) {
+                        if (localStorage.getItem("Voting") == undefined) {
+                            localStorage.setItem("Voting", result[i].value + ' which submited on ' + d.toUTCString()); // Key,Value pair
+                            alert('your vote submit successfuly');
+                            result[i].checked = false;
+                        }
+                        else {
+                            let data = localStorage.getItem('Voting');
+                            alert('voting is done only once, You already voted for ' + data);
+                            result[i].checked = false;
+                        }
+                    } else {
+                        result.innerHTML = "Your browser dose not support client side Storage!";
+                    }
+                }
+            }
+        } 
+    </script>
+</body>
+
+</html>

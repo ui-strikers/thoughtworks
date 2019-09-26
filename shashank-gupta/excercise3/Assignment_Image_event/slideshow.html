@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Slide Show Demo</title>
+	<link rel="shortcut icon" type="image/x-icon" href="img/img_avatar.png">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1" />
+	<meta name="author" content="Shashank" />
+
+	<style>
+		.row {
+			display: flex;
+			flex-flow: row nowrap;
+		}
+
+		.column {
+			margin: 15px auto;
+		}
+
+		.column progress {
+			width: 26em;
+			border-radius: 5px;
+		}
+
+		.slide-show {
+			width: 80%;
+			margin: 0 auto;
+			padding: 20px;
+			vertical-align: middle;
+		}
+
+		.slide-image {
+			width: 500px;
+			height: 300px;
+		}
+
+		h1 {
+			text-align: center;
+		}
+	</style>
+</head>
+
+<body>
+	<main>
+		<article>
+			<section class='slide-show'>
+				<div class='row'>
+					<div class='column'>
+						<figure class='slide'>
+							<h1 class='slide-header'>Slide Show</h1>
+							<figure>
+								<img class='slide-image' src='img/butterfly10.jpg' />
+							</figure>
+							<figcaption class='slide-into'></figcaption>
+						</figure>
+					</div>
+				</div>
+				<div class='row'>
+					<div class='column'>
+						<input class='btn btn-start' type='button' value='Start' />
+						<input class='btn btn-stop' type='button' value='Stop' />
+					</div>
+				</div>
+				<div class='row'>
+					<div class='column'>
+						<progress value=0 min=0 max=100 class='progress-bar'></progress>
+					</div>
+				</div>
+			</section>
+		</article>
+	</main>
+
+	<script>
+		document.addEventListener('slideshowprogress', function (evt) {
+			var progress0 = document.querySelectorAll('.progress-bar')[0];
+			console.log(evt.detail);
+			progress0.value = evt.detail.current * 10;
+		});
+
+		var image0 = document.querySelectorAll('.slide-image')[0];
+		var buttonList = document.querySelectorAll('.btn');
+		var btn0 = buttonList[0];
+		var btn1 = buttonList[1];
+		var counter = 1;
+
+		btn0.addEventListener('click', function () {
+			clock = window.setInterval(function () {
+				image0.setAttribute('src', `img/butterfly${counter++}.jpg`);
+				var finishEvent = new CustomEvent('slideshowprogress', { detail: { current: counter } });
+				document.dispatchEvent(finishEvent);
+
+				if (counter > 10) {
+					counter = 1;
+				}
+			}, 1500);
+		});
+
+		btn1.addEventListener('click', function () {
+			window.clearInterval(clock);
+			var stopEvent = new CustomEvent('slideshowstop');
+			document.dispatchEvent(stopEvent);
+
+		});
+	</script>
+</body>
+
+</html>

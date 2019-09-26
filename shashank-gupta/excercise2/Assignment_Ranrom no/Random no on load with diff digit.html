@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Random No. with diff. Digit</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/img_avatar.png">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1" />
+    <meta name="author" content="Shashank" />
+    <style>
+        p {
+            padding: 10px 30px;
+            background: #ccc;
+            width: 33em;
+        }
+    </style>
+    <script>
+        function randomNumber() {
+            return function (range) {
+                var count = 1;
+                for (var i = 1; i < range; i++) {
+                    count += '1';
+                }
+                var randomno = Math.floor(Number(count) + Math.random() * Number(count));
+                // var output = document.querySelectorAll('section')[0];
+                //var para= document.createElement('p');
+                //var text = document.createTextNode("Genrate unique random no. for " + range + " digits is: " + randomno);
+                //para.appendChild(text);
+                //output.appendChild(para);
+                document.write("<p>Genrate unique random no. for " + range + " digits is: " + randomno + "</p>");
+            }
+        }
+        randomNumber()(4);
+        randomNumber()(6);
+        randomNumber()(8);
+        randomNumber()(10);
+        randomNumber()(20);
+
+        // do it in all in inner
+
+        function customNo() {
+            debugger;
+            var customNo = Number(document.getElementById("randomno").value);
+            if (typeof customNo == 'number' && customNo != 0) {
+                debugger;
+                randomNumber()(customNo);
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <main>
+        <section>
+            </br> </br>
+
+            <input id="randomno" type="number" min="0">
+            <input type="submit" onclick="customNo();">
+        </section>
+    </main>
+</body>
+
+</html>
