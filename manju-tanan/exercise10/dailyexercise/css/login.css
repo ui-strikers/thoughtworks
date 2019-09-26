@@ -1,0 +1,50 @@
+@import 'reset.css';
+.form-row{
+	justify-content: space-evenly;
+    display: flex;
+    margin: 15px;
+}
+.form-row label{
+flex: 1;
+	/*width: 35%*/
+
+}
+
+.form-row input[type=text]{
+	flex: 2;
+	/*width: 75%*/
+}
+.form-row input[type=date]{
+	flex: 2;
+	width: 75%
+}
+
+.login-form{
+	margin: 30px;
+}
+.start-date{
+	flex: 2;
+}
+
+table {
+  /*border-collapse: collapse;*/
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 12px;
+}
+
+tr:nth-child(even) {
+  background-color: #ddddddbf;
+}
+tr:nth-child(odd) {
+  background-color: #d9deff57;
+}
+table tr:first-child{
+	background-color: #95a1e6;
+	line-height: 2.4em;
+
+}
