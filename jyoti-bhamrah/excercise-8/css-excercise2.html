@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Excercise 2</title>
+	<style type="text/css">
+		body{
+			font-family: calibri;
+		}
+		div:not(.clearfix){
+			height: 100px;
+			margin: 10px;
+			padding: 10px;
+			color:#fff;
+			text-align: center;
+		}
+		div.wt-row1{
+			width: 47.3%;
+		}
+		div.wt-row2{
+			width: 30.7%;
+		}
+		.fl_left{
+			float: left;
+		}
+		.fl_right{
+			float: right;
+		}
+		div.clearfix{
+			clear: both;
+			content: "";
+		}
+		div.green{
+			background: #009966;
+		}
+		div.red{
+			background: #cc0000;
+		}
+		div.pink{
+			background: pink;
+		}
+		div.magenta{
+			background: magenta;
+		}
+		div.orange{
+			background: #ff9933;
+		}
+	</style>
+</head>
+<body>
+		<div class="fl_left green wt-row1">
+			This is simply dummy text ...
+		</div>
+		<div class="fl_right red wt-row1">
+			This is simply dummy text ...
+		</div>
+	
+		<div class="clearfix"></div>
+	
+		<div class="fl_left pink wt-row2">
+			This is simply dummy text ...
+		</div>
+		<div class="fl_left magenta wt-row2">
+			This is simply dummy text ...
+		</div>
+		<div class="fl_right orange wt-row2">
+			This is simply dummy text ...
+		</div>
+</body>
+</html>

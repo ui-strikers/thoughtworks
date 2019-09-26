@@ -1,0 +1,41 @@
+$card-width:250px;
+$card-height:200px;
+$body-width:100%;
+$card-margin:0px;
+$card-background-color:lightblue;
+$padding:0 10px;
+$card-border-radius:10px;
+
+body{
+	width:$body-width;
+}
+.column {
+  float: left;
+  padding:$padding;
+}
+
+.row{
+	margin:$card-margin;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.card1, .card2, .card3 {
+  box-shadow: 1px 4px 8.8px lightblue;
+  width: $card-width;
+  height:$card-height;
+  padding:$padding;
+  text-align: center;
+  background-color: $card-background-color;
+  border-radius:$card-border-radius;
+}
+
+.card1:hover,.card2:hover,.card3:hover{
+	  -webkit-transform:rotate(240deg);
+   -ms-transform:rotateY(180deg);
+    -o-transform:rotateY(180deg);
+     transform:rotateY(240deg);
+}
