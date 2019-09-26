@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Slide Show Demo</title>
+<link rel="stylesheet" href="css/slideshow.css">
+</head>
+<body>
+<section class='slide-show'>
+	<div class='row'>
+		<div class='column'>	
+			<figure class='slide'>
+				<h3 class='slide-header'></h3>
+				<img class='slide-image' src='images/slide-img-5.jpg'  />
+				<figcaption class='slide-into'></figcaption>
+			</figure>
+		</div>
+	</div>
+	<div class='row'>
+		<div class='column'>	
+			<input class='btn btn-start' type='button' value='Start' />
+			<input class='btn btn-stop' type='button' value='Stop' />
+		</div>
+	</div>
+	<div class='row'>
+		<div class='column'>	
+			<progress value=0 min=0 max=100 class='progress-bar'></progress>
+		</div>
+	</div>
+</section>
+<script src="js/slideshow.js"></script>
+</body>
+</html>

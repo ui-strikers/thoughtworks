@@ -1,0 +1,64 @@
+body{
+	font-family: calibri;
+	width: 1000px;
+	margin:1em auto;
+}
+
+/*Spacing Classes*/
+.ml-10{
+	margin-left: 10px;
+}
+.ml-20{
+	margin-left: 20px;
+}
+
+/* Css to move left or light between block elements */
+.move-left{
+	float: left;
+}
+.move-right{
+	float:right;
+}
+
+/* Css to align the text */
+.text-left{
+	text-align: left;
+}
+.text-right{
+	text-align: right;
+}
+.text-center{
+	text-align: center;
+}
+
+/*css for changes in text color */
+.text-danger{
+	color: #99151c;
+}
+.text-success{
+	color: #166e0e;
+}
+
+/* box shadow */
+.in-shadow{
+	background-color: #fff;
+	padding: 1em 3em;
+	clear: both;
+	margin-bottom: 0.2em;
+	box-shadow: inset 40px 20px 25px -25px #14628f, inset -40px -20px 25px -25px #14628f;
+}
+
+/* Table design */
+.table-striped th,.table-striped td{
+	padding: 0.3em 0.5em;
+}
+.table-striped th {
+    background: #14628f;
+    color: #fff;
+}
+.table-striped tbody tr:nth-child(odd) {
+    background: #d6fff1;
+}
+.table-striped tbody tr:nth-child(even) {
+    background: #fafafa;
+}
