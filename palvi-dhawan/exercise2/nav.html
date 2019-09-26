@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+		<title>navbar</title>
+	<head>
+		<style> 
+
+
+		nav{
+			background-image:linear-gradient(to right, black 60%,grey );
+					border-radius: 50px;
+					box-shadow: 2px 7px 11px #aba0a0
+		}
+		nav ul{
+			list-style: none;
+			color:white;
+			padding-top: 20px;
+			padding-bottom: 20px;
+			
+		}
+		nav ul li{
+			display: inline;
+			padding:20px 0px;
+			
+		}
+		nav ul li a {
+			margin:0 10px;
+			font-size: 1.2em;
+			color:white;
+
+			
+		}
+		nav ul li:hover{
+			background:#ffffff;
+			
+		}
+		nav ul li:hover a{
+			color:#000000;
+			
+		}
+		nav ul li:last-child{
+					margin-right:10px;
+					padding:0px;
+					float: right;
+		}
+		nav ul li:hover:last-child{
+				background: none;
+					}
+		nav ul li:last-child input{
+			    border-radius: 20px;
+			    border: 2px solid #333;
+			    height: 40px;
+			    padding: 15px;
+			    margin-right:10px;
+			    position: relative;
+			    bottom:8px;
+			    outline: none;
+				}
+
+		@media screen and (max-width:800px){
+						#main{
+						width: initial;
+						margin: 0;
+							}
+					nav{
+					border-radius: 0px;
+					}
+					nav ul{
+						padding-left:0px;
+					}
+					nav ul li{
+						display: inline;
+						/*border-bottom:2px solid #ffffff;*/
+					}
+					nav ul li a{
+						font-size:1em;
+					}
+					nav ul li:nth-child(3) {
+					    display: none;
+					}
+					nav ul li:nth-child(5) {
+					    display: none;
+					}
+					nav ul li:last-child {
+						border-bottom: 0px;
+					}
+					nav ul li:last-child input{
+				    height: 35px;
+				    padding-left: 10px;
+				    margin-right:5px;
+				    width: 80%;
+					}
+					}
+
+				@media screen and (max-width:600px) and (min-width: 530px){
+/*						#main{
+							width: initial;
+							margin: 0;
+						}*/					
+					nav ul li:nth-child(4) {
+					    display: none;
+					}
+				
+				}
+				@media screen and (max-width:530px) and (min-width:500px){
+					body{
+						margin:0px;
+					}	
+					nav{
+						margin-top:15%;
+					}
+					nav ul{
+						padding-top:0px;
+						margin-top:0px;
+						padding-bottom: 0px;
+					}			
+					nav ul li{
+						display: block;
+						border-bottom:2px solid #ffffff;
+					}
+					nav ul li:last-child {
+					    float: none;
+					    margin: 0 auto;
+					    display: block;
+					    text-align: center;
+					    top: 5%;
+					    right: 0%;
+					    position: absolute;
+					}
+				}
+
+		</style>
+	</head>
+	<body> 
+		<main id="main">
+			<nav>
+				<ul>
+					<li><a>Friends</a></li>
+					<li><a>Movies</a></li>
+					<li><a>Cars</a></li>
+					<li><a>Songs</a></li>
+					<li><a>Fun</a></li>
+					<li><a>Hobbies</a></li>
+					<li><a>Holidays</a></li>
+					<li><input type="search" placeholder="search"></li>
+				</ul>
+			</nav>
+		</main>
+	</body>
+</html>
+
+
