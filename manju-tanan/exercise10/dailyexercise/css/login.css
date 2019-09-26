@@ -1,34 +1,55 @@
-@import 'reset.css';
-.form-row{
-	justify-content: space-evenly;
-    display: flex;
-    margin: 15px;
-}
-.form-row label{
-flex: 1;
-	/*width: 35%*/
+@import 'common.css';
 
-}
-
-.form-row input[type=text]{
-	flex: 2;
-	/*width: 75%*/
-}
-.form-row input[type=date]{
-	flex: 2;
-	width: 75%
-}
-
-.login-form{
-	margin: 30px;
-}
-.start-date{
+.form-row > label {
+    padding: .3em 1em .3em 0;
+    flex: 1;
+    text-align: right;
+    color: #3d3d3d; 
+  }
+.form-row > input {
+    flex: 2;
+    border-radius: 4px;
+  }
+.description-text-two{
 	flex: 2;
 }
-
+.sales-form{
+	list-style-type: none;
+}
+.description-text-two > input{
+	border-radius: 4px;
+	margin-right: 6px;
+	padding: 0.1em;
+}
+.description-text-two i{
+	transform: rotate(333deg);
+}
+input:focus{
+  border-color: #ffffff;
+  outline: none;
+  box-shadow: inset 0 1px 1px rgba(27,31,35,.075), 0 0 0 0.2em rgba(3,102,214,.3);
+}
+.btn{
+  text-align: center;
+  cursor: pointer;
+  border: none transparent;
+  background-color: #e6e6e6;
+  text-decoration: none;
+  border-radius: 2px;
+  padding: .6em 1em;
+  box-shadow: 0 0 0 1px rgba(0,0,0,.15) inset, 0 0 6px rgba(0,0,0,.2) inset;
+  border-color: #3d3d3d;
+  color: #3d3d3d;
+  }
+.sales-form .buttons{
+	text-align: center;
+	padding-top: 30px;
+}
+.buttons a:first-child{
+	margin-right: 30px;
+}
 table {
-  /*border-collapse: collapse;*/
-  width: 100%;
+ width: 100%;
 }
 
 td, th {
@@ -48,3 +69,5 @@ table tr:first-child{
 	line-height: 2.4em;
 
 }
+
+

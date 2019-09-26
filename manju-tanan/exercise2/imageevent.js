@@ -3,7 +3,7 @@ window.onload = function () {
     // Create Image Element
     var image = document.createElement('img');
     //Insert Image In Image Attribute
-    image.src = '../images/butterfly-1127666__340.jpg';
+    image.src = 'images/butterfly-1127666__340.jpg';
     console.log("image added via javascript", image);
     image.id = "imageNature";
     image.width = 500;
@@ -31,7 +31,7 @@ window.onload = function () {
 function imageChange() {
     console.log("image change");
     var imageHover = document.getElementById("imageNature");
-    imageHover.src = "../images/photo-1500622944204-b135684e99fd.jpeg";
+    imageHover.src = "images/photo-1500622944204-b135684e99fd.jpeg";
     imageHover.width = 500;
     imageHover.height = 300;
     console.log("image change", imageHover);
@@ -42,7 +42,7 @@ function imageChange() {
 function imageDefault() {
     console.log("image change");
     var imageHover = document.getElementById("imageNature");
-    imageHover.src = "../images/butterfly-1127666__340.jpg";
+    imageHover.src = "images/butterfly-1127666__340.jpg";
     imageHover.width = 500;
     imageHover.height = 300;
     console.log("image change", imageHover);
