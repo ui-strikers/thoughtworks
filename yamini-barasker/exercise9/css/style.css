@@ -1,0 +1,26 @@
+@import "form.css";
+@import "table.css";
+
+body{}
+.container{
+	width: 1000px;
+	margin: auto;
+}
+.form-section,.table-section{
+ 	margin: 20px auto;
+}
+.form-section header{
+	font-size: 1.2em;
+	text-align: center;
+	color: #0C1DA1;
+	text-shadow: 1px 1px 3px #0C1DA1;
+}
+
+.btn{
+	width: 100px;
+    margin: 5px;
+    padding: 6px 14px;
+}
+.table-section{
+	width: 100%;
+}

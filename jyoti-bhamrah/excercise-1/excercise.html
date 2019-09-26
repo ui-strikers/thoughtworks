@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Voting</title>
+</head>
+<body>
+	<header>
+		<h1>Give your voting</h1>
+	</header>
+	<main>
+		<section>
+			<h3>Who is the most corrupt politician?</h3>
+			<input type="radio" name="votePolitician" value="Narendar Modi"> Narendar Modi <br/><br/>
+			<input type="radio" name="votePolitician" value="Arvind Kejriwal"> Arvind Kejriwal<br/><br/>
+			<input type="radio" name="votePolitician" value="Rahul Gandhi"> Rahul Gandhi<br/><br/>
+			<input type="radio" name="votePolitician" value="Mamta Banarjee"> Mamta Banarjee<br/><br/>
+			<input type="submit" name="submitBtn" id="submitBtn" onclick="checkData()" value="Submit">
+		</section>
+		<output id="result"></output>
+	</main>
+
+	<script type="text/javascript">
+		function checkData(){
+			var result=document.getElementById("result");
+			if(window.localStorage){
+				//to read the data and check whether it is for the first time storing data
+				if(localStorage.getItem("Politician")==undefined){
+					// To get element by name of radio values
+					var valueOfRadio=document.getElementsByName("votePolitician");
+					// To get the length of radio inputs 
+					var l = valueOfRadio.length;
+					for (var i = 0; i<l; i++)
+				    {
+				    	//check which radio button is checked
+				        if (valueOfRadio[i].checked)
+				        {
+				        	var d = new Date();
+			        		//Set the value in key named Politician
+					       localStorage.setItem("Politician",valueOfRadio[i].value);
+					       localStorage.setItem("PDate",d);
+				        }
+				    }					
+				}
+				else{
+					//retrieve the data
+					var existingData=localStorage.getItem("Politician");
+					var existingDate=localStorage.getItem("PDate");
+					//Show message that value already exists
+					result.innerHTML="You have already voted " + existingData + ", " + existingDate;
+				}
+			}
+			else{
+				result.innerHTML="Your browser does not support client side storage, better to  change the browser";
+			}
+		}		
+	</script>
+</body>
+</html>

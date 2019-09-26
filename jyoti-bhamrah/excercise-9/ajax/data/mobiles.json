@@ -1,0 +1,12 @@
+[
+	{"make":"Redmi","model":"Note 5 Pro","release":"2014","price":14999},
+	{"make":"Motorola","model":"X1","release":"2008","price":16999},
+	{"make":"OnePlus","model":"10","release":"2019","price":26999},
+	{"make":"Vivo","model":"V8","release":"2013","price":18999},
+	{"make":"Oppo","model":"X2","release":"2014","price":14999},
+	{"make":"Redmi","model":"Note 7","release":"2019","price":14999},
+	{"make":"Motorola","model":"M12","release":"2014","price":14999},
+	{"make":"Nokia","model":"Note 5 Pro","release":"2014","price":14999},
+	{"make":"Vivo","model":"Note 5 Pro","release":"2018","price":14999},
+	{"make":"Samsung","model":"G8","release":"2011","price":14999}
+]
