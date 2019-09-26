@@ -1,0 +1,30 @@
+$primary-color: #333;
+$font-size: 1rem;
+$font-color: #fff;
+$box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+h3 {
+    margin: 0;
+}
+
+@mixin cardSize($height, $width, $padding){
+    width: $width;
+    height: $height;
+    padding: $padding;
+}
+.card {
+    @include cardSize(150px, 300px, 15px);
+    background-color: $primary-color;
+    box-shadow: $box-shadow;
+}
+%card-design{
+    color: $font-color;
+    font-size: $font-size;
+}
+.card-title {
+    @extend %card-design;
+}
+
+.card-sub-title {
+    @extend %card-design;
+    font-size: 0.7rem;
+}

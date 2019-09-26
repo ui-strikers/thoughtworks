@@ -1,0 +1,12 @@
+section.container {
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+}
+table.dataTable {
+    margin: 2% auto;
+}
+th.tableHead {
+    background: #e3e3e3;
+    width: 19%;
+}
