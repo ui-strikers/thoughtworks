@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Excercise 2</title>
+	<style type="text/css">
+		body{
+			font-family: calibri;
+		}
+		header{
+			width: 90%;
+			margin:auto;
+			background: #344554;
+		}
+		header h1{
+			color:#fff;
+			padding: 20px;
+			text-align: center;
+		}
+		div.box{
+			height: 100%;
+			color:#fff;
+			text-align: center;
+		}
+		main{
+			width: 90%;
+			border:2px solid #ccc;
+			margin:50px auto;
+		}
+		section{
+			width: 90%;
+			border:1px solid #ccc;
+			margin:20px auto;
+			display: table;			
+			height: 100px;
+		}
+		div.row1,div.row2{
+			height: 100%;
+			margin:10px;
+			display: table-row;
+		}
+		div.row1 .box {
+			display: table-cell;
+			border: 3px solid #fff;
+		}
+		div.row2 .box {
+			border: 3px solid #fff;
+			display: table-cell;
+		}
+
+		div.green{
+			background: #009966;
+		}
+		div.red{
+			background: #cc0000;
+		}
+		div.pink{
+			background: #ff6633;
+		}
+		div.blue{
+			background: #253c81;
+		}
+		div.orange{
+			background: #ff9933;
+		}
+	</style>
+</head>
+<body>
+		<header>
+			<h1 class="banner">Box demo with display:table property</h1>
+		</header>
+		<main>
+			<section>
+				<div class="row1">
+					<div class="green box left">
+						<p>This is simply dummy text ...</p>
+					</div>		
+					<div class="red box right">
+						<p>This is simply dummy text ...</p>
+					</div>		
+				</div>					
+			</section>
+			<section>
+				<div class="row2">
+					<div class="pink box left">
+						<p>This is simply dummy text ...</p>
+					</div>		
+					<div class="blue box middle">
+						<p>This is simply dummy text ...</p>
+					</div>		
+					<div class="orange box right">
+						<p>This is simply dummy text ...</p>
+					</div>		
+				</div>
+			</section>
+		</main>
+</body>
+</html>
