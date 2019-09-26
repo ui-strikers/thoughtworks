@@ -1,0 +1,53 @@
+﻿.chart-first {
+	height: 100px;
+	margin-left: 85px;
+ }
+ 
+.chart-first-background {
+	background-color: red;
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	-o-border-radius: 50px;
+	border-radius: 50px;
+	-moz-box-shadow: -1px 1px 3px #000;
+	-webkit-box-shadow: -1px 1px 3px #000;
+	-o-box-shadow: -1px 1px 3px #000;
+	box-shadow: -1px 1px 3px #000;
+ }
+.pie {
+	position: absolute;
+    width: 100px;
+	height: 100px;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	-o-border-radius: 50px;
+	border-radius: 50px;
+	clip: rect(0px, 50px, 100px, 0px);
+ }
+.hold {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	-o-border-radius: 50px;
+	border-radius: 50px;
+	clip: rect(0px, 100px, 100px, 50px);
+ }
+.chart-first-slice {
+	-webkit-transform:rotate(0deg);
+	-moz-transform:rotate(0deg);
+	-o-transform:rotate(0deg);
+	transform:rotate(0deg);
+}
+.chart-first-slice .pie {
+	background-color: #001FFF;
+	-webkit-transform:rotate(100deg);
+	-moz-transform:rotate(100deg);
+	-o-transform:rotate(100deg);
+	transform:rotate(100deg);
+}
+</style>

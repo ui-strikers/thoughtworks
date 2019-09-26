@@ -1,0 +1,144 @@
+﻿.chart-second {
+	display: table;
+	table-layout: fixed;
+    width: 70%;
+	max-width: 700px;
+	height: 200px;
+	margin: 0 auto;
+	background-size: 100% 50px;
+	background-position: left top;
+}
+.chart-second li {
+	position: relative;
+	display: table-cell;
+	vertical-align: bottom;
+	height: 200px;
+	top: -32%;
+	border-bottom: 1px solid #22222261;
+}
+.chart-second li:nth-child(1) span {
+	height:5%;
+	width:36px;
+	display: block;
+	background: #001FFF;
+	-webkit-animation: draw 1s ease-in-out;
+}
+.chart-second li:nth-child(2) span {
+	height:70%;
+	width:36px;
+	display: block;
+	background: #001FFF;
+	-webkit-animation: draw 1s ease-in-out;
+}
+.chart-second li:nth-child(3) span {
+	height:50%;
+	width:36px;
+	display: block;
+	background: #001FFF;
+	-webkit-animation: draw 1s ease-in-out;
+}
+.chart-second li:nth-child(1) span:before {
+	position: absolute;
+    left: -13px;
+    right: 0;
+    top: 100%;
+    padding: 5px 0 0;
+    display: block;
+    text-align: center;
+    content: 'CURRENT';
+	font-size:12px;
+}
+.chart-second li:nth-child(2) span:before {
+	position: absolute;
+    left: -13px;
+    right: 0;
+    top: 100%;
+    padding: 5px 0 0;
+    display: block;
+    text-align: center;
+    content: 'LAPSED';
+	font-size:12px;
+}
+.chart-second li:nth-child(3) span:before {
+	position: absolute;
+    left: -13px;
+    right: 0;
+    top: 100%;
+    padding: 5px 0 0;
+    display: block;
+    text-align: center;
+    content: 'PROSPECT';
+	font-size:12px;
+}
+.chart-third {
+	display: table;
+	table-layout: fixed;
+	width: 70%;
+	max-width: 700px;
+	height: 200px;
+	margin: 0 auto;
+	background-size: 100% 50px;
+	background-position: left top;
+}
+.chart-third li {
+	position: relative;
+	display: table-cell;
+	vertical-align: bottom;
+	height: 200px;
+	top: -32%;
+	border-bottom: 1px solid #22222261;
+}
+.chart-third li:nth-child(1) span {
+	height:70%;
+	width:36px;
+	display: block;
+	background: #001FFF;
+	-webkit-animation: draw 1s ease-in-out;
+}
+.chart-third li:nth-child(2) span {
+	height:50%;
+	width:36px;
+	display: block;
+	background: #001FFF;
+	-webkit-animation: draw 1s ease-in-out;
+}
+.chart-third li:nth-child(3) span {
+	height:5%;
+	width:36px;
+	display: block;
+	background: #001FFF;
+	-webkit-animation: draw 1s ease-in-out;
+}
+.chart-third li:nth-child(1) span:before {
+	position: absolute;
+    left: -13px;
+    right: 0;
+    top: 100%;
+    padding: 5px 0 0;
+    display: block;
+    text-align: center;
+    content: 'CURRENT';
+	font-size:12px;
+}
+.chart-third li:nth-child(2) span:before {
+	position: absolute;
+    left: -13px;
+    right: 0;
+    top: 100%;
+    padding: 5px 0 0;
+    display: block;
+    text-align: center;
+    content: 'LAPSED';
+	font-size:12px;
+}
+.chart-third li:nth-child(3) span:before {
+	position: absolute;
+    left: -13px;
+    right: 0;
+    top: 100%;
+    padding: 5px 0 0;
+    display: block;
+    text-align: center;
+    content: 'PROSPECT';
+	font-size:12px;
+}
