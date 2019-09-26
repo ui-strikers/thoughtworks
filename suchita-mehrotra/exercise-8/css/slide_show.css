@@ -1,0 +1,17 @@
+ .container {
+ 	width : 70%;
+ 	background-color : #c8c8c8;
+ 	margin : 20px auto;
+ 	padding : 20px;
+ 	vertical-align : middle;
+ }
+ .btn{
+ 	background-color: #2471A3;
+ 	font-size:20px;
+ }
+ 
+ 
+ img{
+ 	width : 90%;
+ }
+

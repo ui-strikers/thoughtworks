@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ajax Demo</title>
+</head>
+<body>
+	<input type="button" id="load-val" value="Load Value" name="">
+	<section class="content">
+		
+	</section>
+</body>
+<script type="text/javascript">
+	var contentRegion = document.querySelectorAll('.content')[0];
+	var action = document.getElementById('load-val');
+	action.addEventListener('click',function() {
+		fetch('data/mobiles.json')
+	   	   .then(function(res) {
+			return res.json();
+     		   }).then(function(data) {
+			displayData(data);
+     		   }).catch(function(err) {
+			contentRegion.innerHTML = '<h2>Error</h2>';	
+		   });
+
+		console.log("Async Request sent to server!!!!");		
+	});
+
+	function createNode(nodeName) {
+		return document.createElement(nodeName);
+	}	
+
+	function append(parentNode,childNode) {
+		parentNode.appendChild(childNode);
+	}	
+
+	function displayData(mobiles) {
+		var table = createNode('table');
+		contentRegion.appendChild(table);
+		var tbody = createNode('tbody');
+		table.appendChild(tbody);
+		mobiles.forEach(function(mobile){
+			debugger;
+			var tr = createNode('tr');
+			append(tbody,tr);
+			for(var val in mobile){
+				debugger;
+				var td=createNode('td');
+				td.innerHTML=mobile[val];
+				tr.appendChild(td);
+			}
+				
+		});
+		
+	}
+
+</script>
+</html>

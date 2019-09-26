@@ -1,0 +1,35 @@
+body {
+  width: 100%;
+}
+
+.column {
+  float: left;
+  padding: 0 10px;
+}
+
+.row {
+  margin: 0px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.card1, .card2, .card3 {
+  box-shadow: 1px 4px 8.8px lightblue;
+  width: 250px;
+  height: 200px;
+  padding: 0 10px;
+  text-align: center;
+  background-color: lightblue;
+  border-radius: 10px;
+}
+
+.card1:hover, .card2:hover, .card3:hover {
+  -webkit-transform: rotate(240deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(240deg);
+}
