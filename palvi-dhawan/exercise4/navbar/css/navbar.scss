@@ -1,0 +1,52 @@
+$navbar-shadow : 2px 7px 11px #aba0a0;
+$navbar-border-radius:50px;
+$navbar-background:linear-gradient(to right, black 60%,grey );
+$white:#ffffff;
+
+.navbar{
+	background-image:$navbar-background;
+	border-radius: $navbar-border-radius;
+    box-shadow: $navbar-shadow;
+    
+    &__list{
+        list-style: none;
+		color:$white;
+		padding-top: 20px;
+        padding-bottom: 20px;
+            
+            &--item{
+                display: inline;
+                padding:20px 0px;
+
+                    &--link{
+                        margin:0 10px;
+			            font-size: 1.2em;
+			            color:$white;
+                    } 
+                    &--link:hover{
+                        color:#000000;
+                    }
+            }
+            &--item:hover{
+                background:$white;
+            } 
+            &--item:last-child{
+                	margin-right:10px;
+					padding:0px;
+					float: right;
+            }   
+            &--item:hover:last-child{
+                background: none;
+            }  
+            &--item:last-child input{
+                border-radius: 20px;
+			    border: 2px solid #333;
+			    height: 40px;
+			    padding: 15px;
+			    margin-right:10px;
+			    position: relative;
+			    bottom:8px;
+			    outline: none;
+            }          
+    }
+}

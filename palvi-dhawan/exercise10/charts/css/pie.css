@@ -1,0 +1,18 @@
+
+canvas.pie.chart {
+    margin: 0 auto;
+    display: flex;
+}
+.pie{
+    width:180px;
+    height:180px;
+    border-radius:50%; 
+    -webkit-box-shadow: 0 2px 2px 0 rgba(122,122,122,0.5);
+    -moz-box-shadow: 0 2px 2px 0 rgba(122,122,122,0.5);
+    -ms-box-shadow: 0 2px 2px 0 rgba(122,122,122,0.5);
+    box-shadow: 0 2px 2px 0 rgba(122,122,122,0.5);
+    margin:0 auto;
+}
+.pie.chart{
+    background: conic-gradient(#0074d9 15%, #8e0905 0);
+}

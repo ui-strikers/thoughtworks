@@ -1,0 +1,20 @@
+.wrapper .main-header{
+    border: 1px solid  #e4e4e4;
+    -webkit-border: 1px solid  #e4e4e4;
+    -moz-border: 1px solid  #e4e4e4;
+    -ms-border: 1px solid  #e4e4e4;
+    margin: 2px 0;
+    padding: 10px 40px;
+    -webkit-box-shadow: inset 25px 0px 25px -20px rgba(63, 87, 135), inset -25px 0px 25px -20px rgba(63, 87, 135);
+    -moz-box-shadow: inset 25px 0px 25px -20px rgba(63, 87, 135), inset -25px 0px 25px -20px rgba(63, 87, 135);
+    box-shadow: inset 25px 0px 25px -20px rgba(63, 87, 135), inset -25px 0px 25px -20px rgba(63, 87, 135);
+}
+.main-header .sale-description {
+    font-size: 1em;
+    padding-bottom: 4px;
+    color:#ad2c28;
+    font-weight: 800;
+}
+.main-header .sale-count {
+    font-size: 1em;
+}
