@@ -1,0 +1,62 @@
+body {
+  font-family: calibri;
+  width: 90%;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #16a085;
+  line-height: 3em;
+  border-radius: 30px;
+}
+header h1 {
+  color: #fff;
+  text-align: center;
+}
+
+main .slides {
+  background: #eee;
+  border: 1px solid #ccc;
+  padding: 2em;
+  margin-bottom: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .slides img {
+  width: 80%;
+  object-fit: cover;
+  -webkit-transition: opacity 1s;
+  -moz-transition: opacity 1s;
+  -o-transition: opacity 1s;
+  transition: opacity 1s;
+}
+main .controls {
+  display: flex;
+  justify-content: space-between;
+}
+main .controls button {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5em 1.5em;
+  text-align: center;
+  border: 1px solid #eee;
+}
+main .controls .start-btn {
+  background: #009966;
+}
+main .controls .stop-btn {
+  background: #cc0000;
+}
+main .progress {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #344554;
+  margin: 2em 0;
+  padding: 1em;
+}
+main .progress .progress-bar {
+  padding: 1em;
+  width: 50%;
+}

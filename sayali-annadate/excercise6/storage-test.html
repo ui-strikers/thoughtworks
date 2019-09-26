@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Storage Test</title>
+
+    <script>
+function myFunction() 
+{
+  if(window.localStorage) 
+  {
+      var poll = localStorage.getItem("click");
+      
+      if(poll == "yes")
+      {
+          var name = localStorage.getItem("name");
+          var time = localStorage.getItem("time");
+          document.getElementById("result").innerHTML = "Already clicked" + name + "at time" + time;
+      }
+      else 
+      {
+          var politician = document.getElementsByClassName("poll")[0].value;
+          alert(politician);
+          localStorage.setItem("name", politician);
+          localStorage.setItem("time", "10:30");
+          localStorage.setItem("click", "yes");
+      }
+  }
+    else {
+        
+    }
+  
+}
+</script>
+
+
+</head>
+
+<body>
+
+
+
+
+<main>
+	<p>Who is the most corrupt politician?</p>
+	<input type="radio" name="poll" class="poll" value="Politician 1"/> Politician 1<br>
+	<input type="radio" name="poll" class="poll" value="Politician 2" /> Politician 2<br>
+	<input type="radio" name="poll" class="poll" value="Politician 3"/> Politician 3<br>
+	<input type="radio" name="poll" class="poll" value="Politician 4"/> Politician 4<br><br>
+	<input type="submit" value="SEND"  onClick ="myFunction()">
+	<output id="result"></output>
+</main>
+
+</body>
+</html>

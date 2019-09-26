@@ -1,0 +1,66 @@
+<html>
+
+<head>
+<title>EmployeeI</title>
+
+<script src = "js/employee.js"></script>
+
+<style>
+section {
+    width: 50%;
+    background: darkred;
+    color: #fff;
+    padding: 15px;
+    float: left;
+    box-shadow: 0px 0px 8px #f0ff04;
+}
+
+div#info {
+    float: left;
+    line-height: 1.5;
+}
+
+div#salary {
+    float: right;
+    width: 50%;
+    line-height: 1.5;
+}
+
+div#buttons {
+    width: 100%;
+    float: left;
+    margin: 15px 0 0;
+}
+
+body {
+    background: black;
+}
+
+section:hover {
+    transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+    transition: 1.5s;
+}
+</style>
+</head>
+
+<body onLoad = "employeeInfo()">
+<section>
+<div id ="info"></div>
+<div id ="salary"></div>
+<div id = "buttons">
+<button id = "updateSalary" onClick = "updateSalary()"> Update Salary </button>
+<button id = "updateEmail" onClick = "updateEmail()"> Update Email </button>
+<button id = "joinProject"> Change department </button>
+<button id = "applyLeave" onClick > Apply Leave </button>
+</div>
+</section>
+</body>
+
+
+
+
+
+
+
+</html>
