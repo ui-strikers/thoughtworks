@@ -1,0 +1,29 @@
+.profile{
+    margin: 50px auto;
+    text-align: center;
+    
+    img{
+        box-shadow: 1px 2px 3px 5px #7c8d969c;
+        border: 10px inset #839683;
+        background-image: linear-gradient(115deg,#4fcf70,#fad648,#8657b3,#12bcfe,#44ce7b);
+        padding: 10px;
+    }
+    &:hover{
+        transition: all 2s ease-in-out;
+        scale: 0.5;
+        img{
+            &:hover{
+            transition: all 2s ease-in;
+            transition: 2s ease-out; 
+            scale: 0.5;
+            transform: scale(1.05);
+            }
+        }
+    }
+    }
+    .text-gradient{
+        background: -webkit-linear-gradient(45deg, #82120a, #FF9800, #025400e3 80%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-shadow: 0px 4px 4px #69757b66;
+    }

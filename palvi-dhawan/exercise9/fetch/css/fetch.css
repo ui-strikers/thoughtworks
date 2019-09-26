@@ -1,0 +1,19 @@
+section.container {
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+}
+table.apiResult {
+    margin: 2% auto;
+}
+th.dataHead {
+    background: #e3e3e3;
+    width: 19%;
+    font-size: 1em;
+    text-transform: capitalize;
+    padding: 2px 0px;
+
+}
+tr.dataRow:nth-child(odd) {
+    background: #f5f5f5;
+}
