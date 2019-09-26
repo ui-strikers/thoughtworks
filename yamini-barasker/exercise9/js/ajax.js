@@ -1,41 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title></title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
-</head>
-<body>
-	<header></header>
-	<section class="container">
-		<aside class="left-sidebar">
-			<header class="head">
-				<h2>Movies Browser</h2>
-			</header>
-			<div class="row">
-				<!-- <div class="column">
-					<p>Movies name</p>
-				</div>
-				<div class="column"></div>
-				<div class="column"></div>
-				<div class="column"></div> -->
-			</div>
-
-		</aside>
-		<aside class="right-sidebar"></aside>
-		
-		
-		
-	</section>
-		
-	<section class='content-region'>
-	</section>
-
-</body>
-<script>
-	// var container = document.querySelectorAll('.container')[0];
-	// var leftSidebar = document.querySelectorAll('.left-sidebar')[0];
-	// var col = document.querySelectorAll('.column');
 
 	function fetchData() {
 	
@@ -98,6 +60,3 @@
 }
 
 
-
-</script>
-</html>
