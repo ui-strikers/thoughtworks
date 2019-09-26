@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My first Javascript Assignment for function Currying</title>
+</head>
+
+<script type="text/javascript">
+	function assignValue(){
+
+		console.log("i am fine working with us");
+		return function(){
+
+			var fourval = Math.floor(1000 + Math.random() * 9000);
+			console.log(fourval);
+			document.write("Generating four Unique Value "+fourval+" Please Check");
+			document.write("<br/>");
+
+
+
+			return function(){
+
+				var fourval = Math.floor(1000 + Math.random() * 900000);
+				console.log(fourval);
+				document.write("Generating Six Unique Value "+fourval+" Please Check");
+				document.write("<br/>");
+
+
+				   return function(){
+
+					       var fourval = Math.floor(1000 + Math.random() * 90000000);
+					       console.log(fourval);
+					       document.write("Generating Eight Unique Value "+fourval+" Please Check");
+					       document.write("<br/>");
+
+					             return function(){
+
+						               var fourval = Math.floor(1000 + Math.random() * 9000000000);
+						               console.log(fourval);
+						               document.write("Generating Ten Unique Value "+fourval+" Please Check");
+						               document.write("<br/>");
+
+
+                                           return function(x){
+
+							                var fourval = Math.floor(Math.random() * Math.pow(10,x) + Math.pow(10,x).toString().subString(1));
+						                    console.log(fourval);
+							                document.write("Generating Range Unique Value "+fourval+" Please Check");
+							                 document.write("<br/>");
+						            
+						            }
+					        }
+
+
+				    }
+
+
+
+			    }
+
+
+
+
+		}
+
+
+
+	}
+
+
+	assignValue()()()()()(5);
+</script>
+<body>
+	
+</body>
+</html>
