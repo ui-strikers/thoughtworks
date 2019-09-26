@@ -1,0 +1,14 @@
+body{margin:0;padding:0;}
+
+.profile { margin: 50px auto; text-align: center; height: 100vh}
+
+.profile img { -webkit-box-shadow: 1px 2px 3px 5px #7c8d969c; box-shadow: 1px 2px 3px 5px #7c8d969c;  width:100%;}
+#slider { width: 100%; }
+
+#slider figure { margin: 0px; }
+
+#slider #button-start { left: 40%; }
+
+#slider #button-stop { right: 40%; }
+
+/*# sourceMappingURL=main.css.map */

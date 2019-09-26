@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#slider {
+  width: 100%;
+}
+#slider figure {
+  margin: 0;
+}
+#slider figure img {
+  width: 100%;
+  object-fit: cover;
+  height: 100vh;
+  transition: 0.2s;
+  opacity: 1;
+  transition: opacity 1s ease;
+}
+#slider figure .image-fade {
+  opacity: 1;
+  transition: 0.2s;
+}
+#slider figure figcaption {
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%);
+  left: 50%;
+  font-size: 40px;
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+#slider button {
+  position: absolute;
+  bottom: 10%;
+  padding: 12px 20px 12px 20px;
+  font-size: 18px;
+  width: 110px;
+  font-weight: bold;
+  transition: 0.3s;
+  text-transform: uppercase;
+  border: 1px solid #168ecf;
+  background: #168ecf;
+  color: #fff;
+}
+#slider #button-start {
+  left: 40%;
+}
+#slider #button-start:hover {
+  background: green;
+  transition: 0.3s;
+  border: 1px solid green;
+}
+#slider #button-stop {
+  right: 40%;
+}
+#slider #button-stop:hover {
+  transition: 0.3s;
+  background: red;
+  border: 1px solid red;
+}
