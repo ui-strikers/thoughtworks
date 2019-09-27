@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>ThoughtWorks Super Sale Count</title>
+        <link rel="stylesheet" href="css/common.css">
+    </head>
+    <body>
+        <main class="wrapper">
+            <header class="main-header" role="header-section">
+                <h2 class="sale-description">Description : Walmart Super Sale Count Request</h2>
+                <h2 class="sale-count">Count : 37,784,476</h2>
+            </header>
+            <section class="main-content" role="graphs-section">
+                <section class="top-charts">
+                    <article class="cards" role="LOB-Suppressed-Population">
+                        <header class="card-header">
+                            <h3>LOB Suppressed Population</h3>
+                        </header>
+                        <section class="card-body">
+                            <canvas class="pie chart"></canvas>
+                        </section>    
+                        <section class="card-footer">
+                            <span class="card-footer-label">CostoCons True Earning 6,978,148</span>
+                        </section>
+                    </article>
+                    <article class="cards" role="Customer-Matrix">
+                        <header class="card-header">
+                            <h3>Customer Mix</h3>
+                        </header>
+                        <section class="card-body">
+                            <canvas class="customerMix" width="250" height="180" style="border-bottom: 1px solid #4e606f;"></canvas>
+                        </section>    
+                    </article>
+                    <article class="cards" role="Responder-rate">
+                        <header class="card-header">
+                            <h3>Responder Rate</h3>
+                        </header>
+                        <section class="card-body">
+                            <canvas class="ResponderRate" width="250" height="180" style="border-bottom: 1px solid #4e606f;"></canvas>
+                        </section>    
+                    </article>                                        
+                </section>
+                <section class="bottom-charts">
+                    <article></article>
+                    <article></article>
+                </section>
+            </section>
+            <footer class="main-footer" role="footer-section">
+                <ul class="footer-nav">
+                    <li class="footer-item">
+                        <a class="footer-item-link" href="JavaScript:void(0);">
+                            Card Product
+                        </a>
+                    </li>
+                    <li class="footer-item">
+                        <a class="footer-item-link" href="JavaScript:void(0);">
+                            Channels
+                        </a>
+                    </li>
+                    <li class="footer-item">
+                        <a class="footer-item-link" href="JavaScript:void(0);">
+                            Interest
+                        </a>
+                    </li>
+                    <li class="footer-item">
+                        <a class="footer-item-link" href="JavaScript:void(0);">
+                            Demographics
+                        </a>
+                    </li>
+                    <li class="footer-item">
+                        <a class="footer-item-link" href="JavaScript:void(0);">
+                            Type of Customer
+                        </a>
+                    </li>
+                    <li class="footer-item">
+                        <a class="footer-item-link" href="JavaScript:void(0);">
+                            Spending Behavior
+                        </a>
+                    </li>
+                    <li class="footer-item">
+                        <a class="footer-item-link" href="JavaScript:void(0);">
+                            Firmographic
+                        </a>
+                    </li>
+                    <li class="footer-item">
+                        <a class="footer-item-link" href="JavaScript:void(0);">
+                            CM Geography
+                        </a>
+                    </li>
+                    <li class="footer-item">
+                        <a class="footer-item-link" href="JavaScript:void(0);">
+                            Applied Filters
+                        </a>
+                    </li>
+                    <li class="footer-item">
+                        <a class="footer-item-link" href="JavaScript:void(0);">
+                            Create Segment
+                        </a>
+                    </li>              
+                </ul>
+            </footer>
+            <!--Popup Window-->
+            <section class="popup">
+                <header class="popup-header">
+                    <h3>Enter the Segment Description</h3>
+                </header>    
+                <form action="#" method="GET">
+                    <label for="segment-description"></label>
+                    <input type="text" name="segment-description" id="segment-description" class="input-segment" required aria-required="true" title="segment-description"/>
+                    <section class="button-group">
+                        <button type="button" class="button-item save">Save</button>
+                        <button type="button" class="button-item cancel">Cancel</button>
+                    </section>  
+                </form>
+            </section>
+        </main>
+        <script src="js/barChart.js"></script>
+        <script src="js/dom.js"></script>
+        <script src="js/events.js"></script>
+        <script src="js/popup.js"></script>
+    </body>
+</html>

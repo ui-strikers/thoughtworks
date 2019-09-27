@@ -1,0 +1,85 @@
+@import 'header.css';
+@import 'responsive.css';
+@import 'bargraph.css';
+@import 'footer.css';
+
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    width: 80%;
+    margin: 3em auto;
+}
+
+.text-right {
+    text-align: right;
+}
+
+article{
+    width: 100%;
+    padding: 20px 10px;
+    background: #6395dc;
+    margin: 3px 0;
+}
+
+article section {
+    background: #fff;
+    box-shadow: 0px 0px 18px 10px #fff;
+    width: 95%;
+    margin: 0 auto;
+    padding: 0px;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+article .column:first-child{
+    padding: 0px 64px;
+    flex: 32%;
+}
+article .column {
+    flex: 50%;
+    flex-flow: column;
+    padding: 0 10px 15px;
+}
+
+article .column p {
+    font-weight: bold;
+    margin-bottom: 100px;
+    text-transform: capitalize;
+}
+
+article ul {
+    margin: 10px 0;
+    padding: 0;
+    list-style-type: none;
+    width: 60%;
+}
+
+article ul li {
+    line-height: 1.8em;
+    padding: 2px 15px;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+article ul li:first-child {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    background: #6395dc !important;
+}
+
+article ul li span {
+    margin: 0 20px 0 10px;
+}
+
+article ul li:nth-child(even) {
+    background: #dddddd;
+}
+
+article ul li:nth-child(odd) {
+    background: aliceblue;
+}

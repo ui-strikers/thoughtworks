@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Flexbox</title>
+        <link rel="stylesheet" href="css/slider.css">
+    </head>
+    <body>
+        <section class='slide-show'>
+        <div class='row'>
+            <div class='column'>	
+                <figure class='slide'>
+                    <h3 class='slide-header'></h3>
+                    <img class='slide-image' src='images/slide8.jpg'  />
+                    <figcaption class='slide-into'></figcaption>
+                </figure>
+            </div>
+        </div>
+        <div class='row'>
+            <div class='column controls'>	
+                <input class='btn btn-start' type='button' value='Start' />
+                <input class='btn btn-stop' type='button' value='Stop' />
+            </div>
+        </div>
+        <div class='row'>
+            <div class='column gallery-progress'>	
+                <progress value=0 min=0 max=100 class='progress-bar'></progress>
+            </div>
+        </div>
+    </section>
+    <script src="js/slider.js"></script>
+    </body>
+</html>

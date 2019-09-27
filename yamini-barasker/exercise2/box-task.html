@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		.container{
+			width: 90%;
+			border: 3px solid #ccc;
+			margin: 0 auto;
+			padding: 30px 0;
+		}
+		.row{
+			width: 90%;
+			height: 100px;
+			/*border: 1px solid #000;*/
+			margin: 10px auto;
+		}
+		.box{
+			height: 100%;
+			border: 1px solid deepskyblue;
+			background: lightseagreen;
+			display: inline-table;
+		    color: #fff;
+		    text-align: center;
+		    margin: 5px 1px;
+		    padding-top: 33px;
+		}
+		#row1 .box{
+			width: 49.4%;
+		}
+		#row2 .box{
+			width: 32.7%;
+		}
+        @media screen and (max-width: 1200px){
+			#row1 .box {
+			    width: 48.4%;
+			}	
+			#row2 .box {
+			    width: 31.9%;
+			}
+		}
+		@media screen and (max-width: 800px){
+			#row1 .box {
+			    width: 48.4%;
+			}	
+			#row2 .box {
+			    width: 31.9%;
+			}
+		}
+		@media screen and (max-width: 500px){
+			#row1 .box {
+			    width: 90%;
+			}	
+			#row2 .box {
+			    width: 90%;
+			}
+			.container{
+			height: 400px;
+			
+		 }
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h2>Display inline-table property</h2>
+	</header>
+	<section>
+		<div class="container">
+			<div id="row1" class="row">
+				<div class="box">Left Box</div>
+				<div class="box">Right Box</div>
+			</div>
+			<div id="row2" class="row">
+				<div class="box">Left Box</div>
+				<div class="box">Middle Box</div>
+				<div class="box">Right Box</div>
+			</div>
+		</div>
+	</section>
+
+</body>
+</html>

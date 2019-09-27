@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Storage Demo</title>
+	</head>
+	<body>
+		<section>
+			<label for='currupt'>Who is the most currupt politician ?</label> <br />
+			<input type='radio' name='currupt' value='politician' /> A <br />
+			<input type='radio' name='currupt' value='politician' /> B <br />
+			<input type='radio' name='currupt' value='politician' /> C <br />
+			<input type='radio' name='currupt' value='politician' /> D 
+		</section>
+
+		<output id='result'></output>
+
+		<script>
+			var result = document.getElementById('result');
+			if(window.localStorage){
+
+				if(localStorage.getItem("CURRUPT") == undefined){
+			        localStorage.setItem("CURRUPT","A");
+				}
+			 else {
+				var data = localStorage.getItem("CURRUPT");
+				result.innerHTML = 'You already selected ' + data;
+				
+				} 
+			}
+			else{
+				result.innerHTML = 'browser does not supported';
+			}
+		</script>
+
+
+	</body>
+</html>

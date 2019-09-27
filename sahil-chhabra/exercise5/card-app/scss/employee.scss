@@ -1,0 +1,29 @@
+
+main {
+	section {
+		#card-odd {
+			border: 1px solid #ccc;
+			width: 30%;
+			display: flex;
+			justify-content: space-around;
+			flex-wrap: wrap;
+			background-color:aqua;
+			float:left;
+			margin-right:10px;
+		}
+		#card-even {
+			border: 1px solid #ccc;
+			width: 30%;
+			display: flex;
+			justify-content: space-around;
+			flex-wrap: wrap;
+			background-color:bisque;
+		}
+
+		p {
+			width: 100%;
+			text-align: center;
+		}
+	}
+
+}

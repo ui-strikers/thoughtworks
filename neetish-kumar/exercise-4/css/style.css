@@ -1,0 +1,37 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  margin: 0 auto;
+}
+
+h2 {
+  background: green;
+  color: #fff;
+  padding: 100px;
+  margin: 0px;
+}
+
+h2:nth-of-type(2) {
+  background: red;
+}
+
+h2:nth-of-type(3) {
+  background: brown;
+}
+
+h2:nth-of-type(4) {
+  background: blueviolet;
+}
+
+@media (min-width: 768px) {
+  h2 {
+    width: 50%;
+    float: left;
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=style.css.map */

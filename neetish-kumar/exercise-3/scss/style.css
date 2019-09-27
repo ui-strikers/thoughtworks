@@ -1,0 +1,35 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #555;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.col-s-12 {
+  width: 100%;
+  float: left;
+}
+
+@media (min-width: 768px) {
+  .col-m-6 {
+    width: 50%;
+  }
+}
+
+@media (min-width: 992px) {
+  .col-x-3 {
+    width: 25%;
+    float: left;
+    padding: 50px;
+    -webkit-box-shadow: 0px 0px 0px 7px white;
+            box-shadow: 0px 0px 0px 7px white;
+  }
+}
+/*# sourceMappingURL=style.css.map */

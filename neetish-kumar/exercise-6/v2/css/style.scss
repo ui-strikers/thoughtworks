@@ -1,0 +1,36 @@
+//===================================================================================
+//******************** Neetish Kumar SCSS *******************************************
+//===================================================================================
+//
+//--------------------------Table Of Content ----------------------------------------
+//
+
+// 1. Colors
+// 2. Typography
+// 3. Buttons
+// 4. DropDown
+// 5. Forms
+// 6. Gallery
+// 7. Tables
+$colors: (
+  primary: #005dff,
+  accent: #fff6bb
+);
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
+  margin: 0;
+  .bg {
+    clip-path: polygon(0 0, 100% 0%, 37% 100%, 0% 100%);
+    background-color: map-get($colors, primary);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+  }
+}

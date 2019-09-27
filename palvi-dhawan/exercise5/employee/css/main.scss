@@ -1,0 +1,34 @@
+$container-width:100%;
+$total-column:4;
+$margin-column : 2%;
+$column-shadow : 3px 5px 9px #333;
+$column-border : 1px solid #bbb8b8;
+$text-bold:bold;
+
+
+.container{
+	width:$container-width;
+	margin:0 auto;
+}
+
+.column{
+	width: $container-width/$total-column - $margin-column;
+	border: $column-border;
+	float:left;
+    box-shadow: $column-shadow;
+
+}
+
+.column{
+	.card{
+		ul{
+			list-style: none;
+			li{
+				span{
+					font-weight: $text-bold;
+				}
+			}	
+		}
+	}
+}
+

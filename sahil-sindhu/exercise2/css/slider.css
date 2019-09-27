@@ -1,0 +1,117 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.container .heading {
+  height: 10vh;
+  background: #9d9e9e;
+}
+.container .heading h1 {
+  font-size: 26px;
+  letter-spacing: 2px;
+  font-weight: 500;
+  color: white;
+  padding-top: 1%;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.slider {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 90vh;
+  transition: all 0.8s;
+}
+.slider .slider__slide {
+  width: 100%;
+  min-width: 100%;
+  height: 100%;
+  background-image: url("../images/camera-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.slider section:nth-child(2) {
+  background-image: url("../images/camera-2.jpg");
+}
+.slider section:nth-child(3) {
+  background-image: url("../images/camera-3.jpg");
+}
+.slider section:nth-child(4) {
+  background-image: url("../images/camera-4.jpg");
+}
+.slider section:nth-child(5) {
+  background-image: url("../images/camera-5.jpg");
+}
+.slider section:nth-child(6) {
+  background-image: url("../images/camera-6.jpg");
+}
+.slider section:nth-child(7) {
+  background-image: url("../images/camera-7.jpg");
+}
+.slider section:nth-child(8) {
+  background-image: url("../images/camera-8.jpg");
+}
+.slider section:nth-child(9) {
+  background-image: url("../images/camera-9.jpg");
+}
+.slider section:nth-child(10) {
+  background-image: url("../images/camera-10.jpg");
+}
+
+.slider__button > button {
+  position: absolute;
+  padding: 15px 15px 15px 20px;
+  border-radius: 100%;
+  outline: none;
+  border: navajowhite;
+  background: transparent;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 0.5s;
+}
+.slider__button > button:hover {
+  background: rgba(222, 222, 222, 0.6);
+}
+.slider__button > button:active {
+  top: 52%;
+  padding: 15px 15px 12px 13px;
+}
+.slider__button > .slider__button--disabled:hover {
+  background: transparent;
+}
+.slider__button > .slider__button--disabled:active {
+  top: 50%;
+  padding: 15px 15px 15px 15px;
+}
+.slider__button .slider__button--left {
+  left: 50px;
+  padding: 15px 20px 15px 15px;
+}
+.slider__button .slider__button--right {
+  right: 50px;
+}
+.slider__button span {
+  border-bottom: 15px solid transparent;
+  border-top: 15px solid transparent;
+  border-left: 15px solid;
+  display: inline-block;
+  height: 0;
+  opacity: 0.3;
+  vertical-align: top;
+  width: 0;
+}
+.slider__button .slider__button--left span {
+  border-left: none;
+  border-right: 15px solid;
+}
+
+/*# sourceMappingURL=slider.css.map */

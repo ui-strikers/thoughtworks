@@ -1,0 +1,103 @@
+@import 'common.css';
+@import 'chart.css';
+.header {
+    border: 1px solid #818586;
+    -moz-box-shadow:    inset 25px 0px 25px -20px #818586, inset -25px 0px 25px -20px #818586;
+    -webkit-box-shadow: inset 25px 0px 25px -20px #818586, inset -25px 0px 25px -20px #818586;
+    box-shadow:         inset 25px 0px 25px -20px #818586, inset -25px 0px 25px -20px #818586;
+    width: calc(1000px - 60px);
+    padding: 10px 30px;
+    margin: 1px auto;
+}
+.header-title {
+    font-size: 20px;
+    color: brown;
+}
+.header-subtitle {
+    font-size: 18px;
+    margin-top: 5px;
+}
+.container {
+    width: calc(1000px - 60px);
+    padding: 30px;
+    margin: 0 auto;
+    -moz-box-shadow:    inset 0 0 30px 5px #818586;
+    -webkit-box-shadow: inset 0 0 30px 5px #818586;
+    box-shadow:         inset 0 0 30px 5px #818586;
+    border: 1px solid #818586;
+}
+.row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.column {
+    flex: 30%;
+    margin: 10px;
+    box-shadow: -4px 5px 5px grey;
+    border: 2px solid #ccc;
+    border-radius: 40px;
+    height: 200px;  
+    text-align: center;
+    padding: 10px 0;
+}
+.column h2 {
+    text-align: center;
+    font-size: 18px;
+}
+.btn {
+    background-image: linear-gradient(to right, #636679, #fff, #636679);
+    border-style: none;
+    border: 1px solid #636679;
+    border-radius: 23px;
+    padding: 10px 15px;
+    width: 160px;
+    cursor: pointer;
+}
+.footer {
+    border: 1px solid #818586;
+    -moz-box-shadow:    inset 25px 0px 25px -20px #818586, inset -25px 0px 25px -20px #818586;
+    -webkit-box-shadow: inset 25px 0px 25px -20px #818586, inset -25px 0px 25px -20px #818586;
+    box-shadow:         inset 25px 0px 25px -20px #818586, inset -25px 0px 25px -20px #818586;
+    width: calc(1000px - 60px);
+    padding: 20px 30px;
+    margin: 1px auto;
+    justify-content: space-between;
+}
+.mt-10 {
+    margin-top: 10px;
+}
+
+/* css for popup */
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+}
+.modal-content {
+    background-image: linear-gradient(to right, gray, #fff, gray);
+    margin: 15% auto; 
+    padding: 20px;
+    width: 60%; 
+    box-shadow: 10px 8px 11px grey
+}
+.modal-input {
+    width: 100%;
+}
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}

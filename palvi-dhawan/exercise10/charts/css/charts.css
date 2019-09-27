@@ -1,0 +1,73 @@
+*{
+    padding:0;
+    margin:0;
+}
+body {
+    width: 1000px;
+    margin: 2% auto;
+    font-family: sans-serif;
+}
+.wrapper{
+    display: flex;
+    flex-flow: column nowrap;
+}
+.wrapper .main-header{
+    border: 1px solid  #e4e4e4;
+    margin: 2px 0;
+    padding: 10px 40px;
+    -webkit-box-shadow: inset 25px 0px 25px -20px rgba(63, 87, 135), inset -25px 0px 25px -20px rgba(63, 87, 135);
+    -moz-box-shadow: inset 25px 0px 25px -20px rgba(63, 87, 135), inset -25px 0px 25px -20px rgba(63, 87, 135);
+    box-shadow: inset 25px 0px 25px -20px rgba(63, 87, 135), inset -25px 0px 25px -20px rgba(63, 87, 135);
+}
+.main-header .sale-description {
+    font-size: 1em;
+    padding-bottom: 4px;
+    color:#ad2c28;
+    font-weight: 800;
+}
+.main-header .sale-count {
+    font-size: 1em;
+}
+.wrapper .main-content{
+    border: 1px solid  #e4e4e4; 
+    margin:2px 0; 
+    padding: 10px 40px;
+    height: 400px;
+    box-shadow: inset 0 0 35px rgba(63, 87, 135); 
+    -webkit-box-shadow: inset 0 0 35px rgba(63, 87, 135);
+    -moz-box-shadow: inset 0 0 35px rgba(63, 87, 135);
+    -ms-box-shadow: inset 0 0 35px rgba(63, 87, 135);
+}
+.wrapper .main-footer{
+    border: 1px solid  #e4e4e4;
+    margin:2px 0;
+    padding: 10px 40px;
+    -webkit-box-shadow: inset 25px 0px 25px -20px rgba(63, 87, 135), inset -25px 0px 25px -20px rgba(63, 87, 135);
+    -moz-box-shadow: inset 25px 0px 25px -20px rgba(63, 87, 135), inset -25px 0px 25px -20px rgba(63, 87, 135);
+    box-shadow: inset 25px 0px 25px -20px rgba(63, 87, 135), inset -25px 0px 25px -20px rgba(63, 87, 135);
+}
+.main-footer .footer-nav {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    text-align: center;
+}
+.main-footer .footer-nav .footer-item {
+    border: 1px solid #666666;
+    -webkit-border: 1px solid #666666;
+    -moz-border: 1px solid #666666;
+    -ms-border: 1px solid #666666;
+    border-radius: 50px;
+    width: 17%;
+    padding: 7px 0px;
+    margin: 4px 4px;
+    -webkit-box-shadow: inset 35px 8px 30px -16px rgba(63, 87, 135), inset -30px -1px 36px -10px rgba(63, 87, 135);
+    -moz-box-shadow: inset 35px 8px 30px -16px rgba(63, 87, 135), inset -30px -1px 36px -10px rgba(63, 87, 135);
+    box-shadow: inset 35px 8px 30px -16px rgba(63, 87, 135), inset -30px -1px 36px -10px rgba(63, 87, 135);
+}
+.main-footer .footer-nav .footer-item .footer-item-link{
+    font-size: 0.7em;
+    letter-spacing: 0.2px;
+    font-weight: 700;
+}

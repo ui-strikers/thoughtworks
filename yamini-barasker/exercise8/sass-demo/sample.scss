@@ -1,0 +1,28 @@
+$page-width:90%;
+$color: #ffcc00;
+$bg-color: gray;
+$redius: 1px solid red;
+$margin:2%;
+$padding:5px;
+$column:6;
+$column-height:100px;
+$coiumn-bg: pink;
+
+.container{
+	width:$page-width;
+	margin: $margin;
+	$padding:5px;
+}
+
+.row{
+	width: $page-width;
+	margin: $margin;
+}
+
+.column{
+	width: ($page-width/$column) - ($margin * 2);
+	height:$column-height;
+	background-color:$coiumn-bg;
+	float:left;
+	margin:$margin;
+}

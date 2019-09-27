@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="description" content="super cell count for every indivdual and company ">
+	<meta name="keywords" content="super cell count,seno,thoughtworks">
+	<title>ThoughtWorks Super Sell Count</title>
+	<link rel="stylesheet" href="./assets/css/common.css">
+	<link rel="stylesheet" href="./assets/css/style.css">
+
+
+</head>
+
+<body>
+	<main class="container">
+
+		<!--		left and right outline start-->
+		<span></span>
+		<!--		left and right outline end-->
+
+		<!--		header start -->
+		<header>
+			<h1 class="text-center text-primary">ThoughtWorks Super Sell Count</h1>
+		</header>
+		<!--		header end -->
+
+		<!--		validate seno start -->
+		<article class="article-box">
+			<form action="javascript:void(0);" method="POST">
+				<section class="form-row">
+					<label for="map">Enter Map or cap seno</label><input type="text" id="map" name="map">
+				</section>
+				<section class="form-row">
+					<label for="senoList">Upload seno list</label><input type="text" id="senoList">
+					<div class="upload-btn-wrapper">
+						<label for="chooseFile"></label> <button class="btn">Browse</button><input type="file">
+					</div>
+				</section>
+				<section class="form-row">
+					<button class="btn-default" data-message="This is for validate seno list button">Validate</button>
+					<button class="btn-default" data-message="This is for reset seno list button"> Reset</button>
+				</section>
+			</form>
+		</article>
+		<!--		validate seno end -->
+
+		<!--		state,city filter start -->
+		<article class="article-box">
+			<form action="javascript" method="POST">
+				<section class="form-row">
+					<label for="map">Filter By </label>
+					<select class="select-box select-box-first">
+					</select>
+					<label for="citylist">=</label>
+					<select class="select-box formSelect select-box-second">
+					</select>
+				</section>
+			</form>
+		</article>
+		<!--		state,city filter end -->
+
+		<!--		data table start  -->
+		<article class="section ">
+
+			<!--			data table row start-->
+			<div class="row">
+								<!--	data table left table data start-->
+
+				<section class="col-5 seno-avilable">
+					<header class="table-heading">
+						<h3>Available Seno</h3>
+					</header>
+					<div class="overflow-x-auto">
+						<table class="table">
+							<thead>
+								<tr>
+									<th></th>
+									<th>Seno</th>
+									<th>Description</th>
+									<th>Population</th>
+								</tr>
+							</thead>
+							<tbody>
+
+							</tbody>
+						</table>
+					</div>
+				</section>
+								<!--	data table left table data end-->
+
+			
+				<section class="col-2 col-shrink-4">
+					<div class="button-box">
+						<button class="btn btn-next">>></button>
+						<button class="btn btn-prev">
+							<< </button> </div> </section>
+
+								<!--	data table right table data start-->
+				<section class="col-5 seno-excluded">
+									<header class="table-heading">
+										<h3>Exceluded Seno</h3>
+									</header>
+									<div class="overflow-x-auto">
+										<table class="table">
+											<thead>
+												<tr>
+													<th></th>
+													<th>Seno</th>
+													<th>Description</th>
+													<th>Population</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td><input type="checkbox"></td>
+													<td>Memo</td>
+													<td>Thaught Works Seno</td>
+													<td>75485</td>
+												</tr>
+												<tr>
+													<td><input type="checkbox"></td>
+													<td>Memo</td>
+													<td>Thaught Works Seno</td>
+													<td>75485</td>
+												</tr>
+												<tr>
+													<td><input type="checkbox"></td>
+													<td>Memo</td>
+													<td>Thaught Works Seno</td>
+													<td>75485</td>
+												</tr>
+												<tr>
+													<td><input type="checkbox"></td>
+													<td>Memo</td>
+													<td>Thaught Works Seno</td>
+													<td>75485</td>
+												</tr>
+												<tr>
+													<td><input type="checkbox"></td>
+													<td>Memo</td>
+													<td>Thaught Works Seno</td>
+													<td>75485</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</section>
+								<!-- data table right table data end-->
+
+			</div>
+					<!--data table row end-->
+
+					<!--generate report start-->
+			<article class="row">
+						<section class="generate-seno">
+							<form action="javascript" method="POST">
+								<input type="radio" id="customCount">
+								<label for="customCount">Coustom Count</label>
+								<button class="btn" data-message="This is for generate counnt button">Generate Count</button>
+							</form>
+						</section>
+			</article>
+					<!--generate report end-->
+
+		</article>
+		<!--		data table end  -->
+
+	</main>
+	<script src="./assets/js/data.js"></script>
+	<script src="./assets/js/dom.js"></script>
+	<script src="./assets/js/senoLocal.js"></script>
+	<script src="./assets/js/seno.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+body{
+	width:1000px;
+	margin:0px auto;
+}
+header{
+	border:1px solid #154360;
+	display: flex;
+	flex-wrap: wrap;
+}
+.pull-left{
+	float:left;
+}
+.pull-right{
+	float:right;
+}
+h3{
+	text-align: center;
+}
+h4{
+	margin:0px 10px 10px 30px;
+}
+footer{
+	border:1px solid #154360;
+}
+.clearfix{
+	clear:both;
+}
