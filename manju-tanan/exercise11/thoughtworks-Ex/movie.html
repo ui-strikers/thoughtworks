@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>
+        Thought Works Movie List Page
+    </title>
+    <meta charset="UTF-8">
+    <meta content="movie related information" name="description">
+    <meta content="movie ,Thoughtworks,page" name="keywords">
+    <meta content="Manju Tanan" name="author">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link rel="stylesheet" href="css/movie.css"/>
+</head>
+<body>
+<section>
+    <article class="main">
+      <header class="flex bg-color">
+            <h1 class="font-size-20">Movie Browser</h1>
+        </header>
+        <div class="flex layout-wrap" id="movies">
+
+        </div>
+    </article> 
+ <main class="sidebar">
+        <section class="blank-space">
+         Blank Space
+        </section>
+        <section class="details">
+            <header class="name">
+                <h2 id="movie-name"></h2>
+                <p id="movie-genres"></p>
+            </header>
+            <aside class="movie-detail">
+                <section class="flex layout-row">
+                    <div class="flex-20">Image</div>
+                    <div class="flex layout-column">
+                        <p>Title : <span id="title"></span></p>
+                        <p>Year  : <span id="year"></span></p>
+                        <p>Genres : <span id="genres"></span></p>
+                        <p>Release :<span id="release"></span></p>
+                        <p>Rating  :<span id="rating"></span></p>
+                        <p>Actors  :<span id="actors"></span></p>
+                    </div>
+                </section>
+                <footer class="flex layout-column">
+                    <h3>Story</h3>
+                    <p>
+                        Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem IpsumLorem Ipsum
+                    </p>
+                </footer>
+            </aside>
+        </section>
+    </main>
+</section>
+<script src="js/dom.js"></script>
+<script src="js/movie.js"></script>
+<script src="js/events.js"></script>
+<script src="js/movielist.js"></script>
+</body>
+</html>
