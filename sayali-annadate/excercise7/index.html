@@ -1,106 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<title>Movies</title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1" />
-    <link href="css/style.css" type="text/css" rel="stylesheet">
-    <script src="js/movie-list.js" type="text/javascript"></script>
-   
+<link href="css/style.css" type="text/css" rel="stylesheet">
+<script src="js/movie-list.js" type="text/javascript"></script>
 </head>
-    
-<body onload="displayMovies()">
 
+<body onload="movieBrowse()">
+
+<main class="container">
+    <section class="column-left">
+        <header><h1>Movie Browser</h1></header>
+    </section>
     
-<main>
-    <section class="container">
-        <div class="movie-list">
-            <header class="header">Movie Browser</header>
-            
-            <div class="movie-box">
-                <div class="movie-image"></div>
-                <div class="movie-name">
-                    <div class="name"></div>
-                    <span class="year"> </span>
-                    <span class="genre"></span>
-                </div>
-            </div>
-            
-             <div class="movie-box">
-                <div class="movie-image"></div>
-                <div class="movie-name">
-                    <div class="name">Movie Name</div>
-                    <span class="year">1999 - </span>
-                    <span class="genre">Action</span>
-                </div>
-            </div>
-            
-             <div class="movie-box">
-                <div class="movie-image"></div>
-                <div class="movie-name">
-                    <div class="name">Movie Name</div>
-                    <span class="year">1999 - </span>
-                    <span class="genre">Action</span>
-                </div>
-            </div>
-            
-            <div class="movie-box">
-                <div class="movie-image"></div>
-                <div class="movie-name">
-                    <div class="name">Movie Name</div>
-                    <span class="year">1999 - </span>
-                    <span class="genre">Action</span>
-                </div>
-            </div>
-            
-            <div class="movie-box">
-                <div class="movie-image"></div>
-                <div class="movie-name">
-                    <div class="name">Movie Name</div>
-                    <span class="year">1999 - </span>
-                    <span class="genre">Action</span>
-                </div>
-            </div>
-            
-            <div class="movie-box">
-                <div class="movie-image"></div>
-                <div class="movie-name">
-                    <div class="name">Movie Name</div>
-                    <span class="year">1999 - </span>
-                    <span class="genre">Action</span>
-                </div>
-            </div>
-            
-            <div class="movie-box">
-                <div class="movie-image"></div>
-                <div class="movie-name">
-                    <div class="name">Movie Name</div>
-                    <span class="year">1999 - </span>
-                    <span class="genre">Action</span>
-                </div>
-            </div>
-            
-            <div class="movie-box">
-                <div class="movie-image"></div>
-                <div class="movie-name">
-                    <div class="name">Movie Name</div>
-                    <span class="year">1999 - </span>
-                    <span class="genre">Action</span>
-                </div>
-            </div>    
-        </div>
+    <section class="column-right">
+        <article class="movie-info">
+            <figure class="movie-img"></figure>
+            <label class="movie-name">Movie Name</label>
+            <span class="genre-right-top">Action, Comedy, Si-Fi</span>
+        </article>
         
-        <div class="movie-info">
-            <div class="movie-image-large"></div>
-            <div class="movie-name">
-                    <div class="name">Movie Name</div>
-                    <span class="genre">Action, Comedy, Si-Fi</span>
-            </div>
-            <div class="movie-description">
-                    <div class="movie-image-small"></div>
-                    
-            </div>
-        </div>
+        <section class="movie-details">
+            <article class="movie-img"></article>
+            <article class="movie-discription">
+                <label class="title">Title :</label>
+                <label class="year-right">Year :</label>
+                <label class="genre-right">Genres :</label>
+                <label class="release">Release Date :</label>
+                <label class="actor">Actor :</label>
+            </article>
+        </section>
+        
+        <p class="story">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
     </section>
 </main>
     
@@ -109,10 +43,21 @@
     
     
     
-     
     
     
     
     
-</body>    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</body>
 </html>
