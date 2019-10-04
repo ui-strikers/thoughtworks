@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAIA,AAAA,KAAK,CAAC,iBAAiB,CAAC;EACpB,MAAM,EAAE,eAAe;CAC1B;;AACD,AAAA,iBAAiB,CAAC;EACd,UAAU,EAAE,MAAM;EAClB,MAAM,EAAE,eAAe;EACvB,SAAS,EAAE,MAAM;CACpB;;AACD,AAAA,iBAAiB,CAAC,MAAM,CAAA;EACpB,KAAK,EAAE,OAAO;EACd,SAAS,EAAE,KAAK;EAChB,MAAM,EAAE,QAAQ;CACnB",
+    "sources": [
+        "averageFeedback.scss"
+    ],
+    "names": [],
+    "file": "averageFeedback.css"
+}
