@@ -97,34 +97,105 @@ const movieList = [
   }
 ];
 
-function displayMovies()
-{
-var displayInfo;
-var i;
-for( i =0; i < movieList.length; i++)
-{
-//alert(movieList[i].title);
 
-//displayInfo += '<div class="name">'+ movieList[i].title +'</div>';
-//displayInfo += '<span class="year">'+ movieList[i].year +'</span>';
-//displayInfo += '<span class="genre">'+ movieList[i].genres +'</span>';
+function movieBrowse(){
+    var i ;
+    for(i=0; i < movieList.length; i++) {
+        var movieArticle = document.createElement('article');
+        movieArticle.classList.add("movie-box");
+     /*   movieArticle.addEventListener('click' , movieDetails(movieList[i].title, movieList[i].year, movieList[i].genres, movieList[i].releaseDate, movieList[i].actors));*/
 
-    displayInfo = document.getElementsByClassName("name")[0].innerHTML = movieList[i].title;
-    displayInfo = document.getElementsByClassName("year")[0].innerHTML = movieList[i].year;
+
+      /*      .addEventListener("click", movieDetails(movieList[i].title, movieList[i].year, movieList[i].genres, movieList[i].releaseDate, movieList[i].actors))    */
+        
+        var movieName = document.createElement('lable');
+        movieName.classList.add("movie-name");
+        movieName.appendChild(document.createTextNode(movieList[i].title));
+          
+        
+        
+        var movieYear = document.createElement('span');
+        movieYear.classList.add("year");
+        movieYear.appendChild(document.createTextNode( movieList[i].year + " " +  " - " +  " " + movieList[i].genres));
+        
+        
+        var movieDate = document.createElement('lable');
+        movieDate.style.display = "none";
+        //movieName.classList.add("release");
+        movieDate.appendChild(document.createTextNode(movieList[i].releaseDate));
+        
+        var movieActor = document.createElement('lable');
+        //movieName.classList.add("actor");
+        movieActor.style.display = "none";
+        movieActor.appendChild(document.createTextNode(movieList[i].actors));
+        
+        var movieGenre = document.createElement('span');
+        //movieName.classList.add("actor");
+        movieGenre.style.display = "none";
+        movieGenre.appendChild(document.createTextNode(movieList[i].genres));
+        
+        
+        document.getElementsByClassName("column-left")[0].appendChild(movieArticle);
+        movieArticle.appendChild(movieName);
+        movieArticle.appendChild(movieYear);
+        movieArticle.appendChild(movieGenre);
+        movieArticle.appendChild(movieDate);
+        movieArticle.appendChild(movieActor);
+        
+        
+        
+        movieArticle.addEventListener("click" , movieDetails);
+
+    }
+    document.getElementsByClassName("title")[0].appendChild(document.createTextNode(movieList[0].title));
+    document.getElementsByClassName("year-right")[0].appendChild(document.createTextNode(movieList[0].year));
+    document.getElementsByClassName("genre-right")[0].appendChild(document.createTextNode(movieList[0].genres));
+    document.getElementsByClassName("release")[0].appendChild(document.createTextNode(movieList[0].releaseDate));
+    document.getElementsByClassName("actor")[0].appendChild(document.createTextNode(movieList[0].actors));
+
+}
+
+
+function movieDetails(){
+
+    var title = document.getElementsByClassName("title")[0];
+    if (title.hasChildNodes())
+   {
+        title.removeChild(title.childNodes[1]);
+   }
     
+   var yearRight = document.getElementsByClassName("year-right")[0];
+    if (yearRight.hasChildNodes())
+   {
+        yearRight.removeChild(yearRight.childNodes[1]);
+   }
+    
+    var genreRight = document.getElementsByClassName("genre-right")[0];
+    if (genreRight.hasChildNodes())
+   {
+        genreRight.removeChild(genreRight.childNodes[1]);
+   }
+   
+   var releaseRight = document.getElementsByClassName("release")[0];
+    if (releaseRight.hasChildNodes())
+   {
+        releaseRight.removeChild(releaseRight.childNodes[1]);
+   }
+   
+   var actorsRight = document.getElementsByClassName("actor")[0];
+    if (actorsRight.hasChildNodes())
+   {
+        actorsRight.removeChild(actorsRight.childNodes[1]);
+   }
+    
+    document.getElementsByClassName("title")[0].appendChild(document.createTextNode(this.childNodes[0].innerHTML));
+    document.getElementsByClassName("year-right")[0].appendChild(document.createTextNode(this.childNodes[1].innerHTML.substr(0,5)));
+    document.getElementsByClassName("genre-right")[0].appendChild(document.createTextNode(this.childNodes[2].innerHTML));
+    document.getElementsByClassName("release")[0].appendChild(document.createTextNode(this.childNodes[3].innerHTML));
+    document.getElementsByClassName("actor")[0].appendChild(document.createTextNode(this.childNodes[4].innerHTML));
+
+
 }
-    //document.getElementsByClassName("name")[0].innerHTML = displayInfo;
-}
-
-
-
-
-
-
-
-
-
-
 
 
 

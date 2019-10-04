@@ -5,7 +5,8 @@ const movieList = [
     releaseDate: "20-01-1994",
     rating: "9.3",
     actors: "Tim Robbins",
-    genres: "Drama"
+    genres: "Drama",
+    banner:'slider1.jpg'
   },
   {
     title: "The Godfather",
@@ -13,7 +14,8 @@ const movieList = [
     releaseDate: "20-01-1994",
     rating: "9.2",
     actors: "Marion",
-    genres: "Drama"
+    genres: "Drama",
+    banner:'slider2.jpg'
   },
   {
     title: "The Dark Knight",
@@ -21,7 +23,8 @@ const movieList = [
     releaseDate: "20-01-1994",
     rating: "9.0",
     actors: "Christian Bale",
-    genres: "Drama"
+    genres: "Drama",
+    banner:'slider3.jpg'
   },
   {
     title: "The Godfather: Part 2",
@@ -29,7 +32,8 @@ const movieList = [
     releaseDate: "20-01-1994",
     rating: "9.0",
     actors: "Al Pacino",
-    genres: "Drama"
+    genres: "Drama",
+    banner:'slider4.jpg'
   },
   {
     title: "The Lord of the Rings",
@@ -37,7 +41,8 @@ const movieList = [
     releaseDate: "20-01-1994",
     rating: "8.9",
     actors: "Elijah Wood",
-    genres: "Drama"
+    genres: "Drama",
+    banner:'slider5.jpg'
   },
   {
     title: "Pulp Fiction",
@@ -45,7 +50,8 @@ const movieList = [
     releaseDate: "20-01-1994",
     rating: "8.9",
     actors: "John Travolta",
-    genres: "Drama"
+    genres: "Drama",
+    banner:'slider6.jpg'
   },
   {
     title: "Schindler's List",
@@ -53,7 +59,8 @@ const movieList = [
     releaseDate: "20-01-1994",
     rating: "8.9",
     actors: "Liam Neeson",
-    genres: "Drama"
+    genres: "Drama",
+    banner:'slider7.jpg'
   },
   {
     title: "12 Angry Men",
@@ -61,7 +68,8 @@ const movieList = [
     releaseDate: "20-01-1994",
     rating: "8.9",
     actors: "Henry Fonda",
-    genres: "Drama"
+    genres: "Drama",
+    banner:'slider8.jpg'
   },
   {
     title: "Inception",
@@ -69,7 +77,8 @@ const movieList = [
     releaseDate: "20-01-1994",
     rating: "8.8",
     actors: "Leonardo DiCaprio",
-    genres: "Drama"
+    genres: "Drama",
+    banner:'slider9.jpg'
   },
   {
     title: "Fight Club",
@@ -77,7 +86,8 @@ const movieList = [
     releaseDate: "20-01-1994",
     rating: "8.8",
     actors: "Brad Pitt",
-    genres: "Drama"
+    genres: "Drama",
+    banner:'slider10.jpg'
   },
   {
     title: "The Lord of the Rings",
@@ -85,7 +95,8 @@ const movieList = [
     releaseDate: "20-01-1994",
     rating: "8.8",
     actors: "Elijah Wood",
-    genres: "Drama"
+    genres: "Drama",
+    banner:'slider11.jpg'
   },
   {
     title: "Forrest Gump",
@@ -93,6 +104,7 @@ const movieList = [
     releaseDate: "20-01-1994",
     rating: "8.8",
     actors: "Tom Hanks",
-    genres: "Drama"
+    genres: "Drama",
+    banner:'slider12.jpg'
   }
 ];

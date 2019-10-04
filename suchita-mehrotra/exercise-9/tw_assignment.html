@@ -1,43 +1,55 @@
 <!DOCTYPE html>
-<html>
+<html lang='en'>
 <head>
-	<title>Movies Info</title>	
-	<link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-	<main>
-		<aside class='movie-detail'>
-			<header class='heading'>
-				<h3></h3>
-			</header>
-			<span class='rightSpan'>
-			</span>
-			<div class='row'>
-			</div>
-			<ul class='movie-dataList'>
-				<li>Title:</li>
-				<li>Year:</li>
-				<li>Genres:</li>
-				<li>Release Date:</li>
-				<li>Rating:</li>
-				<li>Actors:</li>
-			</ul>
-		</aside>
-		<section class='movie-list'>
-			<header>
-				<h2>Movie Broswer</h2>
-			</header>
-			<section id='movie-list'>
-				
+	<meta charset="UTF-8">
+	<meta name="description" content="About Movies">
+	<meta name="keywords" content="Songs,Movies,Movie Songs">
+	<meta name="author" content="Suchita">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Movies Browsing App</title>
+	<link rel='stylesheet' href='css/movie.css' /></head>
+	<body>
+		<main>
+			<section class='left-part'>
+				<header class='banner'>
+					<h3>Movie Browser</h3>
+				</header>
+				<div class='movie-list'>
+				</div>
 			</section>
-		</section>
-		
+			<aside class='right-part'>
+				<div class='empty-placeholder'>
+				</div>
+				<header class='movie-name'>
+					<h3 class='movie-title'>
+						MOVIE NAME	
+					</h3>
+					<p></p>
+				</header>
+				<section class='movie-info'>
+					<figure>
+						<img src='' />
+					</figure>
+					<ul>
+						<li><p>Title : <span></span></p></li>		
+						<li><p>Year : <span></span></p></li>		
+						<li><p>Release Date : <span></span></p></li>		
+						<li><p>Rating : <span></span></p></li>		
+						<li><p>Actors : <span></span></p></li>		
+						<li><p>Generes : <span></span></p></li>
+					</ul>
+				</section>
+				<section class='movie-story'>
+					<h3>Story</h3>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+				</section>
+			</aside>
+		</aside>
 	</main>
+	<script src='js/movie.js'></script>	
+	<script src='js/dom.js'></script>
+	<script src='js/event.js'></script>
+	<script src='js/movie-list.js'></script>
 
-	<script src='js/movie.json'></script>
-	<script src='js/movie_list.js'></script>
 </body>
 </html>
-
-
-

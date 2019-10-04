@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+	<title>Feedback Rating System</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="It is all about getting good rating">
+	<meta name="keywords" content="Feedback,Cooker,Rating,Cookware,Kitchen,Utensils">
+	<meta name="author" content="Bill Gates">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel='stylesheet' href='css/feedback.css' />
+</head>
+
+<body>
+	<section>
+		<header>
+			<fieldset class='page'>
+				<legend tabindex=0 role='banner' class='page__title'>The Hawkings Cookware Pvt. Ltd.</legend> 
+				<nav role='navigation' class='menubar'>
+					<ul role='menu' class='menu'>
+						<li role='menuitem' class='menu__item'>
+							<a tabindex=0 class='menu__link' href='javascript:void(0)' hreflang='en'
+								type='text/html'>Register Feedback</a>
+						</li>
+						<li role='menuitem' class='menu__item'>
+							<a tabindex=0 class='menu__link' href='javascript:void(0)' hreflang='en'
+								type='text/html'>Average Feedback</a>
+						</li>
+					</ul>
+				</nav>
+			</fieldset>
+		</header>
+	</section>
+
+	<article class='article__capture__feedback' style='display:none'>
+		<fieldset class='page'>
+			<legend>Register Feedback</legend>
+			<header >
+				<p class="content-register">Please give your feed about our Pressure Cooker by choosing one the below options.</p>
+			</header>
+			<form class='page__feedback-form' name='feedback-form'>
+				<button data-rating='1' type='button' class='btn'>Very Poor(1)</button>
+				<button data-rating='2' type='button' class='btn'>Poor(2)</button>
+				<button data-rating='3' type='button' class='btn'>Good(3)</button>
+				<button data-rating='4' type='button' class='btn'>Very Good(4)</button>
+				<button data-rating='5' type='button' class='btn'>Excellent(5)</button>
+			</form>
+		</fieldset>
+	</article>
+
+	<article class='article__show__feedback' style='display:none'>
+		<fieldset class='page'>
+			<legend>Average Feedback</legend>
+			<p class="content-feedback">
+				Average feedback for the Pressure Cooker Product based on feedback form
+				<strong class='total-users'>5</strong>
+				users is
+				<strong class='average-feedback'>4.2</strong>
+			</p>
+		</fieldset>
+	</article>
+
+	<script src='js/dom.js'></script>
+	<script src='js/events.js'></script>
+	<script src='js/feedback.js'></script>
+</body>
+
+</html>

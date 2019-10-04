@@ -1,0 +1,26 @@
+.page .content-feedback {
+  margin: 3em 1em 4em 1em;
+}
+
+.btn {
+  cursor: pointer;
+  width: 11em;
+  height: 3.5em;
+  border-radius: 1em;
+  background-color: #075eda;
+  border: 2px solid #8fbdff;
+  color: white;
+  -webkit-box-shadow: 6px 8px 14px 1px #075eda;
+          box-shadow: 6px 8px 14px 1px #075eda;
+  font-size: 1em;
+  font-weight: 600;
+  margin: 3em .5em;
+  -webkit-transition-duration: .8s;
+          transition-duration: .8s;
+}
+
+.btn:hover {
+  background-color: white;
+  color: #075eda;
+}
+/*# sourceMappingURL=registerfeedback.css.map */

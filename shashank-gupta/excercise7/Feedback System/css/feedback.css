@@ -1,0 +1,117 @@
+.page .content-feedback {
+  margin: 3em 1em 4em 1em;
+}
+
+.btn {
+  cursor: pointer;
+  width: 11em;
+  height: 3.5em;
+  border-radius: 1em;
+  background-color: #075eda;
+  border: 2px solid #8fbdff;
+  color: white;
+  -webkit-box-shadow: 6px 8px 14px 1px #075eda;
+          box-shadow: 6px 8px 14px 1px #075eda;
+  font-size: 1em;
+  font-weight: 600;
+  margin: 3em .5em;
+  -webkit-transition-duration: .8s;
+          transition-duration: .8s;
+}
+
+.btn:hover {
+  background-color: white;
+  color: #075eda;
+}
+
+.page .content-register {
+  margin: 1em 3em 0em 3em;
+}
+
+.content-feedback {
+  text-align: center;
+  margin: 3em 1em 4em 1em;
+  font-size: larger;
+}
+
+.content-feedback strong {
+  color: #075eda;
+  font-size: 1.5em;
+  margin: 0em 10px;
+}
+
+body {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.page {
+  margin-top: 3em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 10em;
+  border: 2px solid #8fbdff;
+  -webkit-box-shadow: 10px 10px 18px 2px #8fbdff;
+  box-shadow: 10px 10px 18px 2px #8fbdff;
+  border-radius: 16px;
+}
+
+.page legend {
+  font-size: 1.3em;
+  font-weight: 600;
+  color: #0057d4;
+}
+
+.page .page__title {
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.7em;
+  color: blueviolet;
+}
+
+.page .page__feedback-form {
+  text-align: center;
+}
+
+.menubar {
+  margin: 2em;
+}
+
+.menu .menu__link {
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 600;
+  color: black;
+}
+
+.menu .menu__item {
+  list-style-type: circle;
+  line-height: 2em;
+}
+
+.menu .menu__link:hover {
+  color: red;
+  font-size: large;
+  font-weight: 600;
+}
+
+.article {
+  margin-top: 70px;
+  min-height: 8em;
+  border: 2px solid #8fbdff;
+  -webkit-box-shadow: 10px 10px 18px 2px #8fbdff;
+  box-shadow: 10px 10px 18px 2px #8fbdff;
+  border-radius: 16px;
+  position: absolute;
+  width: 70%;
+  padding-top: 20px;
+  text-align: center;
+}
+/*# sourceMappingURL=feedback.css.map */
