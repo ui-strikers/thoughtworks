@@ -1,0 +1,38 @@
+$start:1; $end:6;$gap:4;
+@for $i from $start through $end {
+    .m-t-#{$i}{margin-top: unquote(($i/$gap)+'rem');}
+
+    .m-b-#{$i}{margin-bottom: unquote(($i/$gap)+'rem');}
+
+    .m-l-#{$i}{margin-left: unquote(($i/$gap)+'rem');}
+
+    .m-r-#{$i}{margin-right: unquote(($i/$gap)+'rem');}
+
+    .m-y-#{$i}{
+                margin-top: unquote(($i/$gap)+'rem');
+                margin-bottom: unquote(($i/$gap)+'rem');
+             }
+    .m-x-#{$i}{
+    margin-left: unquote(($i/$gap)+'rem');
+    margin-right: unquote(($i/$gap)+'rem');
+    }
+}
+
+@for $i from $start through $end {
+    .p-t-#{$i}{padding-top: unquote(($i/$gap)+'rem');}
+
+    .p-b-#{$i}{padding-bottom: unquote(($i/$gap)+'rem');}
+
+    .p-l-#{$i}{padding-left: unquote(($i/$gap)+'rem');}
+
+    .p-r-#{$i}{padding-right: unquote(($i/$gap)+'rem');}
+
+    .p-y-#{$i}{
+                padding-top: unquote(($i/4)+'rem');
+                padding-bottom: unquote(($i/4)+'rem');
+             }
+    .p-x-#{$i}{
+    padding-left: unquote(($i/4)+'rem');
+    padding-right: unquote(($i/4)+'rem');
+    }
+}
