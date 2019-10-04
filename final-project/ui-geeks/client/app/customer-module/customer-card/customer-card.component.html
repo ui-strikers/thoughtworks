@@ -1,0 +1,27 @@
+
+<section class="container">
+    <article  class="card" *ngFor='let customer of customers' >
+        <header class="card-head">
+            <h1>{{customer.name}}</h1> 
+            <span class="edit-icon">
+                <a href="#">
+                    <img src='../assets/images/edit.png'/>
+                </a>
+            </span>
+        </header>
+        <div class="card-body">
+            <figure class="card-img" >
+                <span> 
+                    <img [src]="profilePicture" />
+                </span>
+            </figure>
+            <p class="details">{{ customer.address.city }}</p>
+            <p class="details">{{ customer.address.state }}</p>
+            <p class="details">
+                <a href="#"> View Orders</a>
+            </p>
+        </div>
+    </article>
+</section>
+
+<router-outlet></router-outlet>

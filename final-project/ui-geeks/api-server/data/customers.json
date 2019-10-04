@@ -1,0 +1,153 @@
+[
+	{
+		"id":1,
+		"name":"Jhon",
+		"phone":"9930932550",
+		"email":"jhon@gmail.com",
+		"address":{
+					"houseNo":"A10",
+					"society":"Gokul Dham",
+					"street":"Link Road",
+					"city":"Mumbai",
+					"state":"Mharashtra",
+					"country":"India"
+		},
+		"photo":""
+	},
+	{
+		"id":2,
+		"name":"smith",
+		"phone":"9981932770",
+		"email":"smith@gmail.com",
+		"address":{
+					"houseNo":"G20",
+					"society":"Green Park",
+					"street":"Link Road",
+					"city":"Mumbai",
+					"state":"Mharashtra",
+					"country":"India"
+		},
+		"photo":""
+	},
+	{
+		"id":3,
+		"name":"Tom",
+		"phone":"7730932550",
+		"email":"tom@gmail.com",
+		"address":{
+					"houseNo":"B10",
+					"society":"View Park",
+					"street":"Mg Road",
+					"city":"Delhi",
+					"state":"Delhi",
+					"country":"India"
+		},
+		"photo":""
+	},
+	{
+		"id":4,
+		"name":"Merry",
+		"phone":"8830932580",
+		"email":"merry@gmail.com",
+		"address":{
+					"houseNo":"70",
+					"society":"Blue city",
+					"street":"Link Road",
+					"city":"Gurgaon",
+					"state":"Hariyana",
+					"country":"India"
+		},
+		"photo":""
+	},
+	{
+		"id":5,
+		"name":"Puja",
+		"phone":"8330932650",
+		"email":"puja@gmail.com",
+		"address":{
+					"houseNo":"56",
+					"society":"Gokul Dham",
+					"street":"Link Road",
+					"city":"Mumbai",
+					"state":"Mharashtra",
+					"country":"India"
+		},
+		"photo":""
+	},
+	{
+		"id":6,
+		"name":"Herry",
+		"phone":"9930932550",
+		"email":"herry@gmail.com",
+		"address":{
+					"houseNo":"12",
+					"society":"Raheja",
+					"street":"4 B Blue Gum st",
+					"city":"Gurgaon",
+					"state":"Hariyana",
+					"country":"India"
+		},
+		"photo":""
+	},
+	{
+		"id":7,
+		"name":"Rahul",
+		"phone":"9930932550",
+		"email":"rahul@gmail.com",
+		"address":{
+					"houseNo":"G11",
+					"society":"Gokul Dham",
+					"street":"Sector41",
+					"city":"Delhi",
+					"state":"Delhi",
+					"country":"India"
+		},
+		"photo":""
+	},
+	{
+		"id":8,
+		"name":"Vijay",
+		"phone":"7730442550",
+		"email":"vijay@gmail.com",
+		"address":{
+					"houseNo":"C15",
+					"society":"Gokul Dham",
+					"street":"Sector65",
+					"city":"Noida",
+					"state":"Uttar Pradesh",
+					"country":"India"
+		},
+		"photo":""
+	},
+	{
+		"id":9,
+		"name":"Ria",
+		"phone":"9930932550",
+		"email":"ria@gmail.com",
+		"address":{
+					"houseNo":"901",
+					"society":"Green world",
+					"street":"N70 Old Market",
+					"city":"Delhi",
+					"state":"Delhi",
+					"country":"India"
+		},
+		"photo":""
+	},
+	{
+		"id":10,
+		"name":"Deepak",
+		"phone":"9932232593",
+		"email":"deepak@gmail.com",
+		"address":{
+					"houseNo":"503",
+					"society":"lakhmidash",
+					"street":"New Market-17",
+					"city":"Pune",
+					"state":"Mharashtra",
+					"country":"India"
+		},
+		"photo":""
+	}
+
+]
