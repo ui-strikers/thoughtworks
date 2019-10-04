@@ -1,0 +1,151 @@
+[{
+		"Id": 1001,
+		"name": "Rahul",
+		"phone_no": 9856475218,
+		"email_Id": "rahul@gmail.com",
+		"address": {
+			"house_no": "3457",
+			"society": "ram nagar",
+			"street": 2,
+			"city": "rajpura",
+			"state": "punjab",
+			"country": "india"
+		},
+		"logo": "assets/images/1.jpg"
+	},
+	{
+		"customer_Id": 1002,
+		"name": "Rajesh",
+		"phone_no": 9856467218,
+		"email_Id": "rajesh@gmail.com",
+		"address": {
+			"house_no": "457",
+			"society": "Farookh Nagar",
+			"street": 5,
+			"city": "Rewari",
+			"state": "Haryana",
+			"country": "india"
+		},
+		"logo": "assets/images/2.jpg"
+	},
+	{
+		"customer_Id": 1003,
+		"name": "Arshdeep Singh",
+		"phone_no": 88956475318,
+		"email_Id": "arshdeep_singh@gmail.com",
+		"address": {
+			"house_no": "2457",
+			"society": "Sunny Enclave",
+			"street": 10,
+			"city": "Chandigarh",
+			"state": "U.T.",
+			"country": "India"
+		},
+		"logo": "assets/images/3.jpg"
+	},
+	{
+		"customer_Id": 1004,
+		"name": "Priyanka sharma",
+		"phone_no": 9859475218,
+		"email_Id": "sharma_priyanka@gmail.com",
+		"address": {
+			"house_no": "85",
+			"society": "Gandhi Nagar",
+			"street": 9,
+			"city": "Gurgaon",
+			"state": "Haryana",
+			"country": "india"
+		},
+		"logo": "assets/images/4.jpg"
+	},
+	{
+		"customer_Id": 1005,
+		"name": "Ruchika Sharma",
+		"phone_no": 785475218,
+		"email_Id": "sharma_ruchika@gmail.com",
+		"address": {
+			"house_no": "8598",
+			"society": "Karol Bagh",
+			"street": 1,
+			"city": "Delhi",
+			"state": "U.T.",
+			"country": "india"
+		},
+		"logo": "assets/images/5.jpg"
+	},
+	{
+		"customer_Id": 1006,
+		"name": "Simran Kaur",
+		"phone_no": 7859375218,
+		"email_Id": "kaur.simran@gmail.com",
+		"address": {
+			"house_no": "219",
+			"society": "Ajit Nagar",
+			"street": 9,
+			"city": "Ferozpur",
+			"state": "Punjab",
+			"country": "india"
+		},
+		"logo": "assets/images/6.jpg"
+	},
+	{
+		"customer_Id": 1007,
+		"name": "Radhika Apte",
+		"phone_no": 8875412365,
+		"email_Id": "apte_radhika@gmail.com",
+		"address": {
+			"house_no": "375",
+			"society": "Vasant Kunj",
+			"street": 7,
+			"city": "Gurgaon",
+			"state": "Haryana",
+			"country": "india"
+		},
+		"logo": "assets/images/7.jpg"
+	},
+	{
+		"customer_Id": 1008,
+		"name": "Priya Jindal",
+		"phone_no": 7845965321,
+		"email_Id": "priyajindal@gmail.com",
+		"address": {
+			"house_no": "458",
+			"society": "Model town",
+			"street": 3,
+			"city": "Amritsar",
+			"state": "Punjab",
+			"country": "india"
+		},
+		"logo": "assets/images/8.jpg"
+	},
+	{
+		"customer_Id": 1009,
+		"name": "Riya sharma",
+		"phone_no": 9855475318,
+		"email_Id": "sharma_riya@gmail.com",
+		"address": {
+			"house_no": "859",
+			"society": "Punjabi Bagh",
+			"street": 4,
+			"city": "Patiala",
+			"state": "Punjab",
+			"country": "India"
+		},
+		"logo": "assets/images/9.jpg"
+	},
+	{
+		"customer_Id": 1010,
+		"name": "Sahil Kumar",
+		"phone_no": 7525945218,
+		"email_Id": "sahil@gmail.com",
+		"address": {
+			"house_no": "185",
+			"society": "Shastri Nagar",
+			"street": 6,
+			"city": "Ludhiana",
+			"state": "Punjab",
+			"country": "india"
+		},
+		"logo": "assets/images/a10.jpg"
+	}
+]
