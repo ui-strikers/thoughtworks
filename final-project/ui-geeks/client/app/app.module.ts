@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 
-import { AppRoutingModule } from './app-routing.module';
+import { AppRoutingModule } from './approuting.config';
 import { AppComponent } from './app.component';
 import { CustomerModule } from './customer-module/customer.module';
 
@@ -17,6 +17,6 @@ import { CustomerModule } from './customer-module/customer.module';
     CustomerModule
   ],
   providers: [ ],
-  bootstrap: [CustomerModule]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }

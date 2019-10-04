@@ -4,7 +4,7 @@ import { Customer } from '../models/customer';
 import { Address } from '../models/address';
 
 @Component({
-  	selector: 'app', 
+  	selector: 'app-customer', 
   	templateUrl :'./customer-card.component.html' ,
   	styleUrls: ['./customer-card.component.scss']
 })
@@ -15,7 +15,7 @@ export class CustomerCardComponent implements OnInit {
 
     path = 'assets/images/';
     profilePicture:string = `${this.path}female.png`;
-    customersApiUrl = 'http://localhost:5000/api/customers/all';
+    customersApiUrl = 'http://localhost:5000/api/customers';
   	customers:Customer[];
 
  	constructor(private http:HttpClient){
