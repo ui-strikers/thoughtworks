@@ -3,7 +3,7 @@
     <article  class="card" *ngFor='let customer of customers' >
         <header class="card-head">
             <h1>
-                {{customer.firstname}} {{customer.lastname}}
+                {{customer.firstName}} {{customer.lastName}}
             </h1> 
             <span class="edit-icon">
                 <a href="#">
@@ -14,7 +14,7 @@
         <div class="card-body">
             <figure class="card-img" >
                 <span> 
-                    <img src='{{path}}{{customer.firstname|lowercase}}-{{customer.id}}.jpg' />
+                    <img src='{{path}}{{customer.firstName|lowercase}}-{{customer.id}}.jpg' />
                 </span>
             </figure>
             <aside class="pull-left">

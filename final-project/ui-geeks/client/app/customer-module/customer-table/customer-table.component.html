@@ -15,11 +15,11 @@
             <tr *ngFor='let customer of customers' class='table-row' > 
                 <td>
                     <figure>
-                        <img src='{{path}}{{customer.firstname|lowercase}}-{{customer.id}}.jpg' class='profile-pic' />
+                        <img src='{{path}}{{customer.firstName|lowercase}}-{{customer.id}}.jpg' class='profile-pic' />
                     </figure>
                 </td>
-                <td>{{customer.firstname}}</td>
-                <td>{{customer.lastname}}</td>
+                <td>{{customer.firstName}}</td>
+                <td>{{customer.lastName}}</td>
                 <td>{{customer.address.houseNo}}, {{customer.address.society}}, {{customer.address.street}}</td>
                 <td>{{customer.address.city}}</td>
                 <td>{{customer.address.state}}</td>

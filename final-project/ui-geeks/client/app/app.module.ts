@@ -6,7 +6,7 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { CustomerModule } from './customer-module/customer.module';
 
 //Configuration import
-import { AppRoutingModule } from './approuting.config';
+import { AppRoutingModule } from './app-routing.config';
 
 //Components import
 import { AppComponent } from './app.component';
