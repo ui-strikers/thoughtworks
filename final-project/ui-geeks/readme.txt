@@ -1,6 +1,10 @@
+#Version : 1.0.2
+------------------------------------------------------------
 Project name: Order Management System
 ------------------------------------------------------------
-Description : This project is a backend application dealing with the customers, products and orders.
+Description : This project is a backend application dealing with the customers, products and orders. The user can check the customer data.
+------------------------------------------------------------
+Start Date : 03 Oct 2019 
 ------------------------------------------------------------
 Team Name : UI Geeks
 ------------------------------------------------------------
@@ -28,3 +32,15 @@ Roles & Responsibilities in Project :-
 	|-> Design View created of customer header
 	|-> Design View created of customer list & fetch data through service
 ------------------------------------------------------------
+Functionalities :- 
+|-> Under Customer Module - Created Customer Header, Card, List & Table View. 
+                          - Created Services containing ajax call of customer data.
+                          - Created Models of Customer and their Address.
+ -> Under Server - Created Customer JSON containing 10 details.
+                 - Created Rest API to fetch Customer JSON data.
+
+
+
+
+
+
