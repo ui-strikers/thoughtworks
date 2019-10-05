@@ -1,31 +1,24 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap');
-
-body {
-    margin: 0px;
-    padding: 0px;
-    font-family: 'Roboto', sans-serif;
-}
-
-.container {
-    width:90%;
-    margin: 0px auto;
-    padding: 0px 15px;
-    display: flex;
-    flex-flow: row wrap;
-    font-family: 'Roboto', sans-serif;
-}
-
 .card {
     margin: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #dcdcdc;
+    -webkit-box-shadow:1px 1px 5px #dcdcdc;
+    -moz-box-shadow:1px 1px 5px #dcdcdc;
+    -o-box-shadow:1px 1px 5px #dcdcdc;
+    -ms-box-shadow:1px 1px 5px #dcdcdc;
+    box-shadow:1px 1px 5px #dcdcdc;
     flex-basis: 23%;
     overflow: hidden;
+}
+
+.card-img{
+    margin:0;
+    float:left;    
 }
 
 .card-img img {
     width: 70px;
     float: left;
-    padding: 0 15px;
+    padding: 0 15px 0 0;
 }
 
 .card-head {
@@ -45,7 +38,7 @@ body {
     line-height: 1;
     width: 94%;
     float: left;
-    padding: 10px 10px 20px;
+    padding: 15px;
 }
 
 .card-body .details  {

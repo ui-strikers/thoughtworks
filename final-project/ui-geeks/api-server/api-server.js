@@ -22,6 +22,7 @@ server.get('/api/customers',function(req,res){
 
 const PORT = 5000;
 
+//check server listening
 server.listen(PORT,() => {
 	console.log(`Rest Server is ready on port ${PORT}`);
 });

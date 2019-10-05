@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { CustomerService } from '../services/customer.service';
 import { Customer } from '../models/customer';
 import { Address } from '../models/Address';
 
@@ -12,22 +12,20 @@ import { Address } from '../models/Address';
 
 export class CustomerTableComponent implements OnInit {
 
-    title:string='Customers Tabular Data';
-
-    customerApiUrl = 'http://localhost:5000/api/customers';
     path = 'assets/images/';
-    profilePicture:string = `${this.path}female.png`;
 
     customers:Customer[];
 
-    constructor(private http:HttpClient){
+    constructor(private customerService:CustomerService){
         console.log('inside customer table constructor');
     }
 
     ngOnInit(){
-        this.http.get<Customer[]>(this.customerApiUrl).subscribe((res)=>{
-          this.customers=res;
-        })
+        console.log("Inside CustomerTableComponent ngOnInit!!");
+        this.customerService.fetchCustomerData()
+            .subscribe((customerList)=>{
+                this.customers = customerList;
+         });
     }
 
 }

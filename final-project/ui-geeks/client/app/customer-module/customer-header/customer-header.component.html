@@ -1,14 +1,30 @@
 
 <section class="container">
     <section class="row">
-        <header class="header"><h2><i class="fa fa-user"></i> {{title}}</h2></header>
+        <header class="header">
+            <h2>
+                <i class="fa fa-user"></i> {{title}}
+            </h2>
+        </header>
     </section>
     <section class="row">
         <nav>
-            <ul class="navbar">
-                <li class="menu-item"><a href="#"><i class="fa fa-th fa-fw"></i>  Card View</a></li>               
-                <li class="menu-item"><a href="#"><i class="fa fa-list fa-fw"></i> List View</a></li>
-                <li class="menu-item"><a href="#"><i class="fa fa-table fa-fw"></i> Table View</a></li>
+            <ul class="menu">
+                <li class="menu-item">
+                    <a routerLink="['showCustomerCardView']">
+                        <i class="fa fa-th fa-fw"></i> Card View
+                    </a>
+                </li>               
+                <li class="menu-item">
+                    <a routerLink="['showCustomerListView']">
+                        <i class="fa fa-list fa-fw"></i> List View
+                    </a>
+                </li>
+                <li routerLink="['showCustomerCardView']">
+                    <a href="#">
+                        <i class="fa fa-table fa-fw"></i> Table View
+                    </a>
+                </li>
             </ul>
         </nav>
     </section>

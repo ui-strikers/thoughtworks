@@ -1,38 +1,29 @@
+/*Author : Suchita Mehrotra */
+
 $oddrow-bgcolor:#ECF0F1;
 $evenrow-bgcolor:#F0F3F4;
 
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap');
-
-body {
-    margin: 0px;
-    padding: 0px;
-    font-family: 'Roboto', sans-serif;
-}
-
-.container {
-    width:88%;
-    margin: 0px auto;
-    padding: 0px 10px;
-}
-
-.table{
+.table {
     width:100%;
     border:1px solid #ccc;
     font-family: 'Roboto', sans-serif;
 }
 
-.table-row:nth-child(odd){
+.table-row:nth-child(odd) {
     background-color:$oddrow-bgcolor;
 }
 
-.table-row:nth-child(even){
+.table-row:nth-child(even) {
     background-color:$evenrow-bgcolor;
 }
 
-.table-row td{
-    text-align:center;
+.table-row {
+    
+    td {
+        text-align:center;
+    }
 }
 
-.profile-pic{
+.profile-pic {
     height:50px;
 }

@@ -1,10 +1,10 @@
 [
 	{
 		"id":1001,
-		"firstname":"John",
-		"lastname":"Due",
+		"firstname":"Rahul",
+		"lastname":"Vaidya",
 		"phone":"9930932550",
-		"email":"john@gmail.com",
+		"email":"rahulvaidya@gmail.com",
 		"address":{
 					"houseNo":"A10",
 					"society":"Gokul Dham",
@@ -16,10 +16,10 @@
 	},
 	{
 		"id":1002,
-		"firstname":"Smith",
-		"lastname":"Marker",
+		"firstname":"Rakesh",
+		"lastname":"Kumar",
 		"phone":"9981932770",
-		"email":"smith@gmail.com",
+		"email":"rakeshkumar@gmail.com",
 		"address":{
 					"houseNo":"G20",
 					"society":"Green Park",
@@ -31,10 +31,10 @@
 	},
 	{
 		"id":1003,
-		"firstname":"Tom",
-		"lastname":"Cruise",
+		"firstname":"Supriya",
+		"lastname":"Pathak",
 		"phone":"7730932550",
-		"email":"tom@gmail.com",
+		"email":"supriyapathak@gmail.com",
 		"address":{
 					"houseNo":"B10",
 					"society":"View Park",
@@ -50,7 +50,7 @@
 		"firstname":"Kiran",
 		"lastname":"Jain",
 		"phone":"8830932580",
-		"email":"marry@gmail.com",
+		"email":"kiranjain@gmail.com",
 		"address":{
 					"houseNo":"70",
 					"society":"Blue city",
@@ -66,7 +66,7 @@
 		"firstname":"Puja",
 		"lastname":"Sharma",
 		"phone":"8330932650",
-		"email":"puja@gmail.com",
+		"email":"pujasharma@gmail.com",
 		"address":{
 					"houseNo":"56",
 					"society":"Gokul Dham",
@@ -79,10 +79,10 @@
 	},
 	{
 		"id":1006,
-		"firstname":"Harry",
-		"lastname":"Potter",
+		"firstname":"Harish",
+		"lastname":"Verma",
 		"phone":"9930932550",
-		"email":"harry@gmail.com",
+		"email":"harishverma@gmail.com",
 		"address":{
 					"houseNo":"12",
 					"society":"Raheja",
@@ -98,7 +98,7 @@
 		"firstname":"Rahul",
 		"lastname":"Roy",
 		"phone":"9930932550",
-		"email":"rahul@gmail.com",
+		"email":"rahulroy@gmail.com",
 		"address":{
 					"houseNo":"G11",
 					"society":"Gokul Dham",
@@ -114,7 +114,7 @@
 		"firstname":"Vijay",
 		"lastname":"Yadav",
 		"phone":"7730442550",
-		"email":"vijay@gmail.com",
+		"email":"vijayyadav@gmail.com",
 		"address":{
 					"houseNo":"C15",
 					"society":"Gokul Dham",
@@ -127,10 +127,10 @@
 	},
 	{
 		"id":1009,
-		"firstname":"Ria",
-		"lastname":"Jain",
+		"firstname":"Riya",
+		"lastname":"Kapoor",
 		"phone":"9930932550",
-		"email":"ria@gmail.com",
+		"email":"riyakapoor@gmail.com",
 		"address":{
 					"houseNo":"901",
 					"society":"Green world",
@@ -146,7 +146,7 @@
 		"firstname":"Deepak",
 		"lastname":"Verma",
 		"phone":"9932232593",
-		"email":"deepak@gmail.com",
+		"email":"deepakverma@gmail.com",
 		"address":{
 					"houseNo":"503",
 					"society":"lakhmidash",

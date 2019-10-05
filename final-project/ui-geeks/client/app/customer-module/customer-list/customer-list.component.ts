@@ -1,5 +1,5 @@
 import { Component,OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { CustomerService } from '../services/customer.service';
 import { Customer } from '../models/customer';
 import { Address } from '../models/address';
 
@@ -11,21 +11,18 @@ import { Address } from '../models/address';
 
 export class CustomerListComponent implements OnInit {
 
-  	title = 'Order Management System';
-
-    customersApiUrl = 'http://localhost:5000/api/customers';
   	customers:Customer[];
 
-   	constructor(private http:HttpClient){
+   	constructor(private customerService:CustomerService){
     		console.log("Inside Customers List Constructor!");
    	}
 
     ngOnInit(){
-        console.log("Inside ngOnInit method!!");
-        this.http.get<Customer[]>(this.customersApiUrl)
-            .subscribe((res) => {
-                this.customers = res;
-            });
+        console.log("Inside CustomerListComponent ngOnInit!!");
+        this.customerService.fetchCustomerData()
+            .subscribe((customerList)=>{
+                this.customers = customerList;
+         });
     }
 
 }

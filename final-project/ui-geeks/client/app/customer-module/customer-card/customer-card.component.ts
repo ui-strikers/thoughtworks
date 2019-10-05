@@ -1,5 +1,7 @@
 import { Component,OnInit } from '@angular/core';
 import { CustomerService } from '../services/customer.service';
+import { Customer } from '../models/customer';
+import { Address } from '../models/address';
 
 @Component({
   	selector: 'customer-card', 
@@ -9,20 +11,20 @@ import { CustomerService } from '../services/customer.service';
 
 export class CustomerCardComponent implements OnInit {
 
-  	title = 'Order Management System';
     path = 'assets/images/';
-    profilePicture:string = `${this.path}female.png`;
 
-    customerAPI = 'http://localhost:5000/api/customers';
-    customers:Array <any>;
+    customers:Customer[];
 
     constructor(private customerService:CustomerService) {
   		  console.log("Inside Customers Card Constructor!");
-        this.customers = this.customerService.fetchCustomerData(this.customerAPI);
  	  }
 
-    ngOnInit(){
-      console.log("Inside ngOnInit method!!");
+    ngOnInit() {
+      console.log("Inside CustomerCardComponent ngOnInit!!");
+      this.customerService.fetchCustomerData()
+          .subscribe((customerList)=>{
+              this.customers = customerList;
+       });
     }
 
 }
