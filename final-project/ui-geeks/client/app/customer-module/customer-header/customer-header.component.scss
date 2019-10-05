@@ -34,18 +34,18 @@ body {
     padding: 10px;
 }
 
-.menu-bar-2 {
+.navbar {
     list-style-type: none;
     margin: 0px;
     padding: 0px
 }
 
-.menu-bar-2 .menu-items {
+.navbar .menu-item {
     float: left;
     padding: 0px 20px 30px 0px;
 }
 
-.menu-bar-2 .menu-items a {
+.navbar .menu-item a {
     text-decoration: none;
     color: cadetblue;
 }

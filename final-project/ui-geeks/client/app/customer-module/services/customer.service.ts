@@ -12,14 +12,12 @@ export class CustomerService {
 		console.log('Inside CustomerService constructor()!!!');
 	}
 
-	fetchCustomersData(url):any[]{
+	fetchCustomerData(url):Array <any>{
 		console.log("Inside fetchServiceData");
 		this.http.get<Customer[]>(url)
 		.subscribe((res) => {
 				console.log(res);
-      			this.customersData = res;
-              	return this.customersData;
-				console.log("Subscribe method!!");
+              	return res;
           });
 	}
 
