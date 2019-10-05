@@ -1,0 +1,31 @@
+<section class='table-container'>
+    <table class='table'>
+        <thead>
+            <tr>
+                <th></th>
+                <th>Fisrtname</th>
+                <th>Lastname</th>
+                <th>Address</th>
+                <th>City</th>
+                <th>State</th>
+                <th>Order Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor='let customer of customers' class='table-row' > 
+                <td>
+                    <figure>
+                        <img [src]="profilePicture" class='profile-pic' />
+                    </figure>
+                </td>
+                <td>{{customer.firstname}}</td>
+                <td>{{customer.lastname}}</td>
+                <td>{{customer.address.houseNo}}, {{customer.address.society}}, {{customer.address.street}}</td>
+                <td>{{customer.address.city}}</td>
+                <td>{{customer.address.state}}</td>
+                <td>{{10000}}</td>
+            </tr> 
+        </tbody>
+    </table> 
+    <p class='group-name'>Created By: </p>
+</section>

@@ -1,5 +1,5 @@
 import { Component,OnInit } from '@angular/core';
-//import { CustomerService } from '../services/customer.service';
+import { CustomerService } from '../services/customer.service';
 
 
 import { HttpClient } from '@angular/common/http';
@@ -22,18 +22,13 @@ export class CustomerCardComponent implements OnInit {
     customerAPI = 'http://localhost:5000/api/customers';
     customers:Customer[];
 
-    constructor(private http:HttpClient) {
+    constructor(private customerService:CustomerService) {
   		  console.log("Inside Customers Card Constructor!");
+        this.customers = this.customerService.fetchCustomersData(this.customerAPI);
  	  }
 
     ngOnInit(){
       console.log("Inside ngOnInit method!!");
-      
-      this.http.get<Customer[]>(this.customerAPI)
-          .subscribe((res) => {
-              this.customers = res;
-          });
-
     }
 
 }

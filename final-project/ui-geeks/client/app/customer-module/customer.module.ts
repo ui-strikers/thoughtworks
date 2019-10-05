@@ -1,19 +1,36 @@
-import { CustomerCardComponent } from './customer-card/customer-card.component';
+
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
+import { CustomerHeaderComponent } from './customer-header/customer-header.component';
+import { CustomerCardComponent } from './customer-card/customer-card.component';
+import { CustomerListComponent } from './customer-list/customer-list.component';
+import { CustomerTableComponent } from './customer-table/customer-table.component';
+
+import { CustomerService } from './services/customer.service';
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
+
+
+
 @NgModule({
   declarations: [
-    CustomerCardComponent
+    CustomerHeaderComponent,
+    CustomerCardComponent,
+    CustomerListComponent,
+    CustomerTableComponent
   ],
   imports:[
-    CommonModule
+    CommonModule,
+    AngularFontAwesomeModule
   ],
   exports: [
-    CustomerCardComponent
+    CustomerHeaderComponent,
+    CustomerCardComponent, 
+    CustomerListComponent,
+    CustomerTableComponent
   ],
-  providers: [ ],
-  bootstrap: [CustomerCardComponent]
+  providers: [ CustomerService ],
+  bootstrap: [ CustomerHeaderComponent ]
 })
 
 export class CustomerModule { }

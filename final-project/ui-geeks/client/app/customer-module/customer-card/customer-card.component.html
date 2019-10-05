@@ -2,7 +2,7 @@
 <section class="container">
     <article  class="card" *ngFor='let customer of customers' >
         <header class="card-head">
-            <h1>{{customer.name}}</h1> 
+            <h1>{{customer.firstname}} {{customer.lastname}}</h1> 
             <span class="edit-icon">
                 <a href="#">
                     <img src='../assets/images/edit.png'/>

@@ -10,7 +10,7 @@ server.use(function(req, res, next){
 	next();
 })
 
-const baseAPI = '/data/';
+const baseAPI = __dirname + '/data/';
 
 const customerAPI = baseAPI + 'customers.json';
 
