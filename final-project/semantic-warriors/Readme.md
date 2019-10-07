@@ -56,38 +56,38 @@ Now your all the things Running if you get any Error Please feel free to contact
 
 ---
 
-Developer1 : Sahil Sindhu(Team Lead)
-Email: Sahilsindhu16@gmail.com
-Mobile:9729000981
-Dependencies : Created project folder structure and naming
-the convention, Help in data fetch from API using Http
-Ajax Call, write component SCSS .
+- Developer1 : Sahil Sindhu(Team Lead)
+- Email: Sahilsindhu16@gmail.com
+- Mobile:9729000981
+- Dependencies : Created project folder structure and naming
+  the convention, Help in data fetch from API using Http
+  Ajax Call, write component SCSS .
 
 ---
 
-Developer2 : Manju tanan
-Email: manju11cs14@gmail.com
-Mobile: 9416304624
-Dependencies : Created template for Customer Module,
-Data Fetch from API using Http Ajax Call,
-Folder Structure And Naming Convention
+- Developer2 : Manju tanan
+- Email: manju11cs14@gmail.com
+- Mobile: 9416304624
+- Dependencies : Created template for Customer Module,
+  Data Fetch from API using Http Ajax Call,Folder Structure
+  And Naming Convention
 
 ---
 
-Developer3 : Kriti Bhagat
-Email: 95kriti.bhagat@gmail.com
-Mobile: 8709716t225
-Dependencies : Created Customers JSON file and manage ui,
-Refactor css class name to need, Refactor Naming Convention,
-Updation OnJSON file, Design created of customer card.
+- Developer3 : Kriti Bhagat
+- Email: 95kriti.bhagat@gmail.com
+- Mobile: 8709716t225
+- Dependencies : Created Customers JSON file and manage ui,
+  Refactor css class name to need, Refactor Naming Convention,
+  Updation OnJSON file, Design created of customer card.
 
 ---
 
-Developer4 : Neetish Kumar
-Email: neetish3b@gmail.com
-Mobile:9910592744
-Dependencies : Created Server using NodeJS, Express JS, REST API, Ajax Call,
-Manage REST API, Test REST API Using PostMan.
+- Developer4 : Neetish Kumar
+- Email: neetish3b@gmail.com
+- Mobile:9910592744
+- Dependencies : Created Server using NodeJS, Express JS, REST API, Ajax Call,
+  Manage REST API, Test REST API Using PostMan.
 
 ---
 
@@ -96,21 +96,21 @@ Manage REST API, Test REST API Using PostMan.
 1.0.0 - Initial setup for Development. Fatch all the customers list from REST file. Customer
 Grid view created. (04/10/2019)
 
-1.0.1 - Customer list view and table view created. (05/10/2019)
-1.1.0 - UI Major changes (05/10/2019)
-1.1.1 - Minor changes in routing and navigation. (05/10/2019)
-1.1.2 - Customer card view component added (05/10/2019)
-1.1.3 - Customer list view component added (05/10/2019)
-1.1.4 - Customer table view component added (05/10/2019)
-1.1.5 - Undermaintenace page added for broken pages (06/07/2019)
-1.1.6 - Order Module added (06/07/2019)
-1.1.7 - Routing link added (06/07/2019)
-1.1.8 - Navigation bar created (06/07/2019)
-1.1.9 - Rest Api added (06/07/2019) (06/07/2019)
-1.2.0 - Fixed component Ui problems (06/07/2019)
-1.2.1 - Fixed minior changes on Ui (07/07/2019)
-1.3.0 - Footer Bar Added (07/07/2019)
-1.4.0 - Changes in Routing link (07/07/2019)
+- 1.0.1 - Customer list view and table view created. (05/10/2019)
+- 1.1.0 - UI Major changes (05/10/2019)
+- 1.1.1 - Minor changes in routing and navigation. (05/10/2019)
+- 1.1.2 - Customer card view component added (05/10/2019)
+- 1.1.3 - Customer list view component added (05/10/2019)
+- 1.1.4 - Customer table view component added (05/10/2019)
+- 1.1.5 - Undermaintenace page added for broken pages (06/07/2019)
+- 1.1.6 - Order Module added (06/07/2019)
+- 1.1.7 - Routing link added (06/07/2019)
+- 1.1.8 - Navigation bar created (06/07/2019)
+- 1.1.9 - Rest Api added (06/07/2019) (06/07/2019)
+- 1.2.0 - Fixed component Ui problems (06/07/2019)
+- 1.2.1 - Fixed minior changes on Ui (07/07/2019)
+- 1.3.0 - Footer Bar Added (07/07/2019)
+- 1.4.0 - Changes in Routing link (07/07/2019)
 
 ## License
 
