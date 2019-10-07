@@ -1,0 +1,36 @@
+.container {
+  display: flex;
+  justify-content: center;
+  margin: 5% 0 auto;
+}
+.maintenance__heading {
+  font-size: 3em;
+  font-family: "Rajdhani", sans-serif;
+  text-align: center;
+  font-weight: 400;
+}
+.maintenance__subheading {
+  font-size: 2em;
+  font-family: "Rajdhani", sans-serif;
+  text-align: center;
+}
+.maintenance__details {
+  font-size: 1.2em;
+  font-family: "Rajdhani", sans-serif;
+  text-align: center;
+}
+.maintenance__link {
+  display: flex;
+  font-family: "Rajdhani", sans-serif;
+  font-size: 1.5em;
+  font-weight: 300;
+  color: #f44;
+  text-decoration: none;
+  justify-content: center;
+  margin: 0 auto;
+}
+.main-container {
+  width: 80%;
+  padding: 50px;
+  margin: 10px auto;
+}

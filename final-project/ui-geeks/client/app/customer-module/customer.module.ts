@@ -5,13 +5,12 @@ import { RouterModule } from '@angular/router';
 
 //Components import
 import { CustomerHeaderComponent } from './customer-header/customer-header.component';
-import { CustomerFooterComponent } from './customer-footer/customer-footer.component';
-import { CustomerCardComponent } from './customer-card/customer-card.component';
-import { CustomerListComponent } from './customer-list/customer-list.component';
-import { CustomerTableComponent } from './customer-table/customer-table.component';
-
-//Configuration import
-import { CUSTOMER_ROUTES } from './customer-routes.config';
+import { CustomerCardComponent } from './customer-home/customer-card/customer-card.component';
+import { CardComponent } from './customer-home/customer-card/card/card.component';
+import { CustomerListComponent } from './customer-home/customer-list/customer-list.component';
+import { CustomerTableComponent } from './customer-home/customer-table/customer-table.component';
+import { TableRowComponent } from './customer-home/customer-table/table-row/table-row.component';
+import { CustomerHomeComponent } from './customer-home/customer-home.component';
 
 //Services import
 import { CustomerService } from './services/customer.service';
@@ -19,28 +18,18 @@ import { CustomerService } from './services/customer.service';
 
 @NgModule({
   imports:[ 
-    BrowserModule,
-    CUSTOMER_ROUTES
+    BrowserModule, RouterModule
   ],
   declarations: [
     CustomerHeaderComponent,
-    CustomerFooterComponent,
     CustomerCardComponent,
-    CustomerListComponent,
-    CustomerTableComponent
-  ],
-  exports: [
-    CustomerHeaderComponent,
-    CustomerFooterComponent,
-    CustomerCardComponent, 
+    CardComponent,
     CustomerListComponent,
     CustomerTableComponent,
-    RouterModule
+    TableRowComponent,
+    CustomerHomeComponent
   ],
-  providers: [ CustomerService,
-    { provide : 'team' , useValue : 'UI Geeks'}
-  ],
-  bootstrap: [ CustomerHeaderComponent ]
+  providers: [ CustomerService ]
 })
 
 export class CustomerModule { }

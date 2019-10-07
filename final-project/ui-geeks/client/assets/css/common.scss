@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap');
+@import './variables';
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: $font;
+    color:$dark;
+    font-weigh:400;
+    line-height:1.5em;
+}
+
+main {
+    padding:6em 0;
+}
+
+.container {
+    width:90%;
+    margin: 0px auto;
+    padding: 0px 15px;
+    display: flex;
+    flex-flow: row wrap;
+    font-family:$font;
+}
+
+a {
+    text-decoration: none;
+}
+
+.pull-left{
+    float:left;
+}
+
+.pull-right{
+    float:right;
+}
+
+.img-fluid{
+    width:100%;
+}
+.img-center {
+    width: 70%;
+    margin: 0 auto;
+}
+
+
+/* Foreground colors */
+.text-white{
+    color:#fff;
+}
+.text-info{
+    color:cadetblue;
+}
+.text-primary{
+    color:$theme;
+}
+
+.menu{ 
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    
+    .menu-item {
+        float: left;
+        padding: 5px 20px 5px 0px;
+        
+        .active{
+            border-bottom: 1px dashed $theme;
+        }
+    }
+}
+
+
+.table {
+    width:100%;
+    border-collapse:collapse;
+    font-family: $font;
+
+    .table-head{
+        th{
+            background-color: $theme;
+            color: $white;
+            padding: 0.6em;
+            font-weight:500
+        }
+    }
+    .table-row{
+        tr:nth-child(odd){
+            background-color:$oddrow-bgcolor;
+        }
+        tr:nth-child(even){
+            background-color:$evenrow-bgcolor;
+        }
+    }
+}

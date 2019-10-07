@@ -1,0 +1,39 @@
+@import '../../../assets/css/variables';
+
+.header {
+    padding: 0.5em 0;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 1em;
+}
+
+.header-head h2 {
+    font-family: $font;
+    font-size: 1.6em;
+    font-weight: 400;
+    color:#344554;
+    margin: 0;
+}
+
+.row {
+    width: 100%;
+    float: left;
+    padding: 0.8em 0;
+}
+
+.menu{ 
+    .menu-item:nth-child(1){
+        background-color:$theme
+    }
+    .menu-item {
+        float: left;
+        padding:0.3em 0.8em;
+        background-color:#8b8b8b;
+        border-right:1px solid $white; 
+        
+        a {
+            text-decoration: none;
+            color: white;
+            text-align:center;
+         }
+     }
+}

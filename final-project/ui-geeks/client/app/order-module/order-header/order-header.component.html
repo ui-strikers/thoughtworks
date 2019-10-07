@@ -1,0 +1,40 @@
+
+<section class="header container">
+    <section class="row">
+        <header class="header-head">
+            <h2>
+                {{title}}
+            </h2>
+        </header>
+    </section>
+    <section class="row">
+        <nav class='navbar'>
+            <ul class="menu">
+                <li class="menu-item">
+                    <a [routerLink]="['allOrders']" routerLinkActive="active">All Orders
+                    </a>
+                </li>               
+                <li class="menu-item">
+                    <a>Fulfilled Orders
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a>Unfulfilled Orders
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a>Unpaid Orders
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a>Paid Orders
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a>Pending Orders
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </section>
+</section>

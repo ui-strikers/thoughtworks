@@ -1,16 +1,21 @@
-/*Author : Sayali*/
+@import '../../../assets/css/variables';
+
 .fa{
-    color:#14628f
+    color:$theme;
 }
 
 .header {
-    font-family: 'Roboto', sans-serif;
+    padding: 0.5em 0;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 1em;
 }
 
-.header h2 {
+.header-head h2 {
+    font-family: $font;
     font-size: 1.6em;
     font-weight: 400;
     color:#344554;
+    margin: 0;
 }
 
 .row {
@@ -19,21 +24,19 @@
     padding: 0.8em;
 }
 
-.menu {
-    list-style-type: none;
-    margin: 0px;
-    padding: 0px
-}
-
-.menu{ 
+.search-bar {
+    padding: 0;
+    margin: 0;
+    list-style: none;
     
-    .menu-item {
-        float: left;
-        padding: 0px 20px 30px 0px;
-        
-        a {
-            text-decoration: none;
-            color: cadetblue;
-        }
+    .form-group{
+
+    	.form-control{
+    		padding:0.5em;
+    		border:1px solid #ccc;
+    		border-radius:5px;
+    		margin:0 1em;
+            outline:none;
+    	}
     }
 }

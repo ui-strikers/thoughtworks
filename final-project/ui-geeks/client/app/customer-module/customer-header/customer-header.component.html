@@ -1,7 +1,7 @@
 
-<section class="container">
+<section class="header container">
     <section class="row">
-        <header class="header">
+        <header class="header-head">
             <h2>
                 <i class="fa fa-user"></i> {{title}}
             </h2>
@@ -9,21 +9,36 @@
     </section>
     <section class="row">
         <nav>
-            <ul class="menu">
-                <li class="menu-item">
-                    <a [routerLink]="['showCustomerCardView']">
+            <ul role="menu" class="menu pull-left">
+                 <li role="menuitem" class="menu-item">
+                    <a [routerLink]="['card']" routerLinkActive="active" class="text-info">
                         <i class="fa fa-th fa-fw"></i> Card View
                     </a>
                 </li>               
-                <li class="menu-item">
-                    <a [routerLink]="['showCustomerListView']">
+                <li role="menuitem" class="menu-item">
+                    <a [routerLink]="['list']" routerLinkActive="active" class="text-info">
                         <i class="fa fa-list fa-fw"></i> List View
                     </a>
                 </li>
-                <li class="menu-item">
-                    <a [routerLink]="['showCustomerTableView']">
+                <li role="menuitem" class="menu-item">
+                    <a [routerLink]="['table']" routerLinkActive="active" class="text-info">
                         <i class="fa fa-table fa-fw"></i> Table View
                     </a>
+                </li>
+                <li role="menuitem" class="menu-item">
+                    <a class="text-info">
+                        <i class="fa fa-plus fa-fw"></i> New Customer
+                    </a>
+                </li>
+            </ul>
+            <ul class="search-bar pull-right">
+                <li>
+                    <div class="form-group">
+                        <label for="search">
+                            Filter
+                        </label>
+                        <input type="text" id="search" name="search" class="form-control" placeholder="Search">
+                    </div>
                 </li>
             </ul>
         </nav>
