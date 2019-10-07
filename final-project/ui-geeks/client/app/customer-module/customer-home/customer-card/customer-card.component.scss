@@ -1,0 +1,70 @@
+@import '../../../../assets/css/variables';
+
+card{
+    flex-basis:25%;
+}
+.card {
+    margin: 10px;
+    border: 1px solid #dcdcdc;
+    -webkit-box-shadow:1px 1px 5px #dcdcdc;
+    -moz-box-shadow:1px 1px 5px #dcdcdc;
+    -o-box-shadow:1px 1px 5px #dcdcdc;
+    -ms-box-shadow:1px 1px 5px #dcdcdc;
+    box-shadow:1px 1px 5px #dcdcdc;
+    flex-basis: 23%;
+    overflow: hidden;
+}
+
+.card-img{
+    margin:0;
+    float:left;    
+}
+
+.card-img img {
+    width: 70px;
+    float: left;
+    padding: 0 15px 0 0;
+}
+
+.card-head {
+    background: $theme;
+    width: 100%;
+    padding: 10px; 
+    color: $white;
+}
+
+.card-head h1 {
+    padding: 0px;
+    margin: 0px;
+}
+
+.card-body {
+    font-size: 0.9em;
+    line-height: 1;
+    width: 94%;
+    float: left;
+    padding: 15px;
+}
+
+.card-body .details  {
+    margin: 5px 0 10px 0;
+}
+
+.card-body .details a {
+    text-decoration: none;
+    color: cadetblue;
+}
+
+.edit-icon {
+    position: relative;
+    display: block;
+}
+
+.edit-icon img {
+    filter: invert(1);
+    float: right;
+    position: absolute;
+    top: -24px;
+    right: 20px;
+    height:24px;
+}

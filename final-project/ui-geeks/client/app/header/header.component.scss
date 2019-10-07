@@ -1,0 +1,53 @@
+@import '../../assets/css/variables';
+
+.top-header{
+    background:$theme;
+    width: 100%;
+    position:fixed;
+    z-index:2;
+    top:0;
+    padding: 1em 0;
+    
+    .container{
+    	display:flex;
+    }
+
+    .navbar	{
+    	
+    	.menu{
+    		
+    		.menu-item {
+                margin-top:8px;
+
+                a{
+                    padding:10px 20px;
+                }   
+                .active{
+                    border:none;
+                    border-radius:5px;
+                    background:$white;
+                    color:$theme
+                }
+    		}
+    	}
+    }
+}
+
+.logo{
+
+	float:left;
+	margin:0;
+	
+	img {
+		height:40px;
+		float:left;
+	}
+	h1 {
+		color:$white;
+		float:left;
+		margin:0;
+		font-size:1.5em;
+		line-height:2em;
+		font-weight:400;
+	}	
+}

@@ -1,0 +1,11 @@
+
+<section class="container">
+    <ul class="list-view">
+        <li *ngFor='let customer of customers'>
+            <img src="{{PATH}}{{customer.firstName|lowercase}}-{{customer.id}}.jpg">
+            {{customer.firstName}} {{customer.lastName}}
+        </li>
+    </ul>
+</section>
+
+
