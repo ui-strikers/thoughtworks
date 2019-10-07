@@ -1,0 +1,22 @@
+<section class="container">
+	<table class="row-table">
+		<tr class="table-heading">
+			<th class="table-image"></th>
+			<th> First Name </th>
+			<th> Last Name </th>
+			<th> Address </th>
+			<th> City </th>
+			<th> State </th>
+			<th> Order Total </th>
+		</tr>
+		<tr class="table-data" *ngFor="let data of customers">
+			<td> <img src='assets/images/{{data.firstName}}-{{data.id}}.png' width="50" height="50"> </td>
+			<td> {{data.firstName}}</td>
+			<td> {{data.lastName}}</td>
+			<td> {{data.address.society}}</td>
+			<td> {{data.address.city}}</td>
+			<td> {{data.address.state}}</td>
+			<td> $ 0000 </td>
+		</tr>
+	</table>
+</section>

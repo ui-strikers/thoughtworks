@@ -1,0 +1,23 @@
+<section class="container">
+    <article class="card-box" *ngFor="let data of customers">
+        <header class="card-info">
+            <ul class="card-header">
+                <li class="card-name">{{data.firstName}}</li>
+                <li class="card-name"><i class="fa fa-edit"></i></li>
+            </ul>
+        </header>
+        <section class="card-body">
+            <ul class="card-details">
+                <li class="card-photo">
+                    <img src='{{path+data.firstName}}-{{data.id}}.png'>
+                </li>
+                <li class="card-address">
+                    <h1>{{data.address.city}}</h1>
+                    <h1>{{data.address.state}}</h1>
+                </li>
+            </ul>
+        </section>
+    </article>
+</section>
+
+<footer></footer>

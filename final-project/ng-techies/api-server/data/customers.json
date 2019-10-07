@@ -1,0 +1,322 @@
+[ 
+	{
+		"id": 1001,
+		"firstName": "Rahul",
+		"lastName": "Kumar",
+		"gender":"M",
+		"phoneNo": "9856475218",
+		"email": "rahul@gmail.com",
+		"address": {
+				"houseNo": "3457", 
+				"society": "ram nagar", 
+				"street": "M.G Road", 
+				"city": "rajpura", 
+				"state": "punjab", 
+				"country": "india"
+			}
+	},
+	{
+		"id": 1002,
+		"firstName": "Rajesh",
+		"lastName": "Gupta",
+		"gender":"M",
+		"phone": "9856467218",
+		"email": "rajesh@gmail.com",
+		"address": {
+				"houseNo": "457", 
+				"society": "Farookh Nagar", 
+				"street": "Sohna Road", 
+				"city": "Rewari", 
+				"state": "Haryana", 
+				"country": "india"
+			}
+	},
+	{
+		"id": 1003,
+		"firstName": "Arshdeep",
+		"lastName": "Singh",
+		"gender":"M",
+		"phoneNo": 88956475318,
+		"email": "arshdeep_singh@gmail.com",
+		"address": {
+				"houseNo": "2457",
+				"society": "Sunny Enclave", 
+				"street": "Major Ram Sing Road", 
+				"city": "Chandigarh", 
+				"state": "U.T.", 
+				"country": "India"
+			}
+	},
+	{
+		"id": 1004,
+		"firstName": "Priyanka",
+		"lastName": "Sharma",
+		"gender":"F",
+		"phone": 9859475218,
+		"email": "sharma_priyanka@gmail.com",
+		"address": {
+				"houseNo": "85", 
+				"society": "Gandhi Nagar", 
+				"street": "Major Sushil Aima Marg", 
+				"city": "Gurgaon", 
+				"state": "Haryana", 
+				"country": "india"
+			}	
+	},
+	{
+		"id": 1005,
+		"firstName": "Ruchika",
+		"lastName": "Sharma",
+		"gender":"F",
+		"phone": 785475218,
+		"email": "sharma_ruchika@gmail.com",
+		"address": {
+			"houseNo": "8598", 
+			"society": "Karol Bagh", 
+			"street": "Rajput Khurd Village Road", 
+			"city": "Delhi", 
+			"state": "U.T.", 
+			"country": "india"
+		}
+	},
+	{
+		"id": 1006,
+		"firstName": "Simran",
+		"lastName": "Kaur",
+		"gender":"F",
+		"phone": 7859375218,
+		"email": "kaur.simran@gmail.com",
+		"address": {
+				"houseNo": "219", 
+				"society": "Ajit Nagar", 
+				"street": "Rajpur Khurd Extention Road", 
+				"city": "Ferozpur", 
+				"state": "Punjab", 
+				"country": "india"
+			}
+	},
+	{
+		"id": 1007,
+		"firstName": "Radhika",
+		"lastName": "Apte",
+		"gender":"F",
+		"phone": 8875412365,
+		"email": "apte_radhika@gmail.com",
+		"address": {
+		   "houseNo": "375", 
+		   "society": "Vasant Kunj", 
+		   "street": "CDR Chowk", 
+		   "city": "Gurgaon", 
+		   "state": "Haryana", 
+			"country": "india"
+		}
+	},
+	{
+		"id": 1008,
+		"firstName": "Priya",
+		"lastName": "Jindal",
+		"gender":"F",
+		"phone": 7845965321,
+		"email": "priyajindal@gmail.com",
+		"address": {
+			"houseNo": "458", 
+			"society": "Model town", 
+			"street": "Nirvana Road", 
+			"city": "Amritsar", 
+			"state": "Punjab", 
+			"country": "india"
+		}
+	},
+	{
+		"id": 1009,
+		"firstName": "Riya",
+		"lastName": "Sharma",
+		"gender":"F",
+		"phone": 9855475318,
+		"email": "sharma_riya@gmail.com",
+		"address": {
+			"houseNo": "859", 
+			"society": "Punjabi Bagh", 
+			"street": "DLF Road", 
+			"city": "Patiala", 
+			"state": "Punjab", 
+			"country": "India"
+		}
+	},
+	{
+		"id": 1010,
+		"firstName": "Sahil",
+		"lastName": "Kumar",
+		"gender":"M",
+		"phoneNo": 7525945218,
+		"email": "sahil@gmail.com",
+		"address": {
+			"houseNo": "185", 
+			"society": "Shastri Nagar", 
+			"street": "Green View Road", 
+			"city": "Ludhiana", 
+			"state": "Punjab", 
+			"country": "india"
+		}
+	},
+	{
+		"id": 1011,
+		"firstName": "Bipanpreet",
+		"lastName": "Singh",
+		"gender":"M",
+		"phoneNo": 7529945218,
+		"email": "bipanpreet@gmail.com",
+		"address": {
+			"houseNo": "189", 
+			"society": "Shastri Nagar", 
+			"street": "Green View Road", 
+			"city": "Ludhiana", 
+			"state": "Punjab", 
+			"country": "india"
+		}
+	},
+	{
+		"id": 1012,
+		"firstName": "Jasleen",
+		"lastName": "Kaur",
+		"gender":"F",
+		"phoneNo": 8525945218,
+		"email": "kaur_jasleen@gmail.com",
+		"address": {
+			"houseNo": "285", 
+			"society": "Model Town", 
+			"street": "Green View Road", 
+			"city": "Patiala", 
+			"state": "Punjab", 
+			"country": "india"
+		}
+	},
+	{
+		"id": 1013,
+		"firstName": "Harry",
+		"lastName": "Sharma",
+		"gender":"M",
+		"phoneNo": 7524295218,
+		"email": "harrysharma@gmail.com",
+		"address": {
+			"houseNo": "289", 
+			"society": "Dawarka Nagar", 
+			"street": "Green View Road", 
+			"city": "Gurgaon", 
+			"state": "Haryana", 
+			"country": "india"
+		}
+	},
+	{
+		"id": 1014,
+		"firstName": "Upinder",
+		"lastName": "Kaur",
+		"gender":"F",
+		"phoneNo": 8754296542,
+		"email": "upinderkaur@gmail.com",
+		"address": {
+			"houseNo": "785", 
+			"society": "Ram Nagar", 
+			"street": "Green Park", 
+			"city": "Rajpura", 
+			"state": "Punjab", 
+			"country": "india"
+		}
+	},
+	{
+		"id": 1015,
+		"firstName": "Raveena",
+		"lastName": "Sheikh",
+		"gender":"F",
+		"phoneNo": 9525945218,
+		"email": "sheikh_raveena@gmail.com",
+		"address": {
+			"houseNo": "167", 
+			"society": "Aprajita Society", 
+			"street": "Mahatama Gandhi Road", 
+			"city": "Zirakpur", 
+			"state": "Punjab", 
+			"country": "india"
+		}
+	},
+	{
+		"id": 1016,
+		"firstName": "Simranjeet",
+		"lastName": "Singh",
+		"gender":"M",
+		"phoneNo": 7845965218,
+		"email": "jeetsimran@gmail.com",
+		"address": {
+			"houseNo": "1957", 
+			"society": "Sushma Enclave", 
+			"street": "Patiala-Zirakpur Highway", 
+			"city": "Zirakpur", 
+			"state": "Punjab", 
+			"country": "india"
+		}
+	},
+	{
+		"id": 1017,
+		"firstName": "Gauravjit",
+		"lastName": "Singh",
+		"gender":"M",
+		"phoneNo": 9875945218,
+		"email": "gauravsingh@gmail.com",
+		"address": {
+			"houseNo": "2001", 
+			"society": "Sunny Enclave", 
+			"street": "Green View Road", 
+			"city": "Ludhiana", 
+			"state": "Punjab", 
+			"country": "india"
+		}
+	},
+	{
+		"id": 1018,
+		"firstName": "Saurav",
+		"lastName": "Kumar",
+		"gender":"M",
+		"phoneNo": 8574945218,
+		"email": "kumarsaurav@gmail.com",
+		"address": {
+			"houseNo": "297", 
+			"society": "Omaxe City", 
+			"street": "Sohna Road", 
+			"city": "Patial", 
+			"state": "Punjab", 
+			"country": "india"
+		}
+	},
+	{
+		"id": 1019,
+		"firstName": "Smriti",
+		"lastName": "Devi",
+		"gender":"F",
+		"phoneNo": 8745945218,
+		"email": "smritidevi@gmail.com",
+		"address": {
+			"houseNo": "450", 
+			"society": "Mahatama Gandhi Society", 
+			"street": "M.G. Road", 
+			"city": "Gurgaon", 
+			"state": "Haryana", 
+			"country": "india"
+		}
+	},
+	{
+		"id": 1020,
+		"firstName": "Amandeep",
+		"lastName": "Kaur",
+		"gender":"F",
+		"phoneNo": 8596745213,
+		"email": "amandeep.kaur@gmail.com",
+		"address": {
+			"houseNo": "5007", 
+			"society": "Shastri Nagar", 
+			"street": "Green View Road", 
+			"city": "Ludhiana", 
+			"state": "Punjab", 
+			"country": "india"
+		}
+	}
+]

@@ -1,0 +1,42 @@
+<section class="order">
+	<section class="order-container">
+		<h1>Orders</h1>
+		<nav class="nav-order" role="navigation">
+			<ul class="order-menu">
+				<li class="order-menu-list active-order-menu-item"><a>All</a></li>
+				<li><a>Unfulfill</a></li>
+				<li><a>Fulfil</a></li>
+				<li><a>Unpaid</a></li>
+				<li><a>Paid</a></li>
+				<li><a>Pending</a></li>
+			</ul>
+		</nav>
+	</section>
+	<section>
+		<table class="order-listing">
+			<tr class="listing-heading">
+				<th>Orders</th>
+				<th>Date</th>
+				<th>Product Name</th>
+				<th>Payment Status</th>
+				<th>Fulfillment Status</th>
+				<th>Total</th>
+			</tr>
+			<tr class="listing-data" *ngFor="let order of orders">
+				<td>{{order.orderId}}</td>
+				<td>{{order.orderDate}}</td>
+				<td>{{order.products[0].productName}}</td>
+				<td><span class="cta {{order.payStatus}}">{{order.payStatus | uppercase}}</span></td>
+				<td>
+					<span *ngIf="order.fulfillStatus; else elseBlock" class="cta fulfill">Fulfilled</span>
+					<ng-template #elseBlock>
+						<span class="cta unfulfill">Unfulfilled</span>
+					</ng-template>
+				</td>
+				<td>&#8377; {{order.products[0].orderPrice}}</td>
+			</tr>
+		</table>
+	</section>
+</section>
+
+<router-outlet></router-outlet>

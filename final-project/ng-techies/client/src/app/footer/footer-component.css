@@ -1,0 +1,10 @@
+
+.footer{
+    padding: 2em 8em;
+    display: flex;
+    background-color: #d6d6d6;
+    flex-wrap: wrap;
+}
+.footer-content{
+    color: #606060;
+}

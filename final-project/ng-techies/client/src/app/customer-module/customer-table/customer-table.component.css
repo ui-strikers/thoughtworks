@@ -1,0 +1,32 @@
+main{
+	margin: 3em 0em;
+}
+.container{
+	width: 80%;
+	margin: 0 auto;
+}
+.row-table{
+	width: 100% !important;
+	border-collapse: collapse; 
+}
+.table-heading{
+	border-bottom: 0.18em solid #CECECE;
+	line-height: 2.8em;
+    text-align: left;
+}
+.table-data{
+	border-bottom: 0.18em solid #CECECE;
+	line-height: 2em;
+}
+.row-table tr:nth-of-type(even) { 
+	background: #eee;	
+}
+.row-table tr:nth-of-type(odd) { 
+	background: #fff; 
+}
+.table-image{
+	width: 8%;
+}
+.table-address{
+	width: 30%;
+}

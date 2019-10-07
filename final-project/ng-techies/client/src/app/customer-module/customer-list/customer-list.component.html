@@ -1,0 +1,7 @@
+<section>
+    <ul class="customer-list">
+        <li *ngFor='let data of customers'>
+            <img class="circle" src='assets/images/{{data.firstName}}-{{data.id}}.png' width="35" height="30">
+            {{data.firstName}} {{data.lastName}}</li>
+    </ul>
+</section>

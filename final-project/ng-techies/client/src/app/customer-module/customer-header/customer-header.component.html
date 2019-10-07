@@ -1,0 +1,30 @@
+<section class="header-container">
+	<section class="customer-header">
+		<i class="fa fa-user"></i>
+		<h2 class="customer-title">&nbsp;Customers</h2>
+	</section>
+	<section class="customer-subheader">
+		<nav class="nav-listing" role="navigation">
+			<ul class="nav-series">
+				<li class="view-icon">
+					<a [routerLink]="['./cardView']" routerLinkActive="link-active" class=" view-title active">
+						<i class="fa fa-th"></i> Card View
+					</a>
+				</li>
+				<li class="view-icon">
+					<a [routerLink]="['./listView']" routerLinkActive="link-active" class=" view-title">
+						<i class="fa fa-list"></i> List View
+					</a>
+				</li>
+				<li class="view-icon">
+					<a [routerLink]="['./tableView']" routerLinkActive="link-active" class=" view-title">
+						<i class="fa fa-table"></i> Table View
+					</a>
+				</li>
+			</ul>
+		</nav>
+		<section class="filter-section">
+			<input type="text" placeholder="Filter">
+		</section>
+	</section>
+</section>	
