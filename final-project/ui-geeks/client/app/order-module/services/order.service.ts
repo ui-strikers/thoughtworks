@@ -16,4 +16,13 @@ export class OrderService {
 		console.log("Inside OrderService fetchOrderData!!");
 		return this.http.get<Order[]>(this.orderAPI);
 	}
+
+	fetchOrderTotal(order){
+        let product = 0;
+		for(let products of order.products){
+          product += products.orderPrice;
+          console.log(products);
+        }
+        return product;
+	}
 }

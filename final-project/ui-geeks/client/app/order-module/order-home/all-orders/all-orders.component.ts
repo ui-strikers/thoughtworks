@@ -24,17 +24,10 @@ export class AllOrdersComponent implements OnInit {
       this.orderService.fetchOrderData()
           .subscribe((orderList) => {
               for(let order of orderList){
-                let product = 0;
-                for(let products of order.products){
-                  product += products.orderPrice;
-                  console.log(products);
-                }
-                console.log(product);
-                this.totalOrderPrice.push(product);
+                this.totalOrderPrice.push(this.orderService.fetchOrderTotal(order));
               }
               this.orders = orderList;
        });
-       console.log(this.totalOrderPrice);
     }
 
 }
