@@ -1,7 +1,4 @@
 import { Component,Inject, Input} from '@angular/core';
-import { CustomerService } from '../../services/customer.service';
-import { Customer } from '../../models/customer';
-import { Address } from '../../models/address';
 
 @Component({
     selector:'[customer-row]',
