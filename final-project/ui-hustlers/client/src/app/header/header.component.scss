@@ -1,0 +1,61 @@
+@import '../../assets/scss/partials/variables';
+
+.menu {
+    display: flex;
+    align-items: center;
+
+    &__brand {
+        font-size: 2rem;
+        color: $white;
+        font-weight: 600;
+        text-shadow: 1px 1px 1px $black;
+        padding: 0.75rem 1rem 0.75rem 0rem;
+        margin: 0rem 0.75rem 0rem 0rem;
+        display: flex;
+        align-items: center;
+
+        .logo {
+            max-width: 3.25rem;
+            margin-right: 1rem;
+        }
+    }
+
+    &__toggle {
+        font-size: 2rem;
+        color: $white;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        display: none;
+    }
+
+    &__bar {
+        display: flex;
+    }
+
+    &__item {
+        margin: 1rem 0.75rem;
+    }
+
+    &__link {
+        font-size: 1.25rem;
+        color: $white;
+        padding: 0.5rem 1rem;
+        border-radius: 0.35rem;
+        transition: .2s ease-in-out;
+
+        &:hover,
+        &:focus {
+            background: $white;
+            color: $black;
+            transition: .2s ease-in-out;
+        }
+
+        &--active {
+            background: $white;
+            color: $black;
+            transition: .2s ease-in-out;
+        }
+    }
+
+}

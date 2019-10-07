@@ -1,0 +1,52 @@
+/*Author : Jyoti Bhamrah*/
+
+.top-header{
+    background: #14628f;
+    width: 97.9%;
+    position:fixed;
+    z-index:2;
+    top:0;
+    padding: 1em;
+    
+    .container{
+    	display:flex;
+    }
+
+    .navbar	{
+    	
+    	.menu{
+    		
+    		.menu-item{
+    			
+    			padding:15px 20px;
+    		}
+    		.menu-item.active{
+
+    			border-radius:5px;
+    			background:#fff;
+
+    			a {
+    				color:#14628f
+    			}
+    		}
+    	}
+    }
+}
+
+.logo{
+	float:left;
+	margin:0;
+	
+	img {
+		height:40px;
+		float:left;
+	}
+	h1 {
+		color:#fff;
+		float:left;
+		margin:0;
+		font-size:1.5em;
+		line-height:2em;
+		font-weight:400;
+	}	
+}

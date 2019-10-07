@@ -1,0 +1,21 @@
+<section class='container'>
+    <table class='table'>
+        <thead class='table-head'>
+            <tr>
+                <th>Order No.</th>
+                <th>Date</th>
+                <th>Customer Id</th>
+                <th align="left">
+                    Payment Status
+                </th>
+                <th align="left">Fulfillment Status</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody class='table-row'>
+            <tr *ngFor='let order of orders;let i = index' order-row [orderList]='order' [total]='totalOrderPrice[i]'>
+
+            </tr>
+        </tbody>
+    </table> 
+</section>

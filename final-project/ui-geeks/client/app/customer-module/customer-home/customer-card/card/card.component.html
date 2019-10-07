@@ -1,0 +1,32 @@
+<article  class="card">
+    <header class="card-head">
+        <h1>
+            {{data.firstName}} {{data.lastName}}
+        </h1> 
+        <span class="edit-icon">
+            <a href="#">
+                <i class="fa fa-edit text-white"></i>
+            </a>
+        </span>
+    </header>
+    <div class="card-body">
+        <figure class="card-img" >
+            <span> 
+                <img src='{{PATH}}{{data.firstName|lowercase}}-{{data.id}}.jpg' />
+            </span>
+        </figure>
+        <aside class="pull-left">
+            <p class="details">
+                {{ data.address.city }}
+            </p>
+            <p class="details">
+                {{ data.address.state }}
+            </p>
+            <p class="details">
+                <a href="#"> 
+                    View Orders
+                </a>
+            </p>
+        </aside>
+    </div>
+</article>

@@ -1,0 +1,40 @@
+
+<td align="center" width="10%">{{orderList.orderId}}</td>
+<td align="center">{{orderList.orderDate}}</td>
+<td align="center">{{orderList.customerId}}</td>
+<td *ngIf="orderList.payStatus == 'paid'" align="left" width="15%">
+	<span class='success'>
+		{{orderList.payStatus | titlecase }}
+	</span>
+</td>
+<td *ngIf="orderList.payStatus == 'pending'" width="15%">
+	<div>
+		<span class='info'>
+			{{orderList.payStatus | titlecase}}
+		</span>
+	</div>
+</td>
+<td *ngIf="orderList.payStatus == 'unpaid'" width="15%">
+	<div>
+		<span  class='danger'>
+			{{orderList.payStatus | titlecase}}
+		</span>
+	</div>
+</td>
+<td *ngIf="orderList.fulfillStatus == true" width="15%">
+	<div>
+		<span class='fulfilled'>
+			Fulfilled
+		</span>
+	</div>
+</td>
+<td *ngIf="orderList.fulfillStatus == false" width="15%">
+	<div>
+		<span class='unfulfilled'>
+			Unfulfilled
+		</span>
+	</div>
+</td>
+<td align="center" width="10%">
+	{{total}}
+</td>

@@ -1,0 +1,50 @@
+.table {
+	border-collapse: collapse;
+    width: $full-width;
+    margin: 0 auto;
+	thead {
+		th {
+			padding: 0.65em  .5em;
+            font-weight: 500;
+			font-size: 1.15em;
+			color : $white;
+			background-color : $blue;
+			text-align:center;
+		}
+	}
+
+	tbody {
+		border-bottom: 3px solid $blue;
+		tr {
+			border-bottom: 2px solid #ddd;
+       
+			td {
+				padding: .5em 0;
+				text-align:center;
+				font-size: 0.85rem;
+				a {
+					color: $blue;
+					text-decoration: none;
+					display: inline-block;
+					margin: 0 .5em 0 0;
+					&:hover, &:active, &:focus {
+						color: darken($blue, 10%);
+						border: none;
+					}
+				}
+			}
+			td img{
+				height:3rem;
+			}
+			td:nth-child(2){
+				color:$blue;
+			}
+		}
+		tr:nth-child(even){
+				background-color:#b9b2f194;
+			}
+			tr:nth-child(odd){
+				background-color:#fbf8f8;
+			}
+	}
+}

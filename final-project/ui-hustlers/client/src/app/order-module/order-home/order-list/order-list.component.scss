@@ -1,0 +1,53 @@
+
+@import '../../../../assets/scss/partials/variables';
+@import '../../../../assets/scss/partials/mixins';
+
+
+.label-pending {
+    background-color: $orange;
+    @include label;
+}
+
+.label-paid {
+    background-color: $sucess;
+    @include label;
+}
+
+.label-unpaid {
+    background-color: $gray;
+    @include label;
+}
+
+.label-unfullfilled {
+    background-color: $danger;
+    @include label;
+}
+
+.label-fullfilled {
+    background-color: $sucess;
+    @include label;
+}
+
+.order-status {
+    background-color: $gray;
+    @include button-box-shadow;
+}
+
+.order-status-active {
+    background-color: $blue;
+    @include button-box-shadow;
+}
+
+.order-list-button {
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+    cursor: pointer;
+}
+
+.table {
+    tbody {
+        tr td {
+            padding: 0.75rem;
+        }
+    }
+}

@@ -1,0 +1,23 @@
+.customer{
+    margin: 1rem 0.5rem;
+
+    &__list {
+            padding: 8px;
+            
+    }
+
+    &__name {
+        margin: 12px 0px;
+        font-size: 14px;
+        letter-spacing: 0.2px;
+        text-transform: capitalize;
+    } 
+    &__image{
+        width: 30px;
+        height: 30px;
+        overflow: hidden;
+        border-radius: 50%;
+    }   
+
+}
+   

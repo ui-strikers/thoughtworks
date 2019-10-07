@@ -1,0 +1,26 @@
+
+
+.customer__menu{
+  padding-top: 0.85rem;
+  display: flex;
+  justify-content: space-between;
+  &--item{
+    margin: 0 2.5rem;
+    &:nth-child(1){margin-left: 0;}
+  }
+  &--link{
+    font-size: 1.15rem;
+    color: #333;
+    &:hover,&:focus{
+      color:#6b7cda;
+      outline: none;
+    }
+  }
+  &--link--active{
+    color:#6b7cda;
+  }
+  &--link--disable{
+    color:#ccc;
+    cursor:no-drop;
+  }
+}
