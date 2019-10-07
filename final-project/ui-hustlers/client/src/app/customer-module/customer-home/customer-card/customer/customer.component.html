@@ -1,0 +1,32 @@
+<!-- customer detail in card format start -->
+<article class="customer">
+
+  <!-- customer full name -->
+  <header class="customer__name bg-primary">
+    <h3 class="text-white">{{customerDetail.firstName + ' ' + customerDetail.lastName}}</h3>
+  </header>
+  <!-- customer full name end -->
+
+  <!-- customer details start -->
+  <section class="customer__details">
+
+    <!-- customer details: profile picture -->
+    <figure class="customer__profile">
+      <img class="img-fill"
+        src='{{customerProfile}}/customer/{{customerDetail.firstName}}-{{customerDetail.id}}.png'
+        title="{{customerDetail.firstName}} {{customerDetail.lastName}}"
+        alt="{{customerDetail.firstName}} {{customerDetail.lastName}}">
+    </figure>
+    <!-- customer details: profile picture -->
+
+    <!-- customer details: address start -->
+    <address class="customer__address">
+      <p class="customer__details-state">{{customerDetail.address.state}}</p>
+      <p class="customer__details-city">{{customerDetail.address.country}}</p>
+      <p class="customer__details-orders"><a class="text-blue" href="">View Orders</a></p>
+    </address>
+    <!-- customer details: address end -->
+
+  </section>
+</article>
+<!-- customer detail in card format end -->

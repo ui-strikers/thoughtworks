@@ -1,0 +1,93 @@
+<!-- customer module header start -->
+<header class="container header-customer">
+
+  <!-- customer module: designation title start-->
+  <section class="customer__miniature col__12 m-y-6">
+    <figure class="m-r-2">
+      <img src="{{customerIcon}}/customer/fa-user.png" alt="customer" class="profile-picture">
+    </figure>
+    <h2 class="h2-text m-t-3 mn-r-2">Customers</h2>
+  </section>
+  <!-- customer module: designation title end-->
+
+  <!-- customer module: menu bar start-->
+  <nav class="menu-bar flex-class m-y-6 ">
+
+    <!-- customer module: menu start-->
+    <ul class="customer__menu">
+
+       <!-- customer module: menu (card view) start -->
+      <li class="customer__menu--item">
+        <a routerLink="cardView" class="customer__menu--link"
+          routerLinkActive="customer__menu--link--active" tabindex="0" role="button"
+          aria-label="show customer card view">
+          <!-- customer module: menu card view icon -->
+          <span class="m-r-2">
+            <i class="fa fa-th"
+              aria-hidden="true">
+            </i>
+          </span>
+           <!-- customer module: menu card view icon end -->
+          Card View
+        </a>
+      </li>
+      <!-- customer module: menu (card view) end-->
+
+      <!-- customer module: menu (list view) start --> 
+      <li class="customer__menu--item">
+        <a routerLink="listView" class="customer__menu--link"
+          routerLinkActive="customer__menu--link--active" tabindex="1" role="button"
+          aria-label="show customer List View ">
+        <!-- customer module: menu list view icon -->
+          <span class="m-r-2">
+            <i class="fa fa-list" aria-hidden="true"></i>
+          </span>
+        <!-- customer module: menu list view icon end -->
+          List View
+        </a>
+      </li>
+      <!-- customer module: menu (list view) end-->
+
+       <!-- customer module: menu (table view) start --> 
+      <li class="customer__menu--item">
+        <a routerLink="tableView" class="customer__menu--link"
+          routerLinkActive="customer__menu--link--active" tabindex="2" role="button"
+          aria-label="show customer Table View ">
+          <!-- customer module: menu table view icon -->
+          <span class="m-r-2">
+            <i class="fa fa-table" aria-hidden="true"></i>
+          </span>
+          <!-- customer module: menu table view icon end-->  
+            Table View</a>
+      </li>
+      <!-- customer module: menu (table view) end --> 
+
+      <!-- customer module: menu (add new customer) start --> 
+      <li class="customer__menu--item">
+        <a href="javascript:;" class="customer__menu--link--disable" tabindex="3" role="button"
+          aria-label="Add New Customer">
+          <!-- customer module: menu (add new customer) icon -->
+          <span class="m-r-2">
+            <i class="fa fa-plus" aria-hidden="true"></i>
+          </span>
+           <!-- customer module: menu (add new customer) icon end-->
+          Add New Customer 
+        </a>
+      </li>
+      <!-- customer module: menu (add new customer) end -->
+
+    </ul>
+    <!-- customer module: menu end-->
+
+    <!-- customer module: menu customer filter start-->
+    <div class="filter" data-message="Filter by customers">
+      <form role="form">
+        <legend>Filter</legend>
+        <label for="filter" class="filter-text"></label>
+        <input type="search" placeholder="Search Customer" name="search" class="input-search" tabindex="4">
+      </form>
+    </div>
+    <!-- customer module: menu customer filter end-->
+  </nav>
+   <!-- customer module: menu bar end-->
+</header>

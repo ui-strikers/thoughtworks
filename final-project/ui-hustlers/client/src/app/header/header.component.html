@@ -1,0 +1,55 @@
+<!-- app header starts here -->
+
+<header class="bg-primary m-b-4">
+
+    <!-- app header menu here -->
+    <nav class="menu container">
+
+        <!-- app brand logo start here -->
+        <a class="menu__brand" href="#" tabindex="0" aria-label="Home Page">
+            <figure class="logo">
+                <img class="img-fill" src="{{imgPath}}/svg/teamicon.svg" alt="Customer Manager"
+                    title="Customer Manager" />
+            </figure> Customer Manager
+        </a>
+        <!-- app brand logo end here -->
+
+        <!-- app mobile toggle start here -->
+        <button class="menu__toggle" tabindex="0" aria-label="Mobile Toggle Button" role="Button">
+            <i class="fa fa-bars"></i>
+        </button>
+          <!-- app mobile toggle end here -->
+         <!-- app menu start here -->
+        <ul class="menu__bar">
+            <!-- app menu items (customer) start here -->
+            <li class="menu__item">
+                <a class="menu__link" routerLink="customers" routerLinkActive="menu__link--active" tabindex="0"
+                    role="link" aria-label="Customers menu link">Customers</a>
+            </li>
+             <!-- app menu items (customer) end here -->
+
+             <!-- app menu items (orders) start here -->
+            <li class="menu__item">
+                <a routerLink="orders" class="menu__link" routerLinkActive="menu__link--active" tabindex="1" role="link"
+                    aria-label="orders menu link">Orders</a>
+            </li>
+             <!-- app menu items (orders) end here -->
+
+            <!-- app menu items (about) start here -->
+            <li class="menu__item">
+                <a routerLink="about" class="menu__link" routerLinkActive="menu__link--active" tabindex="2" role="link"
+                    aria-label="about menu link">About</a>
+            </li>
+             <!-- app menu items (about) end here -->
+
+              <!-- app menu items (login) start here -->
+            <li class="menu__item">
+                <a routerLink="login" class="menu__link" routerLinkActive="menu__link--active" tabindex="3" role="link"
+                    aria-label="login menu link">Login</a>
+            </li>
+             <!-- app menu items (login) end here -->
+        </ul>
+        <!-- app menu end here -->
+    </nav>
+    <!-- app header menu end -->
+</header>

@@ -1,0 +1,85 @@
+body {
+  font-size: $f-size;
+  font-family: $f-famaily;
+  line-height: 1em;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.img-fill {
+  max-width: $full-width;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.flex-class {
+  display: flex;
+  justify-content: space-between;
+}
+
+.customer__miniature {
+  display: flex;
+}
+
+.listing {
+  display: inline;
+  margin-right: 75px;
+}
+
+.grey-text {
+  color: grey;
+  font-weight: normal;
+}
+
+.h2-text {
+  font-size: 1.8rem;
+}
+
+.p-text {
+  font-size: 1.1rem;
+  color: #000000b3;
+}
+
+.filter-text {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input-search {
+  padding: 5px;
+}
+
+.profile-picture {
+  width: 35px;
+  height: 35px;
+  overflow: hidden;
+  border-radius: 50%;
+}

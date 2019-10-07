@@ -1,162 +1,181 @@
 [
     {
-        "id": 1001,
-        "firstName": "sahil",
-        "lastName": "chhabra",
-        "gender": "male",
-        "phone": 9136191860,
-        "email": "sahilchhabra019@gmail.com",
-        "address": {
-            "houseNumber": "216 A",
-            "society": "Green Fields Apartment",
-            "street": "Zakir Hussain Marg",
-            "city": "Faridabad",
-            "state": "Haryana",
-            "country": "India"
+             "id": 1001,
+             "firstName": "sahil",
+			 "lastName": "chhabra",
+			 "gender": "male",
+             "phone": 9136191860,
+             "email": "sahilchhabra019@gmail.com",
+             "address":
+             {
+                 "houseNo": "216 A",
+                 "society": "Green Fields Apartment",
+                 "street": "Zakir Hussain Marg",
+                 "city": "Faridabad",
+                 "state": "Haryana",
+                 "country": "India"
+             }
+         } ,
+
+         {
+            "id": 1002,
+            "firstName": "ram",
+			"lastName": "sharma",
+			"gender": "male",
+            "phone": 9718605999,
+            "email": "ram121@gmail.com",
+            "address":
+            {
+                "houseNo": "215 B",
+                "society": "Valley Apartment",
+                "street": "Gandhi Marg",
+                "city": "New Delhi",
+                "state": "Delhi",
+                "country": "India"
+            }
+        } ,
+
+        {
+            "id": 1003,
+            "firstName": "pankaj",
+			"lastName": " tiwari",
+			"gender": "male",
+            "phone": 9999101078,
+            "email": "pankaj@gmail.com",
+            "address":
+            {
+                "houseNo": "222",
+                "society": "Worldview society",
+                "street": "Andrew Road",
+                "city": "New Delhi",
+                "state": "Delhi",
+                "country": "India"
+            }
+        },
+
+        {
+            "id": 1004,
+            "firstName": "abdul",
+			"lastName": "sheikh",
+			"gender": "male",
+            "phone": 8047192860,
+            "email": "abdul019@yahoo.in",
+            "address":
+            {
+                "houseNo": "1930-1",
+                "society": "Tara Apartment",
+                "street": "Mandir Road Kalkaji",
+                "city": "New Delhi",
+                "state": "Delhi",
+                "country": "India"
+            }
+        },
+
+        {
+            "id": 1005,
+            "firstName": "palvi",
+			"lastName": "dhawan",
+			"gender": "female",
+            "phone": 9719760383,
+            "email": "dhawan901@gmail.com",
+            "address":
+            {
+                "houseNo": "2350",
+                "society": "Gateway Society",
+                "street": "Sector 18",
+                "city": "Chandigarh",
+                "state": "Haryana",
+                "country": "India"
+            }
+        },
+
+        {
+            "id": 1006,
+            "firstName": "sangeeta",
+			"lastName": "paswan",
+			"gender": "female",
+            "phone": 8067524422,
+            "email": "sangeeta018@gmail.in",
+            "address":
+            {
+                "houseNo": "2350",
+                "society": "Gateway Society",
+                "street": "Sector 18",
+                "city": "Chandigarh",
+                "state": "Haryana",
+                "country": "India"
+            }
+        },
+
+        {
+            "id": 1007,
+            "firstName": "tarun",
+			"lastName": "chaudhary",
+			"gender": "male",
+            "phone": 8067524423,
+            "email": "tarunch@gmail.in",
+            "address":
+            {
+                "houseNo": "111",
+                "society": "Gokul Dham",
+                "street": "Navi Mumbai",
+                "city": "Mumbai",
+                "state": "Maharastra",
+                "country": "India"
+            }
+        },
+
+        {
+            "id": 1008,
+            "firstName": "sagar",
+			"lastName": "rana",
+			"gender": "male",
+            "phone": 9999911788,
+            "email": "sagar@gmail.in",
+            "address":
+            {
+                "houseNo": "189-B",
+                "society": "Paras apartment",
+                "street": "Sohna Road",
+                "city": "Gurugram",
+                "state": "Harayana",
+                "country": "India"
+            }
+        },
+
+        {
+            "id": 1009,
+            "firstName": "shubham",
+			"lastName": "jawla",
+			"gender": "male",
+            "phone": 9718059897,
+            "email": "jawla010@gmail.in",
+            "address":
+            {
+                "houseNo": "187-A",
+                "society": "Jyoti Villa",
+                "street": "MG Road",
+                "city": "Gurugram",
+                "state": "Harayana",
+                "country": "India"
+            }
+        },
+
+        {
+            "id": 1010,
+            "firstName": "ritesh",
+			"lastName": "tyagi",
+			"gender": "male",
+            "phone": 9736772982,
+            "email": "tyagi912@gmail.in",
+            "address":
+            {
+                "houseNo": "121-A",
+                "society": "villas Apartment",
+                "street": "Sector 9",
+                "city": "New Delhi",
+                "state": "Delhi",
+                "country": "India"
+            }
         }
-    },
-    {
-        "id": 1002,
-        "lastName": "Ram",
-        "secondName": "sharma",
-        "gender": "male",
-        "phone": 9718605999,
-        "email": "ram121@gmail.com",
-        "address": {
-            "houseNumber": "215 B",
-            "society": "Valley Apartment",
-            "street": "Gandhi Marg",
-            "city": "New Delhi",
-            "state": "Delhi",
-            "country": "India"
-        }
-    },
-    {
-        "id": 1003,
-        "firstName": "Pankaj",
-        "lastName": " Tiwari",
-        "gender": "male",
-        "phone": 9999101078,
-        "email": "pankaj@gmail.com",
-        "address": {
-            "houseNumber": "222",
-            "society": "Worldview society",
-            "street": "Andrew Road",
-            "city": "New Delhi",
-            "state": "Delhi",
-            "country": "India"
-        }
-    },
-    {
-        "id": 1004,
-        "firstName": "Abdul",
-        "lastName": "Sheikh",
-        "gender": "male",
-        "phone": 8047192860,
-        "email": "abdul019@yahoo.in",
-        "address": {
-            "houseNumber": "1930-1",
-            "society": "Tara Apartment",
-            "street": "Mandir Road Kalkaji",
-            "city": "New Delhi",
-            "state": "Delhi",
-            "country": "India"
-        }
-    },
-    {
-        "id": 1005,
-        "firstName": "Pallavi",
-        "lastName": "Dhawan",
-        "gender": "female",
-        "phone": 9719760383,
-        "email": "dhawan901@gmail.com",
-        "address": {
-            "houseNumber": "2350",
-            "society": "Gateway Society",
-            "street": "Sector 18",
-            "city": "Chandigarh",
-            "state": "Haryana",
-            "country": "India"
-        }
-    },
-    {
-        "id": 1006,
-        "firstName": "Sangeeta",
-        "lastName": "Paswan",
-        "gender": "female",
-        "phone": 8067524422,
-        "email": "sangeeta018@gmail.in",
-        "address": {
-            "houseNumber": "2350",
-            "society": "Gateway Society",
-            "street": "Sector 18",
-            "city": "Chandigarh",
-            "state": "Haryana",
-            "country": "India"
-        }
-    },
-    {
-        "id": 1007,
-        "firstName": "Tarun",
-        "lastName": "Chaudhary",
-        "gender": "male",
-        "phone": 8067524423,
-        "email": "tarunch@gmail.in",
-        "address": {
-            "houseNumber": "111",
-            "society": "Gokul Dham",
-            "street": "Navi Mumbai",
-            "city": "Mumbai",
-            "state": "Maharastra",
-            "country": "India"
-        }
-    },
-    {
-        "id": 1008,
-        "firstName": "Sagar",
-        "lastName": "Rana",
-        "gender": "male",
-        "phone": 9999911788,
-        "email": "sagar@gmail.in",
-        "address": {
-            "houseNumber": "189-B",
-            "society": "Paras apartment",
-            "street": "Sohna Road",
-            "city": "Gurugram",
-            "state": "Harayana",
-            "country": "India"
-        }
-    },
-    {
-        "id": 1009,
-        "firstName": "Shubham",
-        "lastName": "Jawla",
-        "gender": "male",
-        "phone": 9718059897,
-        "email": "jawla010@gmail.in",
-        "address": {
-            "houseNumber": "187-A",
-            "society": "Jyoti Villa",
-            "street": "MG Road",
-            "city": "Gurugram",
-            "state": "Harayana",
-            "country": "India"
-        }
-    },
-    {
-        "id": 1010,
-        "firstName": "Ritesh",
-        "lastName": "Tyagi",
-        "gender": "male",
-        "phone": 9736772982,
-        "email": "tyagi912@gmail.in",
-        "address": {
-            "houseNumber": "121-A",
-            "society": "villas Apartment",
-            "street": "Sector 9",
-            "city": "New Delhi",
-            "state": "Delhi",
-            "country": "India"
-        }
-    }
 ]
