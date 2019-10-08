@@ -8,7 +8,7 @@ export class Order{
 		private customerId:number, 
 		private orderDate:string, 
 		private payStatus:string,
-		private fulfillStatus:boolean,
+		private fulfillStatus:string,
 		private products:Product
 	){}
 

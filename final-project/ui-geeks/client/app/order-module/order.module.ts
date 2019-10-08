@@ -7,11 +7,13 @@ import { RouterModule } from '@angular/router';
 import { OrderHeaderComponent } from './order-header/order-header.component';
 import { OrderHomeComponent } from './order-home/order-home.component';
 import { AllOrdersComponent } from './order-home/all-orders/all-orders.component';
+import { OrdersComponent } from './order-home/orders/orders.component';
 import { OrderRowComponent } from './order-home/all-orders/order-row/order-row.component';
 
 
 //Services import
 import { OrderService } from './services/order.service';
+import { OrderStatusService } from './services/order-status.service';
 
 @NgModule({
   imports:[ 
@@ -22,9 +24,10 @@ import { OrderService } from './services/order.service';
     OrderHeaderComponent,
     OrderHomeComponent,
     AllOrdersComponent,
+    OrdersComponent,
     OrderRowComponent
   ],
-  providers: [ OrderService ]
+  providers: [ OrderService, OrderStatusService ]
 })
 
 export class OrderModule { }

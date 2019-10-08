@@ -23,7 +23,7 @@
                 {{ data.address.state }}
             </p>
             <p class="details">
-                <a href="#"> 
+                <a [routerLink]="['/customer-info/viewOrders', data.id]" routerLinkActive="active"> 
                     View Orders
                 </a>
             </p>

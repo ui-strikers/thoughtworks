@@ -12,6 +12,7 @@ import { Address } from '../../models/address';
 export class CustomerCardComponent implements OnInit {
 
     customers:Customer[];
+    
 
     constructor(private customerService:CustomerService, @Inject('PATH') private PATH:string) {
   		  console.log("Inside Customers Card Constructor!");

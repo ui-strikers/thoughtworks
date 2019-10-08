@@ -5,7 +5,7 @@ import { Product } from '../../models/product';
 
 
 @Component({
-    selector:'order-table',
+    selector:'all-orders',
     templateUrl:'./all-orders.component.html',
     styleUrls:['./all-orders.component.scss']
 })
@@ -16,7 +16,7 @@ export class AllOrdersComponent implements OnInit {
     totalOrderPrice = [];
 
     constructor(private orderService:OrderService){
-        console.log('inside customer table constructor');
+        console.log('Inside all orders constructor!');
     }
 
     ngOnInit() {

@@ -1,4 +1,4 @@
-#Version : 3.0.0
+#Version : 4.0.0
 ------------------------------------------------------------
 Project name: Order Management System
 ------------------------------------------------------------
@@ -24,11 +24,16 @@ Roles & Responsibilities in Project :-
 	|-> Service created of customers.
 	|-> Fetch data from API in customer module.
 	|-> Create REST API fetch JSON data of orders.
+	|-> Created Orders data filter API according to payment status.
+	|-> Created Orders data filter API according to fulfillment status.
+	|-> Orders dynamic routing using route parameters.
 2. Suchita Mehrotra :
 	|-> Create REST API fetch JSON data of customers.
 	|-> Service created of Orders.
 	|-> Design View created of customer table and fetch data through service.
 	|-> Worked on Complete Order Module.
+	|-> Created Customer Form API for adding new customer.
+	|->	Write data of customer form in json file.
 3. Yamini Barasker :
 	|-> JSON file created for customers data.
 	|-> Working on customer list view.
@@ -39,6 +44,8 @@ Roles & Responsibilities in Project :-
 	|-> Design View created of customer header.
 	|-> Created model Customer, Address, Orders, Products.
 	|-> JSON file created for orders data. 
+	|-> Created REST API to fetch data of customer orders.
+	|-> UI created of custom form with validations
 ------------------------------------------------------------
 Functionalities :- 
 
@@ -46,10 +53,12 @@ Functionalities :-
 	=> Top header with nested links of customer & order module.
 |-> Customer Module : 
 	=> Card, List & Table View of Customers data.
+	=> New Customer form
 	=> Required Models and Services created.
 	=> API for fetch JSON data.
 |-> Order Module :
 	=> All orders page of orders data.
+	=> Orders filter according to payment status and fulfillment status
 	=> Required Models and Services created.
 	=> API for fetch JSON data.
 
@@ -63,12 +72,4 @@ Version History :-
 #Version 2.0.0 => Created seperate order module for order components.
 #Version 2.0.1 => Routing of order components.
 #Version 3.0.0 => Created main header and footer and nested route for child modules.
-
-
-               
-
-
-
-
-
-
+#Version 4.0.0 => Added new customer form functionality, Orders filter as per payment & fulfillment status

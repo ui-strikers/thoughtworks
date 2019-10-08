@@ -21,19 +21,21 @@
 }
 
 .menu{ 
-    .menu-item:nth-child(1){
-        background-color:$theme
-    }
-    .menu-item {
-        float: left;
-        padding:0.3em 0.8em;
-        background-color:#8b8b8b;
-        border-right:1px solid $white; 
+    .menu-item { 
+        padding :5px 5px 5px 0px;
         
         a {
+            float: left;
+            padding:0.3em 0.8em;
+            background-color:#8b8b8b;
+            border-right:1px solid $white;
             text-decoration: none;
             color: white;
             text-align:center;
+         }
+         a.active{
+            border:none;
+            background:$theme;
          }
      }
 }

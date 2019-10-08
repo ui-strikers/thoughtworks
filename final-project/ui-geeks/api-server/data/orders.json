@@ -4,7 +4,7 @@
     "customerId": 1001,
     "orderDate": "12/02/2019",
     "payStatus": "paid",
-    "fulfillStatus": true,
+    "fulfillStatus": "fulfilled",
     "products": [
       {
         "productName": "Nutella",
@@ -25,7 +25,7 @@
     "customerId": 1002,
     "orderDate": "20/03/2019",
     "payStatus": "unpaid",
-    "fulfillStatus": false,
+    "fulfillStatus": "unfulfilled",
     "products": [
       {
         "productName": "Bread",
@@ -46,7 +46,7 @@
     "customerId": 1003,
     "orderDate": "04/04/2019",
     "payStatus": "pending",
-    "fulfillStatus": true,
+    "fulfillStatus": "fulfilled",
     "products": [
       {
         "productName": "Ghee",
@@ -67,7 +67,7 @@
     "customerId": 1004,
     "orderDate": "05/10/2019",
     "payStatus": "paid",
-    "fulfillStatus": true,
+    "fulfillStatus": "fulfilled",
     "products": [
       {
         "productName": "Nutella",
@@ -88,7 +88,7 @@
     "customerId": 1005,
     "orderDate": "04/10/2019",
     "payStatus": "unpaid",
-    "fulfillStatus": false,
+    "fulfillStatus": "unfulfilled",
     "products": [
       {
         "productName": "Bread",
@@ -109,7 +109,7 @@
     "customerId": 1006,
     "orderDate": "04/10/2019",
     "payStatus": "pending",
-    "fulfillStatus": true,
+    "fulfillStatus": "fulfilled",
     "products": [
       {
         "productName": "Nutella",
@@ -130,7 +130,7 @@
     "customerId": 1007,
     "orderDate": "03/10/2019",
     "payStatus": "paid",
-    "fulfillStatus": true,
+    "fulfillStatus": "fulfilled",
     "products": [
       {
         "productName": "Nutella",
@@ -151,7 +151,7 @@
     "customerId": 1008,
     "orderDate": "03/10/2019",
     "payStatus": "unpaid",
-    "fulfillStatus": false,
+    "fulfillStatus": "unfulfilled",
     "products": [
       {
         "productName": "Bread",
@@ -172,7 +172,7 @@
     "customerId": 1009,
     "orderDate": "03/10/2019",
     "payStatus": "pending",
-    "fulfillStatus": true,
+    "fulfillStatus": "fulfilled",
     "products": [
       {
         "productName": "Macroni",
@@ -189,7 +189,7 @@
     "customerId": 1010,
     "orderDate": "04/10/2019",
     "payStatus": "paid",
-    "fulfillStatus": true,
+    "fulfillStatus": "fulfilled",
     "products": [
       {
         "productName": "Nutella",
@@ -206,7 +206,7 @@
     "customerId": 1011,
     "orderDate": "03/10/2019",
     "payStatus": "unpaid",
-    "fulfillStatus": false,
+    "fulfillStatus": "unfulfilled",
     "products": [
       {
         "productName": "Bread",
@@ -223,7 +223,7 @@
     "customerId": 1012,
     "orderDate": "03/10/2019",
     "payStatus": "pending",
-    "fulfillStatus": true,
+    "fulfillStatus": "fulfilled",
     "products": [
       {
         "productName": "Soya Bean",
@@ -240,7 +240,7 @@
     "customerId": 1013,
     "orderDate": "02/10/2019",
     "payStatus": "pending",
-    "fulfillStatus": true,
+    "fulfillStatus": "fulfilled",
     "products": [
       {
         "productName": "Nutella",
@@ -253,7 +253,7 @@
     "customerId": 1014,
     "orderDate": "01/10/2019",
     "payStatus": "pending",
-    "fulfillStatus": true,
+    "fulfillStatus": "fulfilled",
     "products": [
       {
         "productName": "Milk",
@@ -266,7 +266,7 @@
     "customerId": 1015,
     "orderDate": "03/10/2019",
     "payStatus": "paid",
-    "fulfillStatus": true,
+    "fulfillStatus": "fulfilled",
     "products": [
       {
         "productName": "Rice",
@@ -279,7 +279,7 @@
     "customerId": 1016,
     "orderDate": "04/10/2019",
     "payStatus": "pending",
-    "fulfillStatus": true,
+    "fulfillStatus": "fulfilled",
     "products": [
       {
         "productName": "Wheat",
@@ -292,7 +292,7 @@
     "customerId": 1017,
     "orderDate": "01/10/2019",
     "payStatus": "paid",
-    "fulfillStatus": true,
+    "fulfillStatus": "fulfilled",
     "products": [
       {
         "productName": "Flour",
@@ -305,7 +305,7 @@
     "customerId": 1018,
     "orderDate": "03/10/2019",
     "payStatus": "pending",
-    "fulfillStatus": true,
+    "fulfillStatus": "fulfilled",
     "products": [
       {
         "productName": "Tomato Ketchup",
@@ -322,7 +322,7 @@
     "customerId": 1019,
     "orderDate": "02/10/2019",
     "payStatus": "unpaid",
-    "fulfillStatus": false,
+    "fulfillStatus": "unfulfilled",
     "products": [
       {
         "productName": "Flour",
@@ -339,7 +339,7 @@
     "customerId": 1020,
     "orderDate": "04/10/2019",
     "payStatus": "unpaid",
-    "fulfillStatus": false,
+    "fulfillStatus": "unfulfilled",
     "products": [
       {
         "productName": "Bread",
@@ -356,7 +356,7 @@
     "customerId": 1021,
     "orderDate": "03/09/2019",
     "payStatus": "unpaid",
-    "fulfillStatus": false,
+    "fulfillStatus": "unfulfilled",
     "products": [
       {
         "productName": "Flour",
@@ -369,7 +369,7 @@
     "customerId": 1022,
     "orderDate": "04/02/2019",
     "payStatus": "paid",
-    "fulfillStatus": true,
+    "fulfillStatus": "fulfilled",
     "products": [
       {
         "productName": "Flour",
@@ -386,7 +386,7 @@
     "customerId": 1023,
     "orderDate": "17/02/2019",
     "payStatus": "pending",
-    "fulfillStatus": false,
+    "fulfillStatus": "unfulfilled",
     "products": [
       {
         "productName": "Maggi",
@@ -403,7 +403,7 @@
     "customerId": 1024,
     "orderDate": "19/04/2019",
     "payStatus": "unpaid",
-    "fulfillStatus": false,
+    "fulfillStatus": "unfulfilled",
     "products": [
       {
         "productName": "Ghee",
@@ -416,7 +416,7 @@
     "customerId": 1025,
     "orderDate": "29/04/2019",
     "payStatus": "unpaid",
-    "fulfillStatus": false,
+    "fulfillStatus": "unfulfilled",
     "products": [
       {
         "productName": "Butter",
@@ -441,7 +441,7 @@
     "customerId": 1026,
     "orderDate": "20/06/2019",
     "payStatus": "paid",
-    "fulfillStatus": true,
+    "fulfillStatus": "fulfilled",
     "products": [
       {
         "productName": "Milk",
@@ -454,7 +454,7 @@
     "customerId": 1027,
     "orderDate": "20/03/2019",
     "payStatus": "paid",
-    "fulfillStatus": true,
+    "fulfillStatus": "fulfilled",
     "products": [
       {
         "productName": "Wheat",
@@ -472,7 +472,7 @@
     "customerId": 1028,
     "orderDate": "20/03/2019",
     "payStatus": "pending",
-    "fulfillStatus": true,
+    "fulfillStatus": "fulfilled",
     "products": [
       {
         "productName": "Chips",
@@ -485,7 +485,7 @@
     "customerId": 1029,
     "orderDate": "22/05/2019",
     "payStatus": "pending",
-    "fulfillStatus": false,
+    "fulfillStatus": "unfulfilled",
     "products": [
       {
         "productName": "Soft drink",
@@ -502,7 +502,7 @@
     "customerId": 1030,
     "orderDate": "24/05/2019",
     "payStatus": "pending",
-    "fulfillStatus": false,
+    "fulfillStatus": "unfulfilled",
     "products": [
       {
         "productName": "Butter",
@@ -515,7 +515,7 @@
     "customerId": 1031,
     "orderDate": "25/07/2019",
     "payStatus": "paid",
-    "fulfillStatus": true,
+    "fulfillStatus": "fulfilled",
     "products": [
       {
         "productName": "Milk",
@@ -528,7 +528,7 @@
     "customerId": 1032,
     "orderDate": "29/09/2019",
     "payStatus": "paid",
-    "fulfillStatus": true,
+    "fulfillStatus": "fulfilled",
     "products": [
       {
         "productName": "Bread",
@@ -545,7 +545,7 @@
     "customerId": 1033,
     "orderDate": "22/04/2019",
     "payStatus": "unpaid",
-    "fulfillStatus": false,
+    "fulfillStatus": "unfulfilled",
     "products": [
       {
         "productName": "Bread",
@@ -566,7 +566,7 @@
     "customerId": 1034,
     "orderDate": "28/08/2019",
     "payStatus": "unpaid",
-    "fulfillStatus": false,
+    "fulfillStatus": "unfulfilled",
     "products": [
       {
         "productName": "American Corn",
@@ -579,7 +579,7 @@
     "customerId": 1035,
     "orderDate": "28/03/2019",
     "payStatus": "pending",
-    "fulfillStatus": true,
+    "fulfillStatus": "fulfilled",
     "products": [
       {
         "productName": "Soft Drink",
@@ -592,7 +592,7 @@
     "customerId": 1036,
     "orderDate": "28/04/2019",
     "payStatus": "paid",
-    "fulfillStatus": true,
+    "fulfillStatus": "fulfilled",
     "products": [
       {
         "productName": "Paneer",
@@ -613,7 +613,7 @@
     "customerId": 1037,
     "orderDate": "18/03/2019",
     "payStatus": "paid",
-    "fulfillStatus": true,
+    "fulfillStatus": "fulfilled",
     "products": [
       {
         "productName": "Paneer",
@@ -626,7 +626,7 @@
     "customerId": 1038,
     "orderDate": "18/05/2019",
     "payStatus": "unpaid",
-    "fulfillStatus": true,
+    "fulfillStatus": "fulfilled",
     "products": [
       {
         "productName": "Pulses",
@@ -643,7 +643,7 @@
     "customerId": 1039,
     "orderDate": "13/03/2019",
     "payStatus": "paid",
-    "fulfillStatus": true,
+    "fulfillStatus": "fulfilled",
     "products": [
       {
         "productName": "Soya Bean",
@@ -664,7 +664,7 @@
     "customerId": 1040,
     "orderDate": "13/06/2019",
     "payStatus": "unpaid",
-    "fulfillStatus": false,
+    "fulfillStatus": "unfulfilled",
     "products": [
       {
         "productName": "Milk",
@@ -677,7 +677,7 @@
     "customerId": 1001,
     "orderDate": "14/04/2019",
     "payStatus": "unpaid",
-    "fulfillStatus": false,
+    "fulfillStatus": "unfulfilled",
     "products": [
       {
         "productName": "Milk",
@@ -694,7 +694,7 @@
     "customerId": 1002,
     "orderDate": "18/04/2019",
     "payStatus": "unpaid",
-    "fulfillStatus": false,
+    "fulfillStatus": "unfulfilled",
     "products": [
       {
         "productName": "Green Chillies",
@@ -715,7 +715,7 @@
     "customerId": 1003,
     "orderDate": "25/04/2019",
     "payStatus": "paid",
-    "fulfillStatus": false,
+    "fulfillStatus": "unfulfilled",
     "products": [
       {
         "productName": "Green Chillies",
@@ -736,7 +736,7 @@
     "customerId": 1004,
     "orderDate": "22/04/2019",
     "payStatus": "paid",
-    "fulfillStatus": true,
+    "fulfillStatus": "fulfilled",
     "products": [
       {
         "productName": "Yogurt",
@@ -753,7 +753,7 @@
     "customerId": 1005,
     "orderDate": "23/04/2019",
     "payStatus": "paid",
-    "fulfillStatus": true,
+    "fulfillStatus": "fulfilled",
     "products": [
       {
         "productName": "Potato",
@@ -766,7 +766,7 @@
     "customerId": 1005,
     "orderDate": "28/04/2019",
     "payStatus": "paid",
-    "fulfillStatus": true,
+    "fulfillStatus": "fulfilled",
     "products": [
       {
         "productName": "Nutella",
@@ -787,7 +787,7 @@
     "customerId": 1006,
     "orderDate": "10/05/2019",
     "payStatus": "unpaid",
-    "fulfillStatus": false,
+    "fulfillStatus": "unfulfilled",
     "products": [
       {
         "productName": "Onion",
@@ -808,7 +808,7 @@
     "customerId": 1007,
     "orderDate": "12/05/2019",
     "payStatus": "paid",
-    "fulfillStatus": true,
+    "fulfillStatus": "fulfilled",
     "products": [
       {
         "productName": "Curd",
@@ -829,7 +829,7 @@
     "customerId": 1008,
     "orderDate": "12/05/2019",
     "payStatus": "paid",
-    "fulfillStatus": true,
+    "fulfillStatus": "fulfilled",
     "products": [
       {
         "productName": "Uncle Chips",
@@ -846,7 +846,7 @@
     "customerId": 1009,
     "orderDate": "13/05/2019",
     "payStatus": "unpaid",
-    "fulfillStatus": false,
+    "fulfillStatus": "unfulfilled",
     "products": [
       {
         "productName": "Butter",
@@ -867,7 +867,7 @@
     "customerId": 1010,
     "orderDate": "14/05/2019",
     "payStatus": "paid",
-    "fulfillStatus": true,
+    "fulfillStatus": "fulfilled",
     "products": [
       {
         "productName": "Chicken",
@@ -888,7 +888,7 @@
     "customerId": 1011,
     "orderDate": "15/05/2019",
     "payStatus": "unpaid",
-    "fulfillStatus": false,
+    "fulfillStatus": "unfulfilled",
     "products": [
       {
         "productName": "Maggi",
@@ -901,7 +901,7 @@
     "customerId": 1012,
     "orderDate": "16/05/2019",
     "payStatus": "paid",
-    "fulfillStatus": true,
+    "fulfillStatus": "fulfilled",
     "products": [
       {
         "productName": "Wheat",
@@ -918,7 +918,7 @@
     "customerId": 1013,
     "orderDate": "15/05/2019",
     "payStatus": "unpaid",
-    "fulfillStatus": false,
+    "fulfillStatus": "unfulfilled",
     "products": [
       {
         "productName": "Garam Masala",
@@ -939,7 +939,7 @@
     "customerId": 1014,
     "orderDate": "15/05/2019",
     "payStatus": "paid",
-    "fulfillStatus": true,
+    "fulfillStatus": "fulfilled",
     "products": [
       {
         "productName": "Cabbage",
@@ -960,7 +960,7 @@
     "customerId": 1015,
     "orderDate": "16/05/2019",
     "payStatus": "paid",
-    "fulfillStatus": true,
+    "fulfillStatus": "fulfilled",
     "products": [
       {
         "productName": "Apple",
@@ -973,7 +973,7 @@
     "customerId": 1016,
     "orderDate": "17/05/2019",
     "payStatus": "unpaid",
-    "fulfillStatus": false,
+    "fulfillStatus": "unfulfilled",
     "products": [
       {
         "productName": "Haldiram Aloo Laccha",
@@ -990,7 +990,7 @@
     "customerId": 1017,
     "orderDate": "17/05/2019",
     "payStatus": "paid",
-    "fulfillStatus": true,
+    "fulfillStatus": "fulfilled",
     "products": [
       {
         "productName": "Banana",
@@ -1011,7 +1011,7 @@
     "customerId": 1018,
     "orderDate": "28/04/2019",
     "payStatus": "paid",
-    "fulfillStatus": true,
+    "fulfillStatus": "fulfilled",
     "products": [
       {
         "productName": "Red Capsicum",
@@ -1032,7 +1032,7 @@
     "customerId": 1019,
     "orderDate": "28/04/2019",
     "payStatus": "unpaid",
-    "fulfillStatus": false,
+    "fulfillStatus": "unfulfilled",
     "products": [
       {
         "productName": "Lays",
@@ -1045,7 +1045,7 @@
     "customerId": 1020,
     "orderDate": "19/06/2019",
     "payStatus": "paid",
-    "fulfillStatus": true,
+    "fulfillStatus": "fulfilled",
     "products": [
       {
         "productName": "Wheat",
@@ -1066,7 +1066,7 @@
     "customerId": 1021,
     "orderDate": "17/06/2019",
     "payStatus": "paid",
-    "fulfillStatus": true,
+    "fulfillStatus": "fulfilled",
     "products": [
       {
         "productName": "Nutella",
@@ -1083,7 +1083,7 @@
     "customerId": 1022,
     "orderDate": "20/06/2019",
     "payStatus": "unpaid",
-    "fulfillStatus": false,
+    "fulfillStatus": "unfulfilled",
     "products": [
       {
         "productName": "Green Chilies",
@@ -1100,7 +1100,7 @@
     "customerId": 1023,
     "orderDate": "28/06/2019",
     "payStatus": "paid",
-    "fulfillStatus": true,
+    "fulfillStatus": "fulfilled",
     "products": [
       {
         "productName": "Nutella",
@@ -1121,7 +1121,7 @@
     "customerId": 1024,
     "orderDate": "25/06/2019",
     "payStatus": "paid",
-    "fulfillStatus": true,
+    "fulfillStatus": "fulfilled",
     "products": [
       {
         "productName": "Curry Leaves",
@@ -1138,7 +1138,7 @@
     "customerId": 1025,
     "orderDate": "19/06/2019",
     "payStatus": "unpaid",
-    "fulfillStatus": false,
+    "fulfillStatus": "unfulfilled",
     "products": [
       {
         "productName": "Butter",
@@ -1155,7 +1155,7 @@
     "customerId": 1026,
     "orderDate": "28/07/2019",
     "payStatus": "paid",
-    "fulfillStatus": true,
+    "fulfillStatus": "fulfilled",
     "products": [
       {
         "productName": "Fish",
@@ -1176,7 +1176,7 @@
     "customerId": 1027,
     "orderDate": "14/07/2019",
     "payStatus": "paid",
-    "fulfillStatus": true,
+    "fulfillStatus": "fulfilled",
     "products": [
       {
         "productName": "Yogurt",
@@ -1193,7 +1193,7 @@
     "customerId": 1028,
     "orderDate": "15/07/2019",
     "payStatus": "unpaid",
-    "fulfillStatus": false,
+    "fulfillStatus": "unfulfilled",
     "products": [
       {
         "productName": "Curd",
@@ -1206,7 +1206,7 @@
     "customerId": 1029,
     "orderDate": "20/07/2019",
     "payStatus": "paid",
-    "fulfillStatus": true,
+    "fulfillStatus": "fulfilled",
     "products": [
       {
         "productName": "Broccoli",
@@ -1227,7 +1227,7 @@
     "customerId": 1030,
     "orderDate": "21/07/2019",
     "payStatus": "unpaid",
-    "fulfillStatus": false,
+    "fulfillStatus": "unfulfilled",
     "products": [
       {
         "productName": "Lays",
@@ -1244,7 +1244,7 @@
     "customerId": 1031,
     "orderDate": "22/07/2019",
     "payStatus": "paid",
-    "fulfillStatus": true,
+    "fulfillStatus": "fulfilled",
     "products": [
       {
         "productName": "Brinjal",
@@ -1261,7 +1261,7 @@
     "customerId": 1032,
     "orderDate": "23/07/2019",
     "payStatus": "unpaid",
-    "fulfillStatus": false,
+    "fulfillStatus": "unfulfilled",
     "products": [
       {
         "productName": "Garam Masala",
@@ -1278,7 +1278,7 @@
     "customerId": 1033,
     "orderDate": "23/07/2019",
     "payStatus": "paid",
-    "fulfillStatus": true,
+    "fulfillStatus": "fulfilled",
     "products": [
       {
         "productName": "Maggi",
@@ -1299,7 +1299,7 @@
     "customerId": 1034,
     "orderDate": "24/07/2019",
     "payStatus": "unpaid",
-    "fulfillStatus": false,
+    "fulfillStatus": "unfulfilled",
     "products": [
       {
         "productName": "Milk",
@@ -1316,7 +1316,7 @@
     "customerId": 1035,
     "orderDate": "25/07/2019",
     "payStatus": "paid",
-    "fulfillStatus": true,
+    "fulfillStatus": "fulfilled",
     "products": [
       {
         "productName": "Wheat",
@@ -1337,7 +1337,7 @@
     "customerId": 1034,
     "orderDate": "25/07/2019",
     "payStatus": "paid",
-    "fulfillStatus": true,
+    "fulfillStatus": "fulfilled",
     "products": [
       {
         "productName": "Hakka Noodles",
@@ -1350,7 +1350,7 @@
     "customerId": 1035,
     "orderDate": "23/07/2019",
     "payStatus": "paid",
-    "fulfillStatus": true,
+    "fulfillStatus": "fulfilled",
     "products": [
       {
         "productName": "Pav Bhaji Masala",
@@ -1371,7 +1371,7 @@
     "customerId": 1036,
     "orderDate": "28/07/2019",
     "payStatus": "unpaid",
-    "fulfillStatus": false,
+    "fulfillStatus": "unfulfilled",
     "products": [
       {
         "productName": "Hakka Noodles",
@@ -1388,7 +1388,7 @@
     "customerId": 1037,
     "orderDate": "30/07/2019",
     "payStatus": "paid",
-    "fulfillStatus": true,
+    "fulfillStatus": "fulfilled",
     "products": [
       {
         "productName": "Butter",
@@ -1409,7 +1409,7 @@
     "customerId": 1038,
     "orderDate": "10/08/2019",
     "payStatus": "unpaid",
-    "fulfillStatus": false,
+    "fulfillStatus": "unfulfilled",
     "products": [
       {
         "productName": "Lemon",
@@ -1430,7 +1430,7 @@
     "customerId": 1039,
     "orderDate": "12/08/2019",
     "payStatus": "paid",
-    "fulfillStatus": true,
+    "fulfillStatus": "fulfilled",
     "products": [
       {
         "productName": "Rice",
@@ -1451,7 +1451,7 @@
     "customerId": 1040,
     "orderDate": "13/08/2019",
     "payStatus": "unpaid",
-    "fulfillStatus": false,
+    "fulfillStatus": "unfulfilled",
     "products": [
       {
         "productName": "Curd",
@@ -1472,7 +1472,7 @@
     "customerId": 1001,
     "orderDate": "16/08/2019",
     "payStatus": "paid",
-    "fulfillStatus": true,
+    "fulfillStatus": "fulfilled",
     "products": [
       {
         "productName": "Buttermilk",
@@ -1493,7 +1493,7 @@
     "customerId": 1002,
     "orderDate": "13/08/2019",
     "payStatus": "unpaid",
-    "fulfillStatus": false,
+    "fulfillStatus": "unfulfilled",
     "products": [
       {
         "productName": "Lays",
@@ -1514,7 +1514,7 @@
     "customerId": 1003,
     "orderDate": "14/08/2019",
     "payStatus": "paid",
-    "fulfillStatus": true,
+    "fulfillStatus": "fulfilled",
     "products": [
       {
         "productName": "Uncle Chips",
@@ -1535,7 +1535,7 @@
     "customerId": 1004,
     "orderDate": "15/08/2019",
     "payStatus": "paid",
-    "fulfillStatus": true,
+    "fulfillStatus": "fulfilled",
     "products": [
       {
         "productName": "Broccoli",
@@ -1556,7 +1556,7 @@
     "customerId": 1005,
     "orderDate": "17/08/2019",
     "payStatus": "paid",
-    "fulfillStatus": true,
+    "fulfillStatus": "fulfilled",
     "products": [
       {
         "productName": "Maggi",
@@ -1577,7 +1577,7 @@
     "customerId": 1006,
     "orderDate": "18/08/2019",
     "payStatus": "unpaid",
-    "fulfillStatus": false,
+    "fulfillStatus": "unfulfilled",
     "products": [
       {
         "productName": "Rice",
@@ -1590,7 +1590,7 @@
     "customerId": 1007,
     "orderDate": "20/08/2019",
     "payStatus": "paid",
-    "fulfillStatus": true,
+    "fulfillStatus": "fulfilled",
     "products": [
       {
         "productName": "Lettuce",
@@ -1611,7 +1611,7 @@
     "customerId": 1008,
     "orderDate": "23/08/2019",
     "payStatus": "unpaid",
-    "fulfillStatus": false,
+    "fulfillStatus": "unfulfilled",
     "products": [
       {
         "productName": "Pav BHaji Masala",
@@ -1632,7 +1632,7 @@
     "customerId": 1009,
     "orderDate": "25/08/2019",
     "payStatus": "paid",
-    "fulfillStatus": true,
+    "fulfillStatus": "fulfilled",
     "products": [
       {
         "productName": "Lays",
@@ -1653,7 +1653,7 @@
     "customerId": 1010,
     "orderDate": "29/08/2019",
     "payStatus": "upaid",
-    "fulfillStatus": false,
+    "fulfillStatus": "unfulfilled",
     "products": [
       {
         "productName": "Puffed Rice",
@@ -1666,7 +1666,7 @@
     "customerId": 1011,
     "orderDate": "13/09/2019",
     "payStatus": "paid",
-    "fulfillStatus": true,
+    "fulfillStatus": "fulfilled",
     "products": [
       {
         "productName": "Milk",
@@ -1687,7 +1687,7 @@
     "customerId": 1012,
     "orderDate": "10/09/2019",
     "payStatus": "unpaid",
-    "fulfillStatus": false,
+    "fulfillStatus": "unfulfilled",
     "products": [
       {
         "productName": "Ladiesfinger",
@@ -1704,7 +1704,7 @@
     "customerId": 1013,
     "orderDate": "15/09/2019",
     "payStatus": "paid",
-    "fulfillStatus": true,
+    "fulfillStatus": "fulfilled",
     "products": [
       {
         "productName": "Wheat",
@@ -1725,7 +1725,7 @@
     "customerId": 1014,
     "orderDate": "17/09/2019",
     "payStatus": "unpaid",
-    "fulfillStatus": false,
+    "fulfillStatus": "unfulfilled",
     "products": [
       {
         "productName": "Curd",
@@ -1746,7 +1746,7 @@
     "customerId": 1015,
     "orderDate": "23/09/2019",
     "payStatus": "paid",
-    "fulfillStatus": true,
+    "fulfillStatus": "fulfilled",
     "products": [
       {
         "productName": "Chicken",
@@ -1767,7 +1767,7 @@
     "customerId": 1016,
     "orderDate": "22/09/2019",
     "payStatus": "unpaid",
-    "fulfillStatus": false,
+    "fulfillStatus": "unfulfilled",
     "products": [
       {
         "productName": "Lemon",
@@ -1788,7 +1788,7 @@
     "customerId": 1017,
     "orderDate": "21/09/2019",
     "payStatus": "paid",
-    "fulfillStatus": true,
+    "fulfillStatus": "fulfilled",
     "products": [
       {
         "productName": "Soya Sauce",
@@ -1809,7 +1809,7 @@
     "customerId": 1018,
     "orderDate": "10/10/2019",
     "payStatus": "unpaid",
-    "fulfillStatus": false,
+    "fulfillStatus": "unfulfilled",
     "products": [
       {
         "productName": "Maggi",
@@ -1830,7 +1830,7 @@
     "customerId": 1019,
     "orderDate": "15/10/2019",
     "payStatus": "paid",
-    "fulfillStatus": true,
+    "fulfillStatus": "fulfilled",
     "products": [
       {
         "productName": "Broccoli",
@@ -1851,7 +1851,7 @@
     "customerId": 1020,
     "orderDate": "18/10/2019",
     "payStatus": "unpaid",
-    "fulfillStatus": false,
+    "fulfillStatus": "unfulfilled",
     "products": [
       {
         "productName": "Maggi",

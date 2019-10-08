@@ -1,0 +1,31 @@
+
+<section class="header container">
+    <section class="row">
+        <header class="header-head">
+            <h2>
+                <i class="fa fa-user"></i> {{title}}
+            </h2>
+        </header>
+    </section>
+    <section class="row">
+        <nav>
+            <ul role="menu" class="menu pull-left">
+                 <li role="menuitem" class="menu-item">
+                    <a class="text-info">
+                        <i class="fa fa-th fa-fw"></i> Customer Details
+                    </a>
+                </li>               
+                <li role="menuitem" class="menu-item">
+                    <a [routerLink]="['/customer-info/viewOrders']" routerLinkActive="active" class="text-info">
+                        <i class="fa fa-tags fa-fw"></i> View Orders
+                    </a>
+                </li>
+                <li role="menuitem" class="menu-item">
+                    <a class="text-info">
+                        <i class="fa fa-table fa-fw"></i> Edit Customer
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </section>
+</section>

@@ -1,0 +1,142 @@
+<section class="container">
+    <form class='form-group' novalidate (ngSubmit)='customerForm.valid && formSubmitted(customerForm.value);' name="custForm" #customerForm="ngForm">
+    
+        <header>
+            <h3 class="title-small">
+                {{title}}
+            </h3>
+        </header>		
+
+        <div class='form-control'>
+    		<label for='firstName'>
+                First Name : 
+            </label>
+    		<input type='text' [(ngModel)]='firstName' id='firstName' name='firstName' #first="ngModel" required minlength="3" maxlength="8"  />
+            <div class='error' *ngIf="(first.touched || first.dirty) &&  first.invalid">
+    			<div class='danger' *ngIf="first.errors.required">
+                    First Name is rquired!!
+                </div>				
+    			<div *ngIf="first.errors.minlength">
+                    First Name should have at least 2 characters!!
+                </div>				
+    			<div *ngIf="first.errors.maxlength">
+                    First Name can not exceed more then 8 characters!!
+                </div>				
+    		</div>
+        </div>
+        
+        <div class='form-control'>
+    		<label for='lastName'>
+                Last Name : 
+            </label>
+    		<input type='text' [(ngModel)]='lastName' id='lastName' name='lastName' #last="ngModel" required minlength="3" maxlength="8"  />
+    		<div class='error' *ngIf="(last.touched || last.dirty) &&  last.invalid">
+    			<div class='danger' *ngIf="last.errors.required">
+                    Last Name is rquired!!
+                </div>				
+    			<div *ngIf="last.errors.minlength">
+                    Last Name should have at least 2 characters!!
+                </div>				
+    			<div *ngIf="last.errors.maxlength">
+                    Last Name can not exceed more then 8 characters!!
+                </div>				
+    		</div>
+        </div>
+        
+        <div class='form-control'>
+    		<label for='customerGender'>
+                Gender : 
+            </label>
+            <label for='genderFemale'></label>
+            <input type='radio' value="male"  [(ngModel)]='genderMale' id='genderMale' name='customerGender' #gender="ngModel" required   /> Male <br>
+            <label for='genderFemale'></label>
+            <input type='radio' value="female"   [(ngModel)]='genderFemale' id='genderFemale' name='customerGender' #gender="ngModel" required   /> Female
+    		<div class='error' *ngIf="(gender.touched || gender.dirty) &&  gender.invalid">
+    			<div class='danger' *ngIf="gender.errors.required">
+                    Gender is rquired!!
+                </div>
+    		</div>
+        </div>
+        
+        <div class='form-control'>
+    		<label for='customerEmail'>
+                Email : 
+            </label>
+    		<input type='email' [(ngModel)]='customerEmail' id='customerEmail' name='customerEmail' #email="ngModel" required  />
+    		<div class='error' *ngIf="(email.touched || email.dirty) &&  email.invalid">
+    			<div class='danger' *ngIf="last.errors.required">
+                    Email is rquired!!
+                </div>
+    		</div>
+        </div>
+        
+        <div class='form-control'>
+    		<label for='address'>
+                Address : 
+            </label>
+            <textarea type='text' [(ngModel)]='address' id='address' name='address' #add="ngModel" required minlength=3 maxlength=256></textarea>
+    		<div class='error' *ngIf="(add.touched || add.dirty) &&  add.invalid">
+                <div class='danger' *ngIf="add.errors.required">
+                    Address can not exceed more then 256 characters!!
+                </div>				
+    		</div>
+        </div>
+        
+        <div class='form-control'>
+    		<label for='city'>City : </label>
+            <select id="city" [(ngModel)]='city' id='city' name='city' #customerCity="ngModel" required >
+                <option value="" [selected]="isSelected">Select City</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Kolhapur">Kolhapur</option>
+                <option value="Pune">Pune</option>
+                <option value="Thane">Thane</option>
+                <option value="Dadar">Dadar</option>
+            </select>       
+    		<div class='error' *ngIf="(customerCity.touched || customerCity.dirty) &&  customerCity.invalid">
+    			<div class='danger' *ngIf="customerCity.errors.required">City is rquired!!</div>						
+    		</div>
+        </div>
+        
+        <div class='form-control'>
+    		<label for='state'>State : </label>
+            <select id="state" [(ngModel)]='state' id='state' name='state' #customerState="ngModel" required >
+                <option value="" selected disabled>Select State</option>
+                <option value="Maharashtra">Maharashtra</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Haryana">Haryana</option>
+                <option value="Tamil Nadu">Tamil Nadu</option>
+                <option value="Kerala">Kerala</option>
+            </select>       
+    		<div class='error' *ngIf="(customerState.touched || customerState.dirty) &&  customerState.invalid">
+    			<div class='danger' *ngIf="customerState.errors.required">
+                    State is rquired!!
+                </div>						
+    		</div>
+        </div>
+        
+        <div class='form-control'>
+    		<label for='country'>
+                Country : 
+            </label>
+            <select id="country" [(ngModel)]='country' id='country' name='country' #customerCountry="ngModel" required >
+                <option value="" selected disabled>Select Country</option>
+                <option value="India">India</option>
+                <option value="China">China</option>
+                <option value="Japan">Haryana</option>
+                <option value="Russia">Russia</option>
+                <option value="France">France</option>
+            </select>       
+    		<div class='error' *ngIf="(customerCountry.touched || customerCountry.dirty) &&  customerCountry.invalid">
+    			<div class='danger' *ngIf="customerCountry.errors.required">
+                    Country is rquired!!
+                </div>
+    		</div>
+        </div>
+        
+        <div class='form-control'>
+    		<input type="submit" value="Submit" class="btn submit"/>
+            <input type="button" value="Update" class="btn update"/>
+        </div>
+    </form>
+</section>
+
