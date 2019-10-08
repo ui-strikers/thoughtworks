@@ -1,0 +1,64 @@
+@import '../../../../assets/scss/partials/variables';
+
+.newCustomerform {
+    max-width: 50%;
+
+    .form-row {
+        margin: 1rem;
+
+        label {
+            display: block;
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: #333;
+
+        }
+
+        .form-control {
+            padding: .5rem .25rem;
+            font-size: 1rem;
+            margin-bottom: .5rem;
+            width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 0.25rem;
+            box-shadow: 0px 0px 1px 1px #0000001a;
+
+            &.ng-invalid {
+                border-left: 0.35rem solid $danger;
+            }
+
+            &.ng-valid {
+                border-left: 0.35rem solid $sucess;
+            }
+        }
+    }
+
+    .ng-invalid {
+        border-left: 5px solid $danger;
+    }
+
+    .ng-valid {
+        border-left: 5px solid $sucess;
+    }
+
+    .btn {
+        padding: 10px 15px;
+        color: $white;
+        padding: 7px 15px;
+        border: none;
+        margin: 1px;
+        text-transform: capitalize;
+    }
+
+    .btn-success {
+        background: $sucess;
+    }
+
+    .btn-default {
+        background: $gray;
+        margin-left: 1rem;
+    }
+
+}
+

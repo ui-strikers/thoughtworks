@@ -7,7 +7,7 @@ import { Component, Input } from '@angular/core';
 
 })
 export class CustomerComponent {
-  customerProfile='../../../../assets/images';
+  customerProfile = '../../../../assets/images';
   // supply customer details from parent(customer-card.component) to child(customer.component)
   @Input()
   customerDetail;

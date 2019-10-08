@@ -1,13 +1,49 @@
 <!-- customer detail in Table format start -->
-<article class="customer p-t-6 m-t-6">
-	<section class="customer__details">
-		<div class="order-list-button">
-			<a class="order-status-active"><span>All Orders</span></a>
-			<a class="order-status"><span>Paid</span></a>
-			<a class="order-status"><span>Unpaid</span></a>
-			<a class="order-status"><span>Fullfilled</span></a>
-			<a class="order-status"><span>Unfullfilled</span></a>
-		</div>
+<section class="order p-t-6 m-t-6">
+		<ul class="order__list m-b-6">
+			<li class="order__item">
+				<a class="order-status-active order--link" (click)="allstatus($event)">
+					<span>
+						All Orders
+					</span>
+				</a>
+			</li>
+			<li class="order__item">
+				<a class="order-status order--link" routerLinkActive="order-status-active" (click)="paidStatus($event)">
+					<span>
+						Paid
+					</span>
+				</a>
+			</li>
+			<li class="order__item">
+				<a class="order-status order--link" (click)="unPaidStatus($event)">
+					<span>
+						Unpaid
+					</span>
+				</a>
+			</li>
+			<li class="order__item">
+				<a class="order-status order--link" (click)="pendingStatus($event)">
+					<span>
+						Pending
+					</span>
+				</a>
+			</li>
+			<li class="order__item">
+				<a class="order-status order--link" (click)="fulFillStatus($event)">
+					<span>
+						Fullfilled
+					</span>
+				</a>
+			</li>
+			<li class="order__item">
+				<a class="order-status order--link" (click)="unFillStatus($event)">
+					<span>
+						Unfullfilled
+					</span>
+				</a>
+			</li>
+		</ul>
 		<table class="table">
 			<thead>
 				<tr>
@@ -16,20 +52,38 @@
 					<th>Customer</th>
 					<th>Payment Status</th>
 					<th>Fullfillment Status</th>
-
+					<th>Total Price</th>
 				</tr>
 			</thead>
 			<tbody>
-				<tr *ngFor="let order of orders">
+				<tr *ngFor="let order of orders;let i = index">
 					<td>{{order.orderId }}</td>
 					<td>{{order.orderDate }}</td>
 					<td>{{order.customerId }}</td>
-					<td><span class="label-paid">{{order.payStatus | titlecase}}</span></td>
-					<td><span class="label-unfullfilled">{{order.fulfillStatus | titlecase}}</span></td>
+					<td>
+						<span *ngIf="order.payStatus == 'paid'" class=" label-paid">
+							{{order.payStatus | titlecase}}
+						</span>
+						<span *ngIf="order.payStatus == 'unpaid'" class="label-unpaid">
+							{{order.payStatus | titlecase}}
+						</span>
+						<span *ngIf="order.payStatus == 'pending'" class="label-pending">
+							{{order.payStatus | titlecase}}
+						</span>
+					</td>
+					<td>
+						<span *ngIf="order.fulfillStatus == 'fulfilled'" class="label-fullfilled">
+							{{order.fulfillStatus | titlecase}}
+						</span>
+						<span *ngIf="order.fulfillStatus == 'notfulfilled'" class="label-unfullfilled">
+							{{order.fulfillStatus | titlecase}}
+						</span>
+					</td>
+					<td>{{totalOrderPrice[i] | currency:'INR'}}</td>
 				</tr>
 			</tbody>
 		</table>
 	</section>
-</article>
+
 
 <!-- customer detail in Table format end -->

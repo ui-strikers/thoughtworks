@@ -9,7 +9,7 @@
     color: $black;
 }
 .text-blue{color: $blue;}
-
+.text-danger{color: $danger;}
 // back ground color class
 .bg-black{
     background: $black;
@@ -17,9 +17,19 @@
 .bg-white{
     background: $white;
 }
-.bg-white{
-    background: $blue;
-}
+
 .bg-primary{
     background: $blue;
+}
+
+
+.btn-success{
+    @include btn;
+    background-color:$sucess;
+    color: $white;
+    font-size: 1.15rem;
+    }
+.btn-default{
+    @include btn;
+    font-size: 1.15rem;
 }

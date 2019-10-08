@@ -1,4 +1,4 @@
-import { Component, Inject } from '@angular/core';
+import { Component, Inject, OnInit } from '@angular/core';
 import { CustomerApiService } from '../services/customer-api.service';
 import { Customer } from '../models/customer';
 
@@ -8,7 +8,7 @@ import { Customer } from '../models/customer';
     templateUrl: './customer-list.component.html',
     styleUrls: ['./customer-list.component.scss']
 })
-export class CustomerListViewComponent {
+export class CustomerListViewComponent implements OnInit{
     customers: Customer[];
     customerProfile='../../../../assets/images';
     constructor(private customerApiService: CustomerApiService) {

@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { CustomerApiService } from '../services/customer-api.service';
+import { CustomerDetailsService } from '../services/customerdetials-api.service';
 import { Customer } from '../models/customer';
 
 
@@ -8,7 +9,7 @@ import { Customer } from '../models/customer';
     templateUrl: './customer-card.component.html',
 })
 
-export class CustomerCardViewComponent {
+export class CustomerCardViewComponent implements OnInit{
     customers: Customer[];
 
     constructor(private customerApiService: CustomerApiService) {
@@ -17,13 +18,15 @@ export class CustomerCardViewComponent {
     }
 
     ngOnInit() {
-        
         // get data from customer api service
         this.customerApiService.getCustomerApi()
+       
         .subscribe((res) => {
             this.customers = res;
         })
     }
+
+
 }
 
 

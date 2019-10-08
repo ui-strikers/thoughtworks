@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CustomerApiService } from '../services/customer-api.service';
 import { Customer } from '../models/customer';
 
@@ -8,7 +8,7 @@ import { Customer } from '../models/customer';
     styleUrls: ['./customer-table.component.scss']
 })
 
-export class CustomerTableViewComponent {
+export class CustomerTableViewComponent implements OnInit{
     customers: Customer[];
     customerProfile="../../../assets/images";
     constructor(private customerApiService: CustomerApiService) {

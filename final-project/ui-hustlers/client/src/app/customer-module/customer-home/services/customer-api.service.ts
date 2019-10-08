@@ -13,4 +13,10 @@ export class CustomerApiService {
     getCustomerApi(): Observable<any> {
         return this.httpclient.get(this.customerAPI)
     }
+
+    getCustomerDetailApi(id): Observable<any> {
+        this.customerAPI=this.customerAPI+'/'+id;
+        return this.httpclient.get(this.customerAPI);
+        
+    }
 }

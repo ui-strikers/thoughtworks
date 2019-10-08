@@ -1,0 +1,60 @@
+<section class="container">
+  <!-- customer info header start -->
+  <header class="header-customer">
+
+    <!-- customer info title start-->
+    <section class="customer__miniature col__12 m-y-6">
+      <figure class="m-r-2">
+        <img src="{{customerIcon}}/customer/fa-user.png" alt="customer" class="profile-picture">
+      </figure>
+      <h2 class="h2-text m-t-3 mn-r-2">Customer Information</h2>
+    </section>
+
+    <!-- customer info menu bar start-->
+    <nav class="menu-bar flex-class m-y-6 ">
+
+      <!-- customer info menu start-->
+      <ul class="customer__menu">
+        <li class="customer__menu--item">
+          <a routerLink="#" class="customer__menu--link" routerLinkActive="customer__menu--link--active" tabindex="0" role="button"
+            aria-label="show customer card view">
+            <!-- customer info:- customer details menu icon -->
+            <span class="m-r-2">
+              <i class="fa fa-list" aria-hidden="true"></i>
+            </span> Customer Details
+          </a>
+        </li>
+        <li class="customer__menu--item">
+          <a routerLink="customerDetail" class="customer__menu--link" routerLinkActive="customer__menu--link--active" tabindex="1"
+            role="button" aria-label="show customer List View ">
+            <!-- customer info:- customer orders menu icon -->
+            <span class="m-r-2">
+              <i class="fa fa-list-alt" aria-hidden="true"></i>
+            </span> Customer Orders
+          </a>
+        </li>
+      </ul>
+      <!-- customer info menu end-->
+    </nav>
+    <!-- customer info menu bar end-->
+  </header>
+  <div class="order-table">
+    <header>
+      <h2>Orders For {{customerDetail.firstName}}</h2>
+    </header>
+    <table class="table customer__order--info" *ngIf="customerDetail">
+      <tbody>
+        <tr *ngFor='let order of customerDetail.products'>
+          <td>{{order.productName}}</td>
+          <td>{{order.orderPrice | currency:'INR'}}</td>
+        </tr>
+      </tbody>
+      <tfoot class="customer__order--price">
+        <tr>
+          <td>Total Price: </td>
+          <td>{{total | currency:'INR'}}</td>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+</section>

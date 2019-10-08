@@ -1,0 +1,40 @@
+.customer__menu{
+    padding-top: 0.85rem;
+    display: flex;
+    justify-content: space-between;
+    &--item{
+      margin: 0 2.5rem;
+      &:nth-child(1){margin-left: 0;}
+    }
+    &--link{
+      font-size: 1.15rem;
+      color: #333;
+      &:hover,&:focus{
+        color:#6b7cda;
+        outline: none;
+      }
+    }
+    &--link--active{
+      color:#000;
+    }
+  }
+
+  .order-table{
+      margin-top:3.5em;
+    .customer__order--info{
+        margin-top:1rem;
+          td{
+              text-align:left;
+              padding:1em;
+            
+          }
+      }
+    .customer__order--price{
+      td{
+        font-weight: 600;
+        font-size: 1.2rem;
+        color: #2c2c2c;
+      }
+    }
+  }
+ 

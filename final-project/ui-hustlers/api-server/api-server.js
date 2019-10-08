@@ -43,6 +43,21 @@ server.get('/api/orders/payStatus/:status', function (req, res) {
   res.status(200).send(order.filter(item => item.payStatus == req.params.status));
 });
 
+server.get('/api/orders/fulfillStatus/:status', function (req, res) {
+  console.log(req.params);
+  res.status(200).send(order.filter(item => item.fulfillStatus == req.params.status));
+});
+
+
+server.get('/api/customers/:customerId', function (req, res) {
+  console.log(req.params);
+  res.status(200).send(order.filter(item => item.customerId == req.params.customerId));
+});
+
+server.get('/api/orders/fulfillStatus/:status', function (req, res) {
+  console.log(req.params);
+  res.status(200).send(order.filter(item => item.fulfillStatus == req.params.status));
+});
 
 const PORT = 8000;
 

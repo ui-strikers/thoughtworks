@@ -1,10 +1,13 @@
 <!-- customer detail in list format start -->
 
-<main class="container">
+<main class="container p-relative">
+    <input type="text" [(ngModel)]="nameSearch" placeholder="Search any fields" class="filter-name"/>
     <section class="row customer">
         <ul class="customer__list">
-            <li class="customer__name" *ngFor='let customer of customers'>
-                <img class="customer__image" src='{{customerProfile}}/customer/{{customer.firstName}}-{{customer.id}}.png' alt={{customer.firstName}}{{customer.lastName}}/>
+            <li class="customer__name" *ngFor="let customer of customers | customerNameFilter:nameSearch;let i = index">
+                <img class="customer__image"
+                    src='{{customerProfile}}/customer/{{customer.firstName}}-{{customer.id}}.png'
+                    alt={{customer.firstName}}{{customer.lastName}} />
                 {{customer.firstName + ' ' + customer.lastName}}
             </li>
         </ul>

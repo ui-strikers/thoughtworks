@@ -1,35 +1,36 @@
 <!-- customer detail in Table format start -->
-<article class="customer p-t-6 m-t-6">
-	<section class="customer__details container">
-
-	  <table class="table">
-					<thead>
-					  <tr>
-						<th>&nbsp;</th>
-						<th>First Name</th>
-						<th>Last Name</th>
-						<th>Address</th>
-						<th>City</th>
-						<th>State</th>
-						<th>Order Total</th>
-					  </tr>
-					</thead>
-					<tbody>
-					  <tr  *ngFor='let customer of customers'>
-						<td>
-							<img src='{{customerProfile}}/customer/{{customer.firstName}}-{{customer.id}}.png' title="{{customer.firstName}} {{customer.lastName}}"
-							alt="{{customer.firstName}} {{customer.lastName}}"/>
-							</td>
-						<td>{{customer.firstName | titlecase}}</td>
-						<td>{{customer.lastName | titlecase}}</td>
-						<td>{{customer.address.society | titlecase}}</td>
-						<td>{{customer.address.city | titlecase}}</td>
-						<td>{{customer.address.state | titlecase}}</td>
-						<td>{{0.00  | currency:'INR'}}</td>
-					  </tr>
-					</tbody>
-			  </table>
-	</section>          
-</article> 
+<article class="customer m-t-6">
+	<section class="customer__details container p-relative">
+		<input type="text" [(ngModel)]="nameSearch" placeholder="Search any fields" class="filter-name" />
+		<table class="table" ng-table="usersTable">
+			<thead>
+				<tr>
+					<th>&nbsp;</th>
+					<th>First Name</th>
+					<th>Last Name</th>
+					<th>Address</th>
+					<th>City</th>
+					<th>State</th>
+					<th>Order Total</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr *ngFor='let customer of customers'>
+					<td>
+						<img src='{{customerProfile}}/customer/{{customer.firstName}}-{{customer.id}}.png'
+							title="{{customer.firstName}} {{customer.lastName}}"
+							alt="{{customer.firstName}} {{customer.lastName}}" />
+					</td>
+					<td>{{customer.firstName | titlecase}}</td>
+					<td>{{customer.lastName | titlecase}}</td>
+					<td>{{customer.address.society | titlecase}}</td>
+					<td>{{customer.address.city | titlecase}}</td>
+					<td>{{customer.address.state | titlecase}}</td>
+					<td>{{0.00  | currency:'INR'}}</td>
+				</tr>
+			</tbody>
+		</table>
+	</section>
+</article>
 
 <!-- customer detail in Table format end -->

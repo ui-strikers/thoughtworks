@@ -1,3 +1,16 @@
 
 /* Import all(variaable,mixin,grid,skin,reset,layout) scss in gloabal */
 @import './assets/scss/main.scss';
+.filter-name {
+    padding: 7px 12px;
+    position: absolute;
+    right: 0;
+    top: -3.3rem;
+}
+.p-relative{position: relative;}
+*{outline: none;}
+.error{display: none;}
+.flex-right {
+    display: flex;
+    justify-content: flex-end;
+}

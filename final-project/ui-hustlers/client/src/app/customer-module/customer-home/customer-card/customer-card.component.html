@@ -1,7 +1,8 @@
 <!-- parent(customer-card.component) structure and integrate childparent(customer) markup -->
-<section class="container">
-  <div class="row">
-    <customer class="card col__3 " *ngFor='let customer of customers' [customerDetail]=customer>
-    </customer>
-  </div>
-</section>
+<section class="container p-relative">
+  <input type="text" [(ngModel)]="nameSearch" placeholder="Search any fields" class="filter-name"/>
+    <div class="row">
+      <customer class="card col__3 " *ngFor="let customer of customers | customerNameFilter:nameSearch;let i = index" [customerDetail]=customer>
+      </customer>
+    </div>
+  </section>
