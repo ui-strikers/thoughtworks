@@ -8,6 +8,8 @@ import { CustomerListComponent } from "./customer-list/customer-list.component";
 import { CustomerHeaderComponent } from "./customer-header/customer-header.component";
 import { CustomerComponent } from "./customer.component";
 import { AppRoutingModule } from "../app-routing.module";
+import { NewCustomerFormComponent } from './new-customer/new-customer-form.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,15 +18,17 @@ import { AppRoutingModule } from "../app-routing.module";
     CustomerCardItemComponent,
     CustomerTableComponent,
     CustomerHeaderComponent,
-    CustomerListComponent
+    CustomerListComponent,
+    NewCustomerFormComponent
   ],
-  imports: [CommonModule, AppRoutingModule],
+  imports: [CommonModule, AppRoutingModule,FormsModule],
   providers: [CustomerService],
   exports: [
     CustomerComponent,
     CustomerCardComponent,
     CustomerTableComponent,
-    CustomerHeaderComponent
+    CustomerHeaderComponent,
+    NewCustomerFormComponent
   ]
 })
 export class CustomerModule {}

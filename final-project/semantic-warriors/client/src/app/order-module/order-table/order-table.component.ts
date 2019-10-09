@@ -9,6 +9,7 @@ import { OrderService } from "../services/order-service";
 })
 export class OrderTableComponent implements OnInit {
   orders: Order[];
+  title:string = "Orders";
 
   constructor(private orderService: OrderService) {
     console.log("Inside OrderTableComponent constructor !!");

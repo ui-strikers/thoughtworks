@@ -1,42 +1,55 @@
+$primary-color: #5656f0;
+$secondary-color: #0063b2;
+$tertiary-color: #e6e6e6;
+
 .order-main {
-  width: 80%;
+  width: 90%;
   margin: 40px auto 0;
+  
 }
-.table {
+.order__tab {
+  padding: 1.5em;
+  background: $tertiary-color;
+  margin: 0.3em;
+}
+.order__table {
   width: 100%;
+  margin-top: 2.5em;
   text-align: center;
   font-family: sans-serif;
 }
-
 .table__head--item {
-  padding: 10px 15px;
-  background: gray;
+  padding: 1em 1em;
+  background: $secondary-color;
   color: #fff;
 }
 .table__item {
   padding: 10px 15px;
 }
-.table__row--item:nth-child(even) {
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-  background: #c6c6c6;
+.table__row--item {
+  &:nth-child(even) {
+    background: #9cc3d5;
+    color: #fff;
+  }
 }
-
 .result__type {
-  color: #155724;
-  background-color: #d4edda;
+  color: #ffffff;
+  background-color: #77ab59;
+  padding: 0.6em;
   border: 1px solid #c3e6cb;
   display: block;
 }
-
 .result__type--general {
-  color: #721c24;
-  background-color: #f8d7da;
+  color: #ffffff;
+  padding: 0.6em;
+  background-color: #FF0000;
   border: 1px solid #f5c6cb;
   display: block;
 }
 .result__type--warning {
-  color: #856404;
-  background-color: #fff3cd;
+  color: #ffffff;
+  background-color: #e1ad01;
+  padding: 0.6em;
   border: 1px solid #ffeeba;
   display: block;
 }
