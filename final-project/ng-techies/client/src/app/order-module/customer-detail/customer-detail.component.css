@@ -1,0 +1,41 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: arial;
+}
+main{
+	margin: 3em 0em;
+}
+ul li{
+	list-style: none;
+}
+.container{
+	width: 80%;
+	margin: 0 auto;
+}
+.order-name{
+	font-size: 1.5em;
+    line-height: 2em;
+}
+.order-table{
+	width: 100%;
+	border-collapse: collapse;
+    margin: 3em auto;
+}
+.order-data{
+	line-height: 3em;
+	border-top: 0.18em solid #CECECE;
+}
+.order-price, .order-total{
+	display: flex;
+    justify-content: flex-end;
+}
+.order-table tr:nth-of-type(even) { 
+	background: #eee; 
+}
+.total-row{
+	border-top: 0.2em solid #000;
+}

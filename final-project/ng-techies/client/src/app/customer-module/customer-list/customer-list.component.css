@@ -1,4 +1,24 @@
-.circle{
+.container{
+	width: 90%;
+	margin: 0 auto;
+}
+.customer-list li{
+	line-height: 2.3em;
+    box-shadow: 2px 2px 2px #CECECE;
+    margin: 1em auto;
+    
+}
+.customer-listimage{
+	width: 2em;
     border-radius: 50%;
-    background-color: #b9b9b9;
+    padding: 0.2em;
+    box-shadow: 2px 2px 2px #CECECE;
+}
+.customer-listtitle{
+	display: inline-block;
+    margin: 0;
+    padding: 0.3em 1em;
+    font-size: 1.1em;
+    line-height: 2em;
+    position: absolute;
 }

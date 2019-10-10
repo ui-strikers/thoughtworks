@@ -1,27 +1,31 @@
 <section class="header">
-	<section class="header-inner">
-		<section class="header-title">
-			<ul class="title-customer">
-				<li class="image"><img width="70" height="70" src="../../assets/images/user.png"></li>
-				<li class="title">Customer Manager</li>
-			</ul>
+		<section class="header-inner">
+			<section class="header-title">
+				<ul class="title-customer">
+					<li class="logo">
+						<img width="58" height="58" src="../../assets/images/user.png">
+					</li>
+					<li class="title">
+						<h1>Customer Manager</h1>
+					</li>
+				</ul>
+			</section>
+			<nav class="header-nav" role="navigation">
+				<ul class="nav-title">
+					<li>
+						<a [routerLink]="['customers']" routerLinkActive="active-link">Customers</a>
+					</li>
+					<li>
+						<a [routerLink]="['customerOrder']" routerLinkActive="active-link">Orders</a>
+					</li>
+					<li>
+						<a [routerLink]="['about']" routerLinkActive="active-link">About</a>
+					</li>
+					<li>
+						<a [routerLink]="['login']" routerLinkActive="active-link">Login</a>
+					</li>
+				</ul>
+			</nav>
 		</section>
-		<nav class="header-nav" role="navigation">
-			<ul class="nav-title">
-				<li>
-					<a [routerLink]="['/cardView']" routerLinkActive="active-link">Customers</a>
-				</li>
-				<li>
-					<a [routerLink]="['/customerOrder']" routerLinkActive="active-link">Orders</a>
-				</li>
-				<li>
-					<a [routerLink]="['/about']" routerLinkActive="active-link">About</a>
-				</li>
-				<li>
-					<a [routerLink]="['/login']" routerLinkActive="active-link">Login</a>
-				</li>
-			</ul>
-		</nav>
 	</section>
-</section>
-<router-outlet></router-outlet>
+	<router-outlet></router-outlet>

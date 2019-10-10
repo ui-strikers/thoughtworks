@@ -2,11 +2,11 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 
-// Imports components
+// Imports order components
 import { CustomerOrderComponent } from './customer-order/customer-order.component';
 
 @NgModule({
-    imports: [BrowserModule],
+    imports: [ BrowserModule ],
     declarations: [
         CustomerOrderComponent
     ],
@@ -14,7 +14,7 @@ import { CustomerOrderComponent } from './customer-order/customer-order.componen
         CustomerOrderComponent,
         RouterModule
     ],
-    bootstrap: []
+    bootstrap: [CustomerOrderComponent]
 })
 
 export class OrderModule {

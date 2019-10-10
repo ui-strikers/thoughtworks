@@ -3,15 +3,12 @@
 	padding: 0;
 	box-sizing: border-box;
 }
-body{
-	font-family: arial;
-}
-main{
-	margin: 3em 0em;
-}
 .header-container{
-	width: 80%;
+	width: 90%;
 	margin: 0 auto;
+}
+.customer-header {
+    margin: 1em;
 }
 .customer-title{
 	display: inline-block;
@@ -22,7 +19,7 @@ main{
 .customer-subheader{
 	display: flex;
 	align-items: center;
-	margin: 1em;
+	margin: 2em;
 }
 .nav-listing{
 	flex:2;

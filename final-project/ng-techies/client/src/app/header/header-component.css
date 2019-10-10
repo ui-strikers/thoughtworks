@@ -3,7 +3,7 @@
 	color: #fff;
 }
 .header-inner{
-	width: 80%;
+	width: 90%;
 	margin: 0 auto;
 	display: flex;
 	align-items: center;
@@ -18,23 +18,20 @@
 .nav-title{
 	display: flex;
 }
-.image{
+.logo{
 	margin-right: 0.3em;
 }
-.title{
-	font-size: 1.6em;
-    line-height: 1.5em;
+.title h1{
+	font-size: 2em;
+    line-height: 1.8em;
 }
 .nav-title li{
 	margin-right: 3em;
 }
 .nav-title a{
 	color: #fff;
-	text-decoration: none;
-	color: #fff;
     text-decoration: none;
-    font-weight: 600;
-    font-size: 1em;
+    font-size: 1.2em;
     line-height: 2em;
 }
 .active-link{

@@ -14,7 +14,7 @@ import { FooterComponent } from './footer/footer-component';
 import { AppComponent } from './app.component';
 
 //Import Routing
-import { AppRoutingModule } from './app-routing.module';
+import { APP_ROUTES } from './app-routing.configure';
 
 @NgModule({
     imports: [
@@ -22,7 +22,7 @@ import { AppRoutingModule } from './app-routing.module';
         CustomerModule,
         OrderModule,
         HttpClientModule,
-        AppRoutingModule
+        APP_ROUTES
     ],
     providers: [
         /* { provide : 'createdBy', useValue : ' Team ng-Techies' } */
@@ -34,7 +34,7 @@ import { AppRoutingModule } from './app-routing.module';
         LoginComponent,
         FooterComponent
     ],
-    bootstrap: [HeaderComponent, AppComponent, FooterComponent]
+    bootstrap: [AppComponent]
 })
 export class AppModule {
 

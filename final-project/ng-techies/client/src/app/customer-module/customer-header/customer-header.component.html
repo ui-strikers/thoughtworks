@@ -7,18 +7,23 @@
 		<nav class="nav-listing" role="navigation">
 			<ul class="nav-series">
 				<li class="view-icon">
-					<a [routerLink]="['./cardView']" routerLinkActive="link-active" class=" view-title active">
+					<a [routerLink]="['cardView']" routerLinkActive="active" class=" view-title">
 						<i class="fa fa-th"></i> Card View
 					</a>
 				</li>
 				<li class="view-icon">
-					<a [routerLink]="['./listView']" routerLinkActive="link-active" class=" view-title">
+					<a [routerLink]="['listView']" routerLinkActive="active" class=" view-title">
 						<i class="fa fa-list"></i> List View
 					</a>
 				</li>
 				<li class="view-icon">
-					<a [routerLink]="['./tableView']" routerLinkActive="link-active" class=" view-title">
+					<a [routerLink]="['tableView']" routerLinkActive="active" class=" view-title">
 						<i class="fa fa-table"></i> Table View
+					</a>
+				</li>
+				<li class="view-icon">
+					<a [routerLink]="['addUser']" routerLinkActive="active" class=" view-title">
+						<i class="fa fa-plus"></i> New Customer
 					</a>
 				</li>
 			</ul>

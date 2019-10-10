@@ -14,7 +14,6 @@ Project Description:-
 	This project is about management of customers orders and it's a backend application for Admin to handel with the customers & their orders.
 	It provides detailed reports of	customers, orders and order placed by particular customer. 
 
-
 	This project have several features & functionalities :- 
 	Features:- 
 		- Add New Customer, 
@@ -67,6 +66,13 @@ Version: 2.0.0
 Version: 2.0.1
 	.page-header component
 	.page-footer component
+-----------------------------------------------------------------------------
+Version: 3.1.1
+	.Created About and Login Module
+	.Created New Customer form
+	.Created Customer information module
+	.Improved performace
+	.Remove Bugs
 -----------------------------------------------------------------------------------------------------
 Roles & Responsibilities in Project :-
 

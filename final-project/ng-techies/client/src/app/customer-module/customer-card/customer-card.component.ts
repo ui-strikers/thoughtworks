@@ -1,8 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
-// Import customer model
 import { Customer } from '../models/customer';
-// Import customer service
 import { CustomerService } from '../services/customer.service';
 
 @Component({

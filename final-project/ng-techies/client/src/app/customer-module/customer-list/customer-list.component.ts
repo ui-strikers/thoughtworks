@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-// Import customer model
+//import { HttpClient } from '@angular/common/http';
 import { Customer } from '../models/customer';
-// Import customer service
 import { CustomerService } from '../services/customer.service';
 
 @Component({
   selector: 'customer-list',
   templateUrl: './customer-list.component.html',
+  styleUrls: ['./customer-list.component.css'],
   providers: [CustomerService]
 })
 

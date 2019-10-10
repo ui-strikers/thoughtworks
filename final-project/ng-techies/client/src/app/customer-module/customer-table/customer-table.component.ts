@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-// Import customer model
+//import { HttpClient } from '@angular/common/http';
+//import { HttpErrorResponse } from '@angular/common/http';
 import { Customer } from '../models/customer';
-// Import customer service
 import { CustomerService } from '../services/customer.service';
 
 @Component({
@@ -22,11 +22,12 @@ export class CustomerTableComponent implements OnInit {
   }
 
   constructor(private service: CustomerService) {
-    console.log("Inside customerTableComponent constructor!!");
+    console.log("Inside customercardComponent constructor!!");
   }
 
   ngOnInit() {
-    console.log("Inside customerCardComponent  ngOnInit!!");
+    console.log("Inside customercardComponent  ngOnInit!!");
+    //obervable returning customer array  
     this.getInfo();
   }
 }

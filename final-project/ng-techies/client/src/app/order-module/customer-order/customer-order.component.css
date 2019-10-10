@@ -1,64 +1,93 @@
-.order-container{
-	width: 80%;
+
+.order-header{
+	width: 90%;
 	margin: 2em auto;
 }
-.nav-order{
+
+.order-title{
+	font-size: 1.7em;
+    font-weight: 200;
+}
+
+.meun{
 		margin-top: 3em;
 }
-.order-menu-list li{
+
+.menu-list{
+	padding: unset;
+}
+
+.menu-list .menu-item{
 	display: inline-block;
     background: #686363;
-    padding: 1em 2em;
-}
-.order-menu-list a{
-	color: #fff;
-    text-decoration: none;
-    font-size: 1em;
+    padding: 1em 2em;color: white;
     line-height: 1.5em;
     font-weight: 600;
 }
-.active-order-menu-item{
+
+.menu-list .menu-item:hover{
+    cursor: pointer;
+	background-color: #004FF8;
+}
+
+.active{
 	background-color: #004FF8 !important;
 }
-.order-listing{
-	width: 75%;
+
+.order-list{
+	width: 90%;
 	margin:3em auto;
 	border-collapse: collapse; 
 }
-.listing-heading{
+
+.list-heading{
 	border-bottom: 0.18em solid #CECECE;
     line-height: 2.5em;
     text-align: left; 
-    font-size: 1.2em;
+	font-size: 1.2em;
+	text-align: center;
 }
-.listing-data{
+
+.table-body{
+	border-bottom: 4px solid #d6d6d6;
+}
+
+.list-item{
 	line-height: 3.5em;
+	text-align: center;
 }
-.order-listing tr:nth-of-type(even) { 
-	background: #c7ccec;	
+
+.order-list tr:nth-of-type(even) { 
+	background: #d6d6d6;	
 }
-.listing-data td{
-	color: #5b6162;
-    font-size: 1.2em;
-    font-weight: 600;
+
+.list-item .item{
+	color: #414344;
+    font-size: 1.1em;
 }
-.cta{
-	padding: 0.6em 1.3em;
+
+.btn{
+	padding: 0.4em 1.5em;
     border-radius: 3px;
     color: #fff;
 }
+
 .paid{
 	background-color: #0E9347;
 }
+
 .unpaid{
 	background-color: #8C0603;
 }
+
 .pending{
-	background-color: #F8B500;
+	background-color: goldenrod;
 }
+
 .fulfill{
 	background-color: #554A46;
 }
+
 .unfulfill{
-	background-color: #5D0B06;
+	background-color: #8c0603;
 }

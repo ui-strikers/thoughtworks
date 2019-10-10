@@ -1,0 +1,53 @@
+$theme : #14628f;
+$dark : #344554;
+$white : #fff;
+$font : 'Roboto', sans-serif;
+
+$oddrow-bgcolor:#e9f5f7;
+$evenrow-bgcolor:#fcfcfc;
+
+
+/* Margin classes */
+$val:0;
+@while $val<=50{
+    .m-#{$val}{
+        margin:#{$val}px;
+    }
+    $val:$val+5;
+}
+
+/* Margin top classes */
+$val:0;
+@while $val<=50{
+    .m-t-#{$val}{
+        margin-top:#{$val}px;
+    }
+    $val:$val+5;
+}
+
+/* Margin right classes */
+$val:0;
+@while $val<=50{
+    .m-r-#{$val}{
+        margin-right:#{$val}px;
+    }
+    $val:$val+5;
+}
+
+/* Margin bottom classes */
+$val:0;
+@while $val<=50{
+    .m-b-#{$val}{
+        margin-bottom:#{$val}px;
+    }
+    $val:$val+5;
+}
+
+/* Margin left classes */
+$val:0;
+@while $val<=50{
+    .m-l-#{$val}{
+        margin-left:#{$val}px;
+    }
+    $val:$val+5;
+}

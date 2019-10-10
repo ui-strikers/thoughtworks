@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-// Import order model
 import { Order } from '../models/order';
-// Import Service
 import { OrderService } from '../services/order.service';
 
 @Component({
@@ -17,17 +15,49 @@ export class CustomerOrderComponent implements OnInit {
     fulfill_Status: boolean = true;
     path: string = 'assets/images/';
 
-    getInfo(): void {
-        this.service.fetchOrderData().subscribe((res) => {
-            this.orders = res;
-        });
-    }
     constructor(private service: OrderService) {
         console.log("Inside CustomerOrderComponent List Constructor!");
     }
 
+    allList(): void {
+        this.service.fetchAllList().subscribe((res) => {
+            this.orders = res;
+        });
+    }
+
     ngOnInit() {
         console.log("Inside CustomerOrderComponent ngOnInit method!!");
-        this.getInfo();
+        this.allList();
+    }
+
+    
+    paidList(){
+        this.service.fetchPaidList().subscribe((res) => {
+            this.orders = res;
+        });
+    }
+
+    unpaidList(){
+        this.service.fetchUnpaidList().subscribe((res) => {
+            this.orders = res;
+        });
+    }
+
+    pendingList(){
+        this.service.fetchPendingList().subscribe((res) => {
+            this.orders = res;
+        });
+    }
+
+    fulfillList(){
+        this.service.fetchFulfillList().subscribe((res) => {
+            this.orders = res;
+        });
+    }
+
+    unfulfillList(){
+        this.service.fetchUnfulfillList().subscribe((res) => {
+            this.orders = res;
+        });
     }
 }
