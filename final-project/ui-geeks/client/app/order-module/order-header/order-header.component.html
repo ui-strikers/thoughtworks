@@ -15,23 +15,23 @@
                     </a>
                 </li>               
                 <li class="menu-item">
-                    <a [routerLink]="['/orders','fulfilled']" routerLinkActive="active">Fulfilled Orders
+                    <a [routerLink]="['byStatus','true']" routerLinkActive="active">Fulfilled Orders
                     </a>
                 </li>
                 <li class="menu-item">
-                    <a [routerLink]="['/orders','unfulfilled']" routerLinkActive="active">Unfulfilled Orders
+                    <a [routerLink]="['byStatus','false']" routerLinkActive="active">Unfulfilled Orders
                     </a>
                 </li>
                 <li class="menu-item">
-                    <a [routerLink]="['/orders','unpaid']" routerLinkActive="active">Unpaid Orders
+                    <a [routerLink]="['byStatus','unpaid']" routerLinkActive="active">Unpaid Orders
                     </a>
                 </li>
                 <li class="menu-item">
-                    <a [routerLink]="['/orders','paid']" routerLinkActive="active">Paid Orders
+                    <a [routerLink]="['byStatus','paid']" routerLinkActive="active">Paid Orders
                     </a>
                 </li>
                 <li class="menu-item">
-                    <a [routerLink]="['/orders','pending']" routerLinkActive="active">Pending Orders
+                    <a [routerLink]="['byStatus','pending']" routerLinkActive="active">Pending Orders
                     </a>
                 </li>
             </ul>

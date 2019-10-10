@@ -13,7 +13,6 @@ import { OrderRowComponent } from './order-home/all-orders/order-row/order-row.c
 
 //Services import
 import { OrderService } from './services/order.service';
-import { OrderStatusService } from './services/order-status.service';
 
 @NgModule({
   imports:[ 
@@ -27,7 +26,7 @@ import { OrderStatusService } from './services/order-status.service';
     OrdersComponent,
     OrderRowComponent
   ],
-  providers: [ OrderService, OrderStatusService ]
+  providers: [ OrderService ]
 })
 
 export class OrderModule { }

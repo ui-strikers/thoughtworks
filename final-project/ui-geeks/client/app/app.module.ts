@@ -40,11 +40,11 @@ import { NotFoundComponent } from './not-found/not-found.component';
     { provide : 'TEAM' , useValue : 'UI Geeks'},
     { provide : 'PATH' , useValue : 'assets/images/'},
     { provide : 'CUSTOMERS_API' , useValue : 'http://localhost:5000/api/customers'},
-    { provide : 'NEW_CUSTOMERS_API' , useValue : 'http://localhost:4700/api/customers'},
-    { provide : 'ORDERS_API' , useValue : 'http://localhost:4000/api/orders'},
-    { provide : 'ORDER_PAY_STATUS_API' , useValue : 'http://localhost:4800/api/orders/'},
-    { provide : 'ORDER_FULFILL_STATUS_API' , useValue : 'http://localhost:4500/api/orders/'},
-    { provide : 'CUSTOMER_ORDERS_API' , useValue : 'http://localhost:4100/api/customer/:id/orders'}
+    { provide : 'NEW_CUSTOMERS_API' , useValue : 'http://localhost:5000/api/customers'},
+    { provide : 'ORDERS_API' , useValue : 'http://localhost:5000/api/orders'},
+    { provide : 'ORDER_PAY_STATUS_API' , useValue : 'http://localhost:5000/api/orders/payment/'},
+    { provide : 'ORDER_FULFILL_STATUS_API' , useValue : 'http://localhost:5000/api/orders/fulfill/'},
+    { provide : 'CUSTOMER_ORDERS_API' , useValue : 'http://localhost:5000/api/customer/:id/orders'}
   ],
   bootstrap: [ AppComponent ]
 })

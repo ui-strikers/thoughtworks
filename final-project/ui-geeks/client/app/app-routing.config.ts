@@ -28,27 +28,30 @@ import { OrdersComponent } from './order-module/order-home/orders/orders.compone
 const ROUTE_LIST: Routes = [
 	{ path:'', redirectTo : 'customers', pathMatch:'full' },
 	{ path:'home', redirectTo : 'customers', pathMatch:'full' },
-	{ path:'customers', component : CustomerHomeComponent, children :
-		[
-			{ path: '', redirectTo: 'card' , pathMatch: 'full' },
-			{ path:'card' , component : CustomerCardComponent },
-			{ path:'list' , component : CustomerListComponent },
-			{ path:'table' , component : CustomerTableComponent },
-			{ path:'newCustomer' , component : CustomerFormComponent }
-		]
+	{ path:'customers', component : CustomerHomeComponent, 
+		children :
+			[
+				{ path: '', redirectTo: 'card' , pathMatch: 'full' },
+				{ path:'card' , component : CustomerCardComponent },
+				{ path:'list' , component : CustomerListComponent },
+				{ path:'table' , component : CustomerTableComponent },
+				{ path:'newCustomer' , component : CustomerFormComponent }
+			]
 	},
-	{ path:'customer-info', component : CustomerInfoComponent, children :
-		[
-			{ path: '', redirectTo: 'viewOrders' , pathMatch: 'full' },
-			{ path:'viewOrders/:id' , component : ViewOrdersComponent }
-		]
+	{ path:'customer-info', component : CustomerInfoComponent, 
+		children :
+			[
+				{ path: '', redirectTo: 'viewOrders' , pathMatch: 'full' },
+				{ path:'viewOrders/:id' , component : ViewOrdersComponent }
+			]
 	},
-	{ path:'orders', component : OrderHomeComponent, children :
-		[
-			{ path: '', redirectTo: 'allOrders' , pathMatch: 'full' },
-			{ path:'allOrders' , component : AllOrdersComponent },
-			{ path:':status' , component : OrdersComponent }
-		]
+	{ path:'orders', component : OrderHomeComponent, 
+		children :
+			[
+				{ path: '', redirectTo: 'allOrders' , pathMatch: 'full' },
+				{ path:'allOrders' , component : AllOrdersComponent },
+				{ path:'byStatus/:status' , component : OrdersComponent }
+			]
 	},
 	{ path:'about',component : AppAboutComponent },
 	{ path:'login',component : UnderConstructionComponent },

@@ -1,5 +1,5 @@
 
-<td align="center" width="10%">{{orderList.orderId}}</td>
+<td align="center" width="10%">#{{orderList.orderId}}</td>
 <td align="center">{{orderList.orderDate}}</td>
 <td align="center">{{orderList.customerId}}</td>
 <td *ngIf="orderList.payStatus == 'paid'" align="left" width="15%">
@@ -21,14 +21,14 @@
 		</span>
 	</div>
 </td>
-<td *ngIf="orderList.fulfillStatus == 'fulfilled'" width="15%">
+<td *ngIf="orderList.fulfillStatus == 'true'" width="15%">
 	<div>
 		<span class='fulfilled'>
 			Fulfilled
 		</span>
 	</div>
 </td>
-<td *ngIf="orderList.fulfillStatus == 'unfulfilled'" width="15%">
+<td *ngIf="orderList.fulfillStatus == 'false'" width="15%">
 	<div>
 		<span class='danger'>
 			Unfulfilled
